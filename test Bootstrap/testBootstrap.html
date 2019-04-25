@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+    <div class="container">
+        <a href="https://www.google.com">Google</a>
+        
+        
+        <form class="orderLine w-25 mt-4">
+            <div class="form-group">
+                <label>Select colour</label>
+                <select id="selectColor" class="form-control">
+                    <option value="0">Select color</option>
+                </select>
+            </div>
+            <div class="form-group orderLine__size">
+                <label>Select size</label>
+                <select id="selectSize" class="form-control">
+                    <option value="0">Select color</option>
+                </select>
+            </div>
+            <div class="orderLine__price">
+                
+            </div>
+            <button class="btn btn-warning orderLine__button w-100">Add to Card</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="testBootstrap.js"></script>
+    <script>
+        urls = ['http://echo.jsontest.com/id/1', 'http://echo.jsontest.com/id/2', 'http://echo.jsontest.com/id/3']
+        promises = $.map(urls, function(url){
+            return $.ajax(url).then(function(result){
+                console.log(JSON.stringify(result));
+            });
+        });
+        $.when.apply(this, promises)
+            .then(function(){
+                console.log('done');
+            });
+    </script>
+
+  </body>
+</html>

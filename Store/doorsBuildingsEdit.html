@@ -1,0 +1,1180 @@
+% layout 'default';
+
+<br>
+
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="col-xs-3 control-label">ID</label>
+        <div class="col-xs-9 col-md-7">
+            <input type="text" class="form-control" name="id" disabled="disabled"/>
+            <input type="hidden" name="id">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Tip</label>
+        <div class="col-xs-9 col-md-7">
+            <select id="type_id" class="form-control form-control-no-arrow" name="type_id">
+                <option>—</option>
+                <option value="1">Binalar</option>
+                <option value="2">Evlər</option>
+                <option value="3">Korporativ abunə</option>
+            </select>
+            <i class="form-group-arrow caret"></i>
+        </div>
+    </div>
+</form>
+<form id="formBuilding" class="form-horizontal" hidden>
+    <div class="form-group">
+        <label class="col-xs-3 control-label"><%=translate('City')%></label>
+        <div class="col-xs-9 col-md-7">
+            <select id="selectCityBuilding" class="form-control selectpicker" name="selectCityBuilding" data-live-search="true" data-dropup-auto="false">
+                <option>—</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label"><%=translate('Builder')%></label>
+        <div class="col-xs-9 col-md-7">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="glyphicon glyphicon-home"></i></div>
+                <select id="builder_id" class="form-control form-control-no-arrow" name="builder_id" selectpicker data-live-search="true" data-dropup-auto="false">
+                    <option>—</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label"><%=translate('Address')%></label>
+        <div class="col-xs-9 col-md-7">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></div>
+                <input type="text" class="form-control" id="address" name="address" placeholder="<%=translate('Address Example')%>"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Mərtəbə</label>
+        <div class="col-xs-9 col-md-7">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="glyphicon glyphicon-align-justify"></i></div>
+                <input type="text" class="form-control" name="floors" />
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Blok</label>
+        <div class="col-xs-9 col-md-7">
+            <input type="text" class="form-control" id="porches" name="porches" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Mənzildən başlayaraq</label>
+        <div class="col-xs-9 col-md-7">
+            <input type="text" class="form-control" id="apartments_from" name="apartments_from" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Mənzilə qədər</label>
+        <div class="col-xs-9 col-md-7">
+            <input type="text" class="form-control" id="apartments_to" name="apartments_to" />
+        </div>
+    </div>
+
+    <div id="tableBuilding-toolbar">
+        <button type="submit" id="btnSubmitBuilding" class="btn btn-secondary">Cədvələ əlavə ed</button>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <table
+                    id                    = "tableBuilding"
+                    data-toggle           = "table"
+                    data-show-toggle      = "true"
+                    data-select-item-name = "input"
+                    data-toolbar          = "#tableBuilding-toolbar"
+                    data-unique-id        = "id"
+            >
+                <thead>
+                <tr>
+                    <th data-field="building_city_name"><%=translate('City')%></th>
+                    <th data-field="building_builder_name"><%=translate('Builder')%></th>
+                    <th data-field="building_address_name"><%=translate('Street')%></th>
+                    <th data-field="building_porches_name"><%=translate('porches')%></th>
+                    <th data-field="building_apartment_name"><%=translate('apartment')%></th>
+
+                    <th data-field="id" data-visible="false">id</th>
+                    <th data-field="building_city_id" data-visible="false">City ID</th>
+                    <th data-field="building_builder_id" data-visible="false">Builder ID</th>
+                    <th data-field="building_address_values" data-visible="false">Address</th>
+                    <th data-field="building_porches_values" data-visible="false">Porches</th>
+                    <th data-field="building_apartments_values" data-visible="false">Apartment</th>
+                    <th data-field="operate" data-formatter="formatterBtnRemoveBuilding" data-align="right"></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <!--
+    <div class="form-group">
+        <div class="col-xs-5 col-xs-offset-3">
+            <a href="#modalMap" role="button" class="btn btn-default" data-toggle="modal"><%=translate('Map')%></a>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Latitude</label>
+        <div class="col-xs-8">
+            <input type="text" class="form-control" name="latitude" value="0"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Longitude</label>
+        <div class="col-xs-8">
+            <input type="text" class="form-control" name="longitude" value="0"/>
+        </div>
+    </div>
+    -->
+
+    <div class="form-group">
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <input type="hidden" name="id">
+            <button type="button" id="btnSaveBuilding" class="btn btn-success"><%=translate('Save')%></button>
+            <a href="doors_buildings" role="button" class="btn btn-default"><%=translate('Cancel')%></a>
+        </div>
+    </div>
+
+</form>
+<form id="formHouse" class="form-horizontal" hidden>
+    <div class="form-group">
+        <label class="col-xs-3 control-label"><%=translate('City')%></label>
+        <div class="col-xs-9 col-md-7">
+            <select id="selectCityHouse" class="form-control selectpicker" name="selectCityHouse" data-live-search="true" data-dropup-auto="false" selectpicker>
+                <option>—</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="selectHouse" class="col-xs-3 control-label"><%=translate('Builder')%></label>
+        <div class="col-xs-9 col-md-7">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="glyphicon glyphicon-home"></i></div>
+                <select id="selectHouse" class="form-control form-control-no-arrow" name="selectHouse" selectpicker data-live-search="true" data-dropup-auto="false">
+                    <option>—</option>
+                </select>
+                <i class="form-group-arrow caret"></i>
+            </div>
+
+            <!--
+            <div class="input-group">
+                    <select id="builder_id" class="form-control" name="builder_id">
+                    </select>
+                <span class="input-group-btn">
+                    <a href="#modalBuilder" role="button" class="btn btn-default" data-toggle="modal" style="color: rgb(255, 0, 0);">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </a>
+                </span>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Ünvan</label>
+        <div class="col-xs-9 col-md-7">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></div>
+                <input type="text" class="form-control" id="house_address" name="house_address" placeholder="<%=translate('Address Example')%>"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Evlərin başlanğıc nömrəsi</label>
+        <div class="col-xs-9 col-md-7">
+            <input type="text" class="form-control" id="house_porches_from" name="house_porches_from" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Evlərin bitmə nömrəsi</label>
+        <div class="col-xs-9 col-md-7">
+            <input type="text" class="form-control" id="house_porches_to" name="house_porches_to" />
+        </div>
+    </div>
+
+    <div id="tableHouse-toolbar">
+        <button type="submit" id="btnSubmitHouse" class="btn btn-secondary">Cədvələ əlavə ed</button>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <table
+                    id="tableHouse"
+                    data-toggle="table"
+                    data-show-toggle="true"
+                    data-select-item-name="input"
+                    data-toolbar="#tableHouse-toolbar"
+                    data-unique-id="id"
+            >
+                <thead>
+                <tr>
+                    <th data-field="id" data-visible="false">id</th>
+                    <th data-field="house_city_name"><%=translate('City')%></th>
+                    <th data-field="house_builder_name"><%=translate('Builder')%></th>
+                    <th data-field="house_address_name"><%=translate('Street')%></th>
+                    <th data-field="house_porches_name"><%=translate('House number')%></th>
+                    <th data-field="house_city_id" data-visible="false">City ID</th>
+                    <th data-field="house_builder_id" data-visible="false">Builder ID</th>
+                    <th data-field="house_address_values" data-visible="false">Address</th>
+                    <th data-field="house_porches_values" data-visible="false">Porches</th>
+                    <th data-field="operate" data-formatter="formatterBtnRemoveHouse" data-align="right"></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <button type="button" id="btnSaveHouse" class="btn btn-success"><%=translate('Save')%></button>
+            <a href="doors_buildings" role="button" class="btn btn-default"><%=translate('Cancel')%></a>
+        </div>
+    </div>
+</form>
+<form id="formCorporate" class="form-horizontal" hidden>
+    <div class="form-group">
+        <label for="objectName" class="col-xs-3 control-label">Obyektin adı</label>
+        <div class="col-xs-9 col-md-7">
+            <input type="text" name="objectName" id="objectName" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="objectType" class="col-xs-3 control-label">Obyektin tipi</label>
+        <div class="col-xs-9 col-md-7">
+            <select id="objectType" class="form-control form-control-no-arrow" name="objectType">
+                <option>—</option>
+                <option value="small">Small</option>
+                <option value="big">Big</option>
+            </select>
+            <i class="form-group-arrow caret"></i>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="contactName" class="col-xs-3 control-label">Əlaqələndirici şəxs</label>
+        <div class="col-xs-9 col-md-7">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
+                <input type="text" name="contactName" id="contactName" class="form-control">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="contactName" class="col-xs-3 control-label">Əlaqə nömrəsi</label>
+        <div class="col-xs-9 col-md-7">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></div>
+                <input type="text" name="contactNumber" id="contactNumber" class="form-control" placeholder="0501234567">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <button type="submit" class="btn btn-success"><%=translate('Save')%></button>
+            <a href="doors_buildings" role="button" class="btn btn-default"><%=translate('Cancel')%></a>
+        </div>
+    </div>
+</form>
+
+<!--<div id="modalMap" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        &lt;!&ndash; Modal content&ndash;&gt;
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Map</h4>
+            </div>
+            <div class="modal-body">
+                <div id="map" style="width: 100%; height: 400px"></div>
+                <br>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!--<div id="modalBuilder" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+        &lt;!&ndash; Modal content&ndash;&gt;
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" onClick="loadBuilderID()">&times;</button>
+                <h4 class="modal-title"><%=translate('Builder')%></h4>
+            </div>
+            <div class="modal-body">
+                <div id="tableTypeEdit-toolbar">
+                    <form id="buildersForm" method="get" class="form-horizontal">
+                        <div class="row no-gutter" id="insertBuilder" style="display:none">
+                            <div class="col-xs-8">
+                                <input type="text" class="form-control" name="builder_name" id="builder_name"/>
+                            </div>
+                            <button class="btn btn-default" id="buttonInsertValue" disabled="disabled" style="color: rgb(0, 0, 255);" onClick="builderInsert()" >
+                                <span class="glyphicon glyphicon-ok" aria-hidden="true" ></span>
+                            </button>
+                            <button class="btn btn-default" id="button" onClick="builderInputHide()" >
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true" ></span>
+                            </button>
+                        </div>
+                        <button class="btn btn-default" id="buttonShowInsertBuilder" onClick="builderInputShow()" >
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true" style="color: rgb(255, 0, 0);"></span>
+                        </button>
+                    </form>
+                    <style type="text/css">
+                        #buildersForm .form-control-feedback {
+                            top: 0;
+                            right: 15px;
+                        }
+                        #buildersForm .has-error .control-label,
+                        #buildersForm .has-error .help-block,
+                        #buildersForm .has-error .form-control-feedback {
+                            color: #a94442;
+                        }
+                    </style>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table  id="tableBuilderEdit"
+                                data-toggle="table"
+                                data-url="ironleg_builders_list"
+                                data-search="true"
+                                data-pagination="true"
+                                data-show-refresh="true"
+                                data-toolbar="#tableTypeEdit-toolbar">
+                            <thead>
+                            <tr>
+                                <th data-field="builder_name" data-formatter="nameFormatter"><%=translate('Builder')%></th>
+                                <th data-field="operate" data-formatter="operateFormatter" data-align="right"></th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div>
+
+                        <div class="col-md-8">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" onClick="loadBuilderID()"><%=translate('Save')%></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<script>
+    const
+        formBuilding       = $('#formBuilding'),
+        formHouse          = $('#formHouse'),
+        formCorporate      = $('#formCorporate');
+
+    let tableDataBuilding = $('#tableBuilding').bootstrapTable('getData'),
+        tableDataHouse = $('#tableHouse').bootstrapTable('getData'),
+        $i = 1;
+
+    function removeTableRow(rowID) {
+        $('#tableHouse').bootstrapTable('removeByUniqueId', rowID);
+        $('#tableBuilding').bootstrapTable('removeByUniqueId', rowID);
+        // document.getElementById('btnAddTableHouse').disabled = false;
+        // document.getElementById('statusAllApartmentsButton').disabled = false;
+        // document.getElementById('customerNameDIV').style.display = 'none';
+        // document.getElementById('customerConTypeDIV').style.display = 'none';
+        // document.getElementById('customerPhoneDIV').style.display = 'none';
+        // document.getElementById('customerContactDIV').style.display = 'none';
+        // document.getElementById('customerTarifDIV').style.display = 'none';
+        // document.getElementById('customerIdDIV').style.display = 'none';
+
+        $('#customer_search').val('');
+        //  $('#tableHouse').bootstrapTable('refresh');
+    }
+
+    function formatterBtnRemoveHouse(value, row, index) {
+        return [
+            '   <div class="btn-group btn-group-xs" role="group">',
+            '<button class="btn btn-default btn-group btn-group-sm" id="button" onClick="removeTableRow('+row.id+')" >',
+            '          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> <%=translate('Delete')%>',
+            '   </button></div>'
+        ].join('');
+    }
+
+    function formatterBtnRemoveBuilding(value, row, index, field) {
+        return [
+            '   <div class="btn-group btn-group-xs" role="group">',
+            '<button class="btn btn-default btn-group btn-group-sm" id="button" onClick="removeTableRow('+row.id+')" >',
+            '          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> <%=translate('Delete')%>',
+            '   </button></div>'
+        ].join('');
+    }
+
+    $.getJSON('ironleg_city_list', function(data) {
+        $.each(data, function(key, val) {
+            $('#selectCityBuilding').append('<option value="' + val.city_id + '">' + val.city_name + '</option>');
+        });
+    })
+        .always(function() {
+            $('#selectCityBuilding').selectpicker('refresh');
+        });
+
+    $.getJSON('ironleg_city_list', function(data) {
+        $.each(data, function(key, val) {
+            $('#selectCityHouse').append('<option value="' + val.city_id + '">' + val.city_name + '</option>');
+        });
+    })
+        .always(function() {
+            $('#selectCityHouse').selectpicker('refresh');
+        });
+
+    $("#type_id").bind("change", function() {
+        formBuilding.hide();
+        formHouse.hide();
+        formCorporate.hide();
+
+        let selectedType = document.getElementById('type_id').value;
+
+        if (selectedType === '1') {
+            formBuilding.show();
+        }
+        else if (selectedType === '2') {
+            formHouse.show();
+        }
+        else if (selectedType === '3') {
+            formCorporate.show();
+        }
+    });
+
+    $("#selectCityBuilding").bind("change", function(e) {
+        document.getElementById('builder_id').options.length = 0;
+        $.getJSON('ironleg_builders_list?city_id='+$("#selectCityBuilding").val(), function(data) {
+            $.each(data, function(key, val) {
+                $('#builder_id').append('<option value="' + val.builder_id + '">' + val.builder_name + '</option>');
+            });
+        })
+            .always(function() {
+                $('#builder_id').selectpicker('refresh');
+                formBuilding.formValidation('revalidateField', 'builder_id');
+            });
+    });
+
+    $("#selectCityHouse").bind("change", function() {
+        document.getElementById('selectHouse').options.length = 0;
+        $.getJSON('ironleg_builders_list?city_id='+$("#selectCityHouse").val(), function(data) {
+            $.each(data, function(key, val) {
+                $('#selectHouse').append('<option value="' + val.builder_id + '">' + val.builder_name + '</option>');
+            });
+        })
+            .always(function() {
+                $('#selectHouse').selectpicker('refresh');
+            });
+    });
+
+    formBuilding.formValidation({
+        framework: 'bootstrap',
+        excluded: ':disabled',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            selectCityBuilding: {
+                validators: {
+                    callback: {
+                        message: 'Tələb olunan sahə',
+                        callback: function() {
+                            if ( $('#selectCityBuilding').val() === '—') {
+                                return false
+                            }
+                            return true
+                        }
+                    }
+                }
+            },
+            builder_id: {
+                validators: {
+                    callback: {
+                        message: 'Tələb olunan sahə',
+                        callback: function(value) {
+                            if ( $('#builder_id').val() === '—' || value === null) {
+                                return false
+                            }
+                            return true
+                        }
+                    }
+                }
+            },
+            address: {
+                validators: {
+                    notEmpty: {
+                        message: 'Tələb olunan sahə'
+                    },
+                }
+            },
+            porches: {
+                validators: {
+                    notEmpty: {
+                        message: '<%=translate('Porches')%> <%=translate('is required')%>'
+                    },
+                    integer: {
+                        message: 'The porches must be a number.'
+                    }
+                }
+            },
+            floors: {
+                validators: {
+                    notEmpty: {
+                        message: '<%=translate('Floors')%> <%=translate('is required')%>'
+                    },
+                    integer: {
+                        message: 'The longitude must be a number.'
+                    }
+                }
+            },
+            apartments_from: {
+                validators: {
+                    notEmpty: {
+                        message: '<%=translate('Apartments')%> <%=translate('is required')%>'
+                    },
+                    integer: {
+                        message: 'The apartments must be a number.'
+                    },
+                    callback: {
+                        message: '\"Mənzilə qədər\"- sahənin nömrəsindən çox olmalı deil',
+                        callback: function (value) {
+                            if( parseInt($('#apartments_to').val()) <= parseInt(value) ) {
+                                return false
+                            }
+                            return true
+                        }
+                    }
+                }
+            },
+            apartments_to: {
+                validators: {
+                    callback: {
+                        message: '\"Mənzildən başlayaraq\"- sahənin nömrəsindən az olmalı deil',
+                        callback: function (value) {
+                            if( parseInt($('#apartments_from').val()) >= parseInt(value) ) {
+                                return false
+                            }
+                            return true
+                        }
+                    }
+                }
+            }
+        }
+    })
+        .on('success.form.fv', function(e) {
+            e.preventDefault();
+            $('#btnSubmitBuilding').attr('disabled', false);
+            $('#btnSubmitBuilding').removeClass('disabled');
+
+            let cityIdBuilding = $("#selectCityBuilding").val(),
+                cityNameBuilding = $("#selectCityBuilding option:selected").text(),
+                buildingID = $("#builder_id").val(),
+                buildingName = $("#builder_id option:selected").text(),
+                addressBuilding = $("#address").val(),
+                porch = $("#porches").val(),
+                apartmentsFrom = $("#apartments_from").val(),
+                apartmentsTo = $("#apartments_to").val(),
+                tableDataBuilding = $('#tableBuilding').bootstrapTable('getData'),
+                dataExist = false;
+
+            if (apartmentsTo === '') {
+                apartmentsTo = apartmentsFrom
+            }
+
+            while(apartmentsTo >= apartmentsFrom) {
+                $.each(tableDataBuilding, function(i, val) {
+                    if (
+                        val.building_city_id === cityIdBuilding &&
+                        val.building_builder_id === buildingID &&
+                        val.building_address_name === addressBuilding &&
+                        // Проверка на этажи
+                        val.building_porches_name === porch &&
+                        val.building_apartment_name === apartmentsFrom
+                    ) {
+                        dataExist = true;
+                    }
+                });
+
+                if (dataExist === false) {
+                    $('#tableBuilding').bootstrapTable('append', {
+                        id : $i,
+                        building_city_id: cityIdBuilding,
+                        building_city_name: cityNameBuilding,
+                        building_builder_id: buildingID,
+                        building_builder_name: buildingName,
+                        building_address_name: addressBuilding,
+                        building_porches_name: porch,
+                        building_apartment_name: apartmentsFrom
+                    });
+                    $i++;
+                }
+                else {
+                    bootbox.alert("apartment already exist");
+                    dataExist = false;
+                }
+                apartmentsFrom++
+            }
+        })
+        .on('err.form.fv', function () {});
+
+    $('#btnSaveBuilding').on('click', function() {
+        tableDataBuilding = $('#tableBuilding').bootstrapTable('getData');
+
+        if (tableDataBuilding.length === 0) {
+            bootbox.alert("Yadda saxlamaq üçün cədvəl boş olmalı deil");
+        }
+        else {
+            let typeID = document.getElementById('type_id').value,
+                id     = formBuilding.find('[name="id"]').val(),
+                $data  = formBuilding.serialize(),
+                $url;
+
+            if (id) {
+                $url = 'building_update'
+            }
+            else {
+                $url = 'building_insert'
+            }
+
+            $.each(tableDataBuilding, function(i, val) {
+                $data = $data + $.param(val) + '&';
+            });
+
+            $data = $data+'type_id='+typeID+'&';
+            $data = $data.substring(0, $data.length - 1);
+
+            console.log('Data for BUILDING ajax send', $data);
+
+            // $.ajax({
+            //     url: $url,
+            //     method: 'POST',
+            //     data: $data
+            // }).success(function(response) {
+            //     window.location="doors_buildings";
+            // });
+
+            // $('#myModal').modal('hide');
+            // $table.bootstrapTable('refresh');
+        }
+    });
+
+    formHouse.formValidation({
+        framework: 'bootstrap',
+        excluded: ':disabled',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            house_address: {
+                validators: {
+                    notEmpty: {
+                        message: '<%=translate('Street')%> <%=translate('is required')%>'
+                    },
+                }
+            },
+            house_porches_from: {
+                validators: {
+                    notEmpty: {
+                        message: '<%=translate('House number from')%> <%=translate('is required')%>'
+                    }
+                }
+            }
+        }
+    })
+        .on('success.form.fv', function(e) {
+            e.preventDefault();
+            $('#btnSubmitHouse').attr('disabled', false);
+            $('#btnSubmitHouse').removeClass('disabled');
+
+            let cityIdHouse = $("#selectCityHouse").val(),
+                cityNameHouse = $("#selectCityHouse option:selected").text(),
+                houseID = $("#selectHouse").val(),
+                houseName = $("#selectHouse option:selected").text(),
+                addressHouse = $("#house_address").val(),
+                houseFrom = $("#house_porches_from").val(),
+                houseTo = $("#house_porches_to").val(),
+                tableDataHouse = $('#tableHouse').bootstrapTable('getData'),
+                dataExist = false;
+
+            if (houseTo === "" || houseTo < houseFrom){
+                houseTo = houseFrom
+            }
+
+            while (houseFrom <= houseTo) {
+                $.each(tableDataHouse, function(i, val) {
+                    if (
+                        val.house_city_id === cityIdHouse &&
+                        val.house_builder_id === houseID &&
+                        val.house_address_name === addressHouse &&
+                        val.house_porches_name === houseFrom
+                    ) {
+                        dataExist = true;
+                    }
+                });
+
+                if (dataExist === false) {
+                    $('#tableHouse').bootstrapTable('append', {
+                        id : $i,
+                        house_city_id: cityIdHouse,
+                        house_city_name: cityNameHouse,
+                        house_builder_id: houseID,
+                        house_builder_name: houseName,
+                        house_address_name: addressHouse,
+                        house_porches_name: houseFrom
+                    });
+                    $i++;
+                }
+                else {
+                    bootbox.alert("House already exist");
+                    dataExist = false;
+                }
+                houseFrom++;
+            }
+        });
+
+    $('#btnSaveHouse').on('click', function() {
+        tableDataHouse = $('#tableHouse').bootstrapTable('getData');
+
+        if (tableDataHouse.length === 0) {
+            bootbox.alert("Yadda saxlamaq üçün cədvəl boş olmalı deil");
+        }
+        else {
+            let typeID = document.getElementById('type_id').value,
+                id = formHouse.find('[name="id"]').val(),
+                $data = '',
+                $url;
+
+            if (id) {
+                $url = 'house_update'
+            }
+            else {
+                $url = 'house_insert'
+            }
+
+            $.each(tableDataHouse, function(i, val) {
+                $data = $data + $.param(val) + '&';
+            });
+
+            $data = $data + 'type_id=' + typeID;
+
+            console.log('Data for HOUSE ajax send:', $data);
+
+            // $.ajax({
+            //     url: $url,
+            //     method: 'POST',
+            //     data: $data
+            // }).success(function(response) {
+            //     window.location="doors_buildings";
+            // });
+        }
+    });
+
+    formCorporate.formValidation({
+        framework: 'bootstrap',
+        excluded: ':disabled',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            objectName: {
+                validators: {
+                    notEmpty: {
+                        message: 'Tələb olunan sahə'
+                    },
+                }
+            },
+            objectType: {
+                validators: {
+                    callback: {
+                        message: 'Tələb olunan sahə',
+                        callback: function(value) {
+                            if (value === '—') {
+                                return false
+                            }
+                            return true
+                        }
+                    },
+                }
+            },
+            contactName: {
+                validators: {
+                    notEmpty: {
+                        message: 'Tələb olunan sahə'
+                    }
+                }
+            },
+            contactNumber: {
+                validators: {
+                    notEmpty: {
+                        message: 'Tələb olunan sahə'
+                    },
+                    regexp: {
+                        regexp: /^0\d{9}$/,
+                        message: 'Nömrə yalnız bu formatda qəbul olunur: 0501234567, 0121234567'
+                    }
+                }
+            },
+        }
+    })
+        .on('success.form.fv', function(e) {
+            e.preventDefault();
+
+            const
+                selectType = $('#type_id').val(),
+                fields = formCorporate.find('.form-control');
+
+            let data = '';
+
+            $.each(fields, function(key, field) {
+                data += `${field.name}=${field.value}&`
+            });
+
+            data += `type_id=${selectType}`;
+
+            console.log(data);
+
+            // $.ajax({
+            //     url: '',
+            //     method: 'post',
+            //     data: data
+            // })
+        });
+
+    // loadBuilderID();
+
+    /*function loadBuilderID(cityID,builderID) {
+        document.getElementById('builder_id').options.length = 0;
+        $.getJSON('ironleg_builders_list?city_id='+cityID, function(data) {
+            $.each(data, function(key, val) {
+                $('#builder_id').append('<option value="' + val.builder_id + '">' + val.builder_name + '</option>');
+            });
+        })
+            .always(function() {
+                //  console.log("bid",builderID);
+                //  $('#builder_id').val(builderID);
+                $('#builder_id').selectpicker('refresh');
+                $('#builder_id').selectpicker('val',builderID);
+                //  $('#builder_id').selectpicker('refresh');
+            });
+    }*/
+
+    /*
+    function loadBuilderID() {
+        document.getElementById('builder_id').options.length = 0;
+        $.getJSON('ironleg_builders_list', function(data) {
+                    $.each(data, function(key, val) {
+                        $('#builder_id').append('<option value="' + val.builder_id + '">' + val.builder_name + '</option>');
+                    });
+        });
+    }
+    */
+
+    /*function nameFormatter(value, row) {
+        setTimeout(editTable,50);
+        return '<a href="#" id="'+row.builder_id+'" data-pk="' + row.builder_id + '">'+ row.builder_name +'</a>';
+    }*/
+
+    /*function operateFormatter(value, row, index) {
+        return [
+            '   <div class="btn-group btn-group-xs" role="group">',
+            '<button class="btn btn-default btn-group btn-group-sm" id="button" onClick="builderDelete('+row.builder_id+')" >',
+            '          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> <%=translate('Delete')%>',
+            '   </button></div>'
+        ].join('');
+    }*/
+
+    /*function editTable() {
+        $('#tableBuilderEdit a').editable({
+            url: 'ironleg_builders_list',
+            placement: 'right',
+            validate: function (value) {
+                value = $.trim(value);
+                if (!value) {
+                    return 'This field is required';
+                }
+            },
+            ajaxOptions: {
+                type: 'put'
+            }
+        });
+    }*/
+
+    /*function builderInsert() {
+        $.ajax({
+            url: "ironleg_builders_list?builder_name="+document.getElementById("builder_name").value,
+            method: 'POST'
+        }).success(function(response) {
+            document.getElementById('insertBuilder').style.display = 'none';
+            document.getElementById('buttonShowInsertBuilder').style.display = 'block';
+            setTimeout(editTable,300);
+            $('#tableBuilderEdit').bootstrapTable('refresh');
+        });
+    }*/
+
+    /*function builderDelete(builderID) {
+        $.ajax({
+            url: "ironleg_builders_delete?builder_id="+builderID,
+            method: 'POST'
+        }).success(function(response) {
+            setTimeout(editTable,300);
+            $('#tableBuilderEdit').bootstrapTable('refresh');
+        });
+    }*/
+
+    /*function builderInputShow() {
+        document.getElementById('buttonInsertValue').disabled = true;
+        document.getElementById('insertBuilder').style.display = 'block';
+        document.getElementById('builder_name').value = '';
+        document.getElementById('buttonShowInsertBuilder').style.display = 'none';
+        $('#buildersForm').formValidation('resetForm', true);
+
+    }*/
+
+    /*function builderInputHide() {
+        document.getElementById('insertBuilder').style.display = 'none';
+        document.getElementById('buttonShowInsertBuilder').style.display = 'block';
+    }*/
+
+    function getURLParameter(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+    }
+
+    /*$('#buildersForm').formValidation({
+        framework: 'bootstrap',
+        excluded: ':disabled',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            builder_name: {
+                validators: {
+                    notEmpty: {
+                        message: 'The builder name is required'
+                    },
+                    remote: {
+                        message: 'Builder already exist.',
+                        url: 'ironleg_builders_check',
+                        type: 'GET'
+                    }
+                }
+            }
+        }
+    })
+    .on('err.field.fv', function(e, data) {
+        // $(e.target)  --> The field element
+        // data.fv      --> The FormValidation instance
+        // data.field   --> The field name
+        // data.element --> The field element
+
+        document.getElementById('buttonInsertValue').disabled = true;
+    })
+    .on('success.field.fv', function(e, data) {
+        // e, data parameters are the same as in err.field.fv event handler
+        // Despite that the field is valid, by default, the submit button will be disabled if all the following conditions meet
+        // - The submit button is clicked
+        // - The form is invalid
+        document.getElementById('buttonInsertValue').disabled = false;
+    });*/
+
+    /*// YANDEX MAP
+    // ymaps.ready(init);
+    var myMap;
+    var $table = $('#tableBuilderEdit');
+
+    // loadValues();
+
+    function init(){
+        var myPlacemark;
+        var myButton =
+            new ymaps.control.Button(
+                '<span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>'
+            );
+        myButton.events
+            .add(
+                'press',
+                function () {
+                    getCoords();
+                }
+            )
+        myMap = new ymaps.Map("map", {
+            center: [40.363288, 47.647705],
+            zoom: 7
+        });
+        myMap.controls.add(myButton, {
+            float: "left"
+        });
+        if (getURLParameter('building_id'))
+        {
+            loadValues();
+        }else if (getURLParameter('object_id')){
+            loadValuesObjects();
+        }
+
+        myMap.events.add('click', function (e) {
+            var coords = e.get('coords');
+            formHouse.latitude.value = coords[0].toPrecision(8);
+            formHouse.longitude.value = coords[1].toPrecision(8);
+
+            if (myPlacemark) {
+                myPlacemark.geometry.setCoordinates(coords);
+            }
+            else {
+                myPlacemark = createPlacemark(coords);
+                myMap.geoObjects.add(myPlacemark);
+            }
+        });
+    }
+
+    function createPlacemark(coords) {
+        return new ymaps.Placemark(coords, {
+            iconContent: ''
+        }, {
+            preset: 'islands#violetStretchyIcon',
+            draggable: true
+        });
+    }
+
+    function getCoords() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            bootbox.alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function showPosition(position) {
+        var ltd = position.coords.latitude,
+            lng = position.coords.longitude;
+        myMap.setCenter([ltd, lng], 16);
+        myGeoObject = new ymaps.GeoObject({
+            geometry: {
+                type: "Point",
+                coordinates: [ltd, lng]
+            }
+        });
+        myMap.geoObjects.add(myGeoObject);
+//            bootbox.alert(ltd + ','+lng);
+//            $('#latitude').val(ltd);
+        $('#formHouse')
+            .find('[name="latitude"]').val(ltd.toFixed(6)).end()
+            .find('[name="longitude"]').val(lng.toFixed(6)).end();
+    }
+
+    function loadValues() {
+        var ltd;
+        var lng;
+        var cityID;
+        var buildingID = getURLParameter('building_id');
+        $.ajax( "doors_buildings_list?building_id=" + buildingID ).done(function(result) {
+            result = result.substring(0, result.length - 1);
+            result = result.substring(1);
+            var response = JSON.parse(result);
+            $('#formBuilding')
+                .find('[name="id"]').val(response.building_id).end()
+                .find('[name="address"]').val(response.building_address).end()
+                .find('[name="porches"]').val(response.building_porches).end()
+                .find('[name="floors"]').val(response.building_floors).end()
+                .find('[name="apartments"]').val(response.building_apartments).end()
+                .find('[name="latitude"]').val(response.building_latitude).end()
+                .find('[name="longitude"]').val(response.building_longitude).end();
+            cityID = response.building_city_id;
+            ltd = response.building_latitude;
+            lng = response.building_longitude;
+            //     $("#city_id").val(cityID);
+            $('#city_id').selectpicker('val',cityID);
+            loadBuilderID(cityID,response.building_builder_id);
+//            $("#builder_id").val(response.building_builder_id)
+            if (ltd != '0') {
+                myMap.setCenter([ltd, lng], 16);
+                myGeoObject = new ymaps.GeoObject({
+                    geometry: {
+                        type: "Point",
+                        coordinates: [ltd, lng]
+                    }
+                });
+                myMap.geoObjects.add(myGeoObject);
+            }
+            else {
+                myMap.setCenter([40.363288, 47.647705], 7);
+            }
+        });
+    }*/
+</script>
+
+<style>
+    .form-group { position: relative }
+    .form-control-no-arrow {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    .form-group-arrow {
+        position: absolute;
+        top: 15px;
+        right: 28px;
+        z-index: 2;
+    }
+    .input-group .form-group-arrow { right: 13px }
+    .input-group .form-control-no-arrow { border-radius: 0 4px 4px 0 !important }
+    .btn.dropdown-toggle.btn-default { border-radius: 0 4px 4px 0 }
+
+
+    /* Validator icons */
+    .form-control-feedback.glyphicon { right: 35px !important }
+    .has-feedback .form-control { padding-right: 0 }
+
+
+    /* Bootstrap table */
+    .bootstrap-table { margin-top: 2rem }
+    .bootstrap-table .fixed-table-container { border: none }
+    .bootstrap-table .fixed-table-container table { border-bottom: none }
+    .bootstrap-table .fixed-table-container thead,
+    .bootstrap-table .fixed-table-container tr { border: 1px solid #dadada !important }
+    .bootstrap-table .fixed-table-container td { padding: 1.5rem !important }
+    .bootstrap-table .card-views { border: 2px solid #dadada }
+    .bootstrap-table .card-view { display: flex }
+    .bootstrap-table .card-view .title {
+        padding: 0.5rem 1rem;
+        min-width: 30%;
+        border-style: solid;
+
+        border-color: #dadada;
+        border-width: 0 0 1px 0;
+    }
+    .bootstrap-table .card-view .value {
+        padding: 0.5rem 1rem;
+        min-width: 70%;
+        border-style: solid;
+        border-color: #dadada;
+        border-width: 0 0 1px 1px;
+    }
+</style>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <title>Employer Tast 3</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="width-wrapper">
+            <a class="main-logo-btn"><img src="img/main-logo.svg"></a>
+            <nav id="header-navigation">
+                <a class="header-nav-btn header-nav-btn-active" href="">
+                    <div class="header-nav-btn-wrapper">
+                        <svg class="header-nav-svg"><use href="img/icons.svg#home"></use></svg>
+                    </div>                
+                    <p class="header-nav-title">HOME</p>
+                </a>
+                <a class="header-nav-btn" href="">
+                    <div class="header-nav-btn-wrapper">
+                        <svg class="header-nav-svg"><use href="img/icons.svg#folder"></use></svg>
+                    </div>                
+                    <p class="header-nav-title">BROWSE</p>
+                </a>
+                <a class="header-nav-btn" href="">
+                    <div class="header-nav-btn-wrapper header-nav-svg-have-add">
+                        <svg class="header-nav-svg"><use href="img/icons.svg#news"></use></svg>
+                    </div>
+                    <p class="header-nav-title">NEWSFEED</p>
+                </a>
+                <a class="header-nav-btn" href="">
+                    <div class="header-nav-btn-wrapper">
+                        <svg class="header-nav-svg"><use href="img/icons.svg#user"></use></svg>
+                    </div>
+                    <p class="header-nav-title">USERS</p>
+                </a>
+            </nav>
+            <form class="upload-media-form" action="" method="post">
+                <input type="file" name="uploadMedia" id="uploadMediaBtn">
+            </form>
+        </div>
+    </header>
+
+    <main class="profile-container">
+        <div class="profile-slider-container"></div>
+
+        <div class="profile-slider-title">
+            <p class="slide-origin">Hong Kong</p>
+            <div class="author-and-date">
+                <img class="slide-author-img" src="img/Justin-Pervorse/Justin-Pervorse-avatar.jpg">
+                <p class="slide-author-name">by Justin Pervorse</p>
+                <p class="slide-author-separator">·</p>
+                <p class="slide-post-date">25th Jan,2014</p>
+            </div>
+            <hr class="profile-slider-gray-line">
+            <div class="author-total-likes">
+                <svg class="author-total-likes-svg"><use href="img/icons.svg#totalLikes"></use></svg>
+                <p class="author-total-likes-amount">640</p>
+            </div>
+            <div class="author-total-comments">
+                <svg class="author-total-comments-svg"><use href="img/icons.svg#totalComments"></use></svg>
+                <p class="author-total-comments-amount">302</p>
+            </div>
+        </div> 
+
+        <section class="profile-media-container active">
+            <div class="blured-bg-slider"></div>
+
+            <div class="hiden-event-block">
+                <svg class="hiden-block-svg"><use href="img/icons.svg#bar"></use></svg>
+            </div>
+
+            <div class="profile-media-wrapper">
+                
+                <div class="profile-about">
+
+                    <button id="setTick">
+                        <svg class="set-tick-svg"><use href="img/icons.svg#user"></use></svg>
+                    </button>
+                    <button id="closeProfileMediaContainer">
+                        <svg class="close-profile-svg"><use href="img/icons.svg#close"></use></svg>
+                    </button>
+
+                    <a class="profile-avatar-btn" href=""><img class="profile-avatar-img" src="img/Justin-Pervorse/Justin-Pervorse-avatar.jpg"></a>
+                    <h2 class="profile-media-name">Justin Pervorse</h2>
+                    <h4 class="profile-media-position">Illustrator and Photographer from Athlanta, GA</h4>
+                </div>
+    
+                <div class="profile-media-gallery">
+                    <div class="profile-media-navigation">
+                        <form class="profile-media-form" action="" method="post">
+                            <input type="file" name="uploadMedia" id="contributeBtn">
+                            <img class="profile-media-add-img" src="img/add.svg">
+                            <i class="profile-media-add-title">CONTRIBUTE</i>
+                        </form>
+                        <div class="page-btn-container">
+                            <button class="profile-back-btn">
+                                <svg class="profile-back-img"><use href="img/icons.svg#arrowBack"></use></svg>
+                            </button>
+                            <button class="profile-forward-btn">
+                                <svg class="profile-forward-img"><use href="img/icons.svg#arrowForward"></use></svg>
+                            </button>
+                        </div>
+                    </div>                
+                    <div class="profile-media-content">
+                        <div class="profile-media-item" style="background-image: url(img/Justin-Pervorse/00001.jpg);"></div>
+                        <div class="profile-media-item" style="background-image: url(img/Justin-Pervorse/00002.jpg);"></div>
+                        <div class="profile-media-item" style="background-image: url(img/Justin-Pervorse/00003.jpg);"></div>
+                        <div class="profile-media-item" style="background-image: url(img/Justin-Pervorse/00004.jpg);"></div>
+                        <div class="profile-media-item" style="background-image: url(img/Justin-Pervorse/00001.jpg);"></div>
+                        <div class="profile-media-item" style="background-image: url(img/Justin-Pervorse/00002.jpg);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="timeline-section">
+        <div class="timeline-container">
+            <div class="timeline-header">
+                <div class="timeline-items-count">
+                    <svg class="items-count-photo"><use href="img/icons.svg#photo"></use></svg>
+                    <span>524</span>
+                    <svg class="items-count-separator"><use href="img/icons.svg#verticalLine"></use></svg>
+                    <svg class="items-count-video"><use href="img/icons.svg#video"></use></svg>
+                    <span>102</span>
+                </div>
+                <div class="time-filter-container">
+                    <label class="time-filter-label" for="openTimeFilter">
+                        <svg class="arrow-down-icon"><use href="img/icons.svg#arrowDown"></use></svg>
+                        <span class="time-filter-title">January, 2014</span>
+                    </label>
+                    <input type="checkbox" id="openTimeFilter">
+                    <input type="month" name="inputMonth" id="inputMonth">
+                </div>
+            </div>
+            <div class="timeline-items-container">
+                <div class="timeline-add-item">
+                    <img class="timeline-media" src="img/timeline-img/timeline-do-post.jpg">
+                </div>
+                <div class="timeline-item">
+                    <img class="timeline-media" src="img/timeline-img/Dann Petty wallpaper.jpg">
+                </div>
+                <div class="timeline-item">
+                    <img class="timeline-media" src="img/timeline-img/Manouk Berg wallpaper.jpg">
+                </div>
+                <div class="timeline-item">
+                    <video class="timeline-media" controls src="video/Eric Hoffman - Big Battle Animals Real.mp4"></video>
+                </div>
+            </div>
+        </div>                  
+    </section>
+    <section class="user-list-section">
+        <form class="view-style" action="" method="get">
+            <label for="view-style-select">
+                <svg class="arrow-down-icon"><use href="img/icons.svg#arrowDown"></use></svg>
+            </label>
+            <select name="" id="view-style-select">
+                <option class="view-style-option">Landscape</option>
+                <option class="view-style-option">Grid</option>
+            </select>
+        </form>
+        <div class="user-list-container">
+            <div class="user-list-favorite">
+                <div class="user-list-item">
+                    <img class="user-list-img" src="img/users-avatar/2.jpg">
+                    <span class="user-list-name">Gustav Butlex</span>
+                </div>
+                <div class="user-list-item">
+                    <img class="user-list-img" src="img/users-avatar/1.jpg">
+                    <span class="user-list-name">Jammie Winston</span>
+                </div>
+                <div class="user-list-item">
+                    <img class="user-list-img" src="img/users-avatar/3.jpg">
+                    <span class="user-list-name">Maykel Loomans</span>
+                </div>
+            </div>
+            <div class="user-list-rest">
+                <div class="user-list-item">
+                    <img class="user-list-img" src="img/users-avatar/4.jpg">
+                    <span class="user-list-name">Erika van der Bent</span>
+                </div>
+                <div class="user-list-item">
+                    <img class="user-list-img" src="img/users-avatar/5.jpg">
+                    <span class="user-list-name">Tim van Damme</span>
+                </div>
+                <div class="user-list-item">
+                    <img class="user-list-img" src="img/users-avatar/6.jpg">
+                    <span class="user-list-name">Dann Petty</span>
+                </div>
+                <div class="user-list-item">
+                    <img class="user-list-img" src="img/users-avatar/7.jpg">
+                    <span class="user-list-name">Kerem Suer</span>
+                </div>
+                <div class="user-list-item">
+                    <img class="user-list-img" src="img/users-avatar/8.jpg">
+                    <span class="user-list-name">Manouk Berg</span>
+                </div>
+                <div class="user-list-item">
+                    <img class="user-list-img" src="img/users-avatar/9.jpg">
+                    <span class="user-list-name">Eric Hoffman</span>
+                </div>
+                <div class="user-list-item">
+                    <img class="user-list-img" src="img/users-avatar/4.jpg">
+                    <span class="user-list-name">Erika van der Bent</span>
+                </div>
+                <div class="user-list-item">
+                    <img class="user-list-img" src="img/users-avatar/5.jpg">
+                    <span class="user-list-name">Tim van Damme</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

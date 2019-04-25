@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Flag Icon -->
+    <link rel="stylesheet" href="../public/assets/plugins/flag-icon/css/flag-icon.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../public/assets/plugins/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <!-- Wowjs -->
+    <link rel="stylesheet" href="../public/assets/plugins/wowjs/animate.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="../public/assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../public/assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<header class="header">
+    <div class="header__user">
+        <div class="container navbar">
+            <ul class="navbar-nav user__lang">
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle btn_light" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="lang__item">
+                            <i class="flag-icon flag-icon-gb"></i>
+                            <span>English</span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <div id="langAze" class="lang__item">
+                                <i class="flag-icon flag-icon-az"></i>
+                                <span>Azərbaycanca</span>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div id="langEng" class="lang__item">
+                                <i class="flag-icon flag-icon-gb"></i>
+                                <span>English</span>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div id="langRus" class="lang__item">
+                                <i class="flag-icon flag-icon-ru"></i>
+                                <span>Русский</span>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav btn_light">
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle btn_light" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>Surname Firstname</span>
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class=" flag-icon-az"></i> Exit</a>
+                    </div>
+                </li>
+            </ul>
+        </div>        
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark header__menu">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../public/assets/img/header_logo.png" alt="Home"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul id="myTab" class="navbar-nav nav menu__wrapper">
+                    <li class="nav-item"><a class="btn_light active show" data-toggle="tab" href="#reason">Why we</a></li>
+                    <li class="nav-item"><a class="btn_light" data-toggle="tab" href="#devices" >Devices</a></li>
+                    <li class="nav-item"><a class="btn_light" data-toggle="tab" href="#implementation">IMPLEMENTATION</a></li>
+                    <li class="nav-item"><a class="btn_light" data-toggle="tab" href="#partnership">PARTNERSHIP</a></li>
+                    <li class="nav-item"><a class="btn_light" data-toggle="tab" href="#business">BUSINESS MODEL</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+</header>
+<main class="content">
+    <div id="reason" class="reason">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 reason__logo wow fadeIn" data-wow-delay=".5s">
+                    <img src="../public/assets/img/header_logo.png" alt="TViTECH logo">
+                </div>
+                <div class="col-lg-7 reason__description mb-5">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Television that is always with you</li>
+                        <li class="list-group-item">Up to 200 channels on 3 devices</li>
+                        <li class="list-group-item">Archive up to 14 days, pause and rewind</li>
+                        <li class="list-group-item">Wherever there is internet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel owl-theme mt-5">
+            <img src="../public/assets/img/main-1.jpg">
+            <img src="../public/assets/img/main-2.jpg">
+            <img src="../public/assets/img/main-3.jpg">
+            <img src="../public/assets/img/main-4.png">
+            <img src="../public/assets/img/main-5.jpg">
+            <img src="../public/assets/img/main-6.png">
+            <img src="../public/assets/img/main-7.jpg">
+            <img src="../public/assets/img/main-7.png">
+            <img src="../public/assets/img/main-8.jpg">
+        </div>
+    </div>
+    <div id="devices" class="devices">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-SmartTV-tab" data-toggle="pill" href="#v-pills-SmartTV" role="tab" aria-controls="v-pills-SmartTV" aria-selected="true">SmartTV</a>
+                        <a class="nav-link" id="v-pills-STB-tab" data-toggle="pill" href="#v-pills-STB" role="tab" aria-controls="v-pills-STB" aria-selected="false">STB</a>
+                        <a class="nav-link" id="v-pills-Phone/TABLET-tab" data-toggle="pill" href="#v-pills-Phone/TABLET" role="tab" aria-controls="v-pills-Phone/TABLET" aria-selected="false">Phone/TABLET</a>
+                        <a class="nav-link" id="v-pills-PC/MAC-tab" data-toggle="pill" href="#v-pills-PC/MAC" role="tab" aria-controls="v-pills-PC/MAC" aria-selected="false">PC/MAC</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-SmartTV" role="tabpanel" aria-labelledby="v-pills-SmartTV-tab">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <p>A smart TV is a traditional television set with integrated Internet and interactive "Web 2.0" features which allows users to stream music and videos, browse the internet, and view photos. Smart TV is a technological convergence of computers, television sets and set-top boxes. Besides the traditional functions of television sets and set-top boxes provided through traditional broadcasting media, these devices can also provide Internet TV, online interactive media, over-the-top content (OTT), as well as on-demand streaming media, and home networking access.</p>
+                                    <p>Smart TV should not be confused with Internet TV, IPTV or Web television. Internet TV refers to receiving television content over the Internet instead of traditional systems (terrestrial, cable and satellite) (although Internet itself is received by these methods). IPTV is one of the Internet television technology standards for use by television broadcasters. Web television is a term used for programs created by a wide variety of companies and individuals for broadcast on Internet TV.</p>
+                                    <p>In smart TVs, the operating system is preloaded or is available through the set-top box. The software applications or "apps" can be preloaded into the device, or updated or installed on demand via an app store or marketplace, in a similar manner to how the apps are integrated in modern smartphones.</p>
+                                    <p>The technology that enables smart TVs is also incorporated in external devices such as set-top boxes and some Blu-ray players, game consoles, digital media players, hotel television systems, smartphones, and other network-connected interactive devices that utilize television-type display outputs. These devices allow viewers to find and play videos, movies, TV shows, photos and other content from the Web, cable or satellite TV channel, or from a local storage device.</p>
+                                </div>
+                                <div class="col-lg-5">
+                                    <img src="../public/assets/img/smart-TV.jpeg" style="width: 100%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-STB" role="tabpanel" aria-labelledby="v-pills-STB-tab">...</div>
+                        <div class="tab-pane fade" id="v-pills-Phone/TABLET" role="tabpanel" aria-labelledby="v-pills-Phone/TABLET-tab">...</div>
+                        <div class="tab-pane fade" id="v-pills-PC/MAC" role="tabpanel" aria-labelledby="v-pills-PC/MAC-tab">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div id="opportunity" class="opportunity">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="opportunity__iptv">
+                        <p>Potential market for IPTV/OTT</p>
+                        <svg version="1.1" id="iptvLineGray" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 290.1 142.6" style="enable-background:new 0 0 290.1 142.6;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:none;stroke:#808080;stroke-width:3;stroke-miterlimit:10;}
+                            </style>
+                            <path data-delay="1" class="st0" d="M0,1.5h149l140,140"/>
+                        </svg>
+                        <svg version="1.1" id="iptvLineWhite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 290.1 142.6" style="enable-background:new 0 0 290.1 142.6;" xml:space="preserve">
+                            <style type="text/css">
+                                .st1{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;stroke-dasharray:12.407,12.407;}
+                            </style>
+                            <polyline class="st1" points="18.4,1.5 149,1.5 280.4,132.9"/>
+                        </svg>
+                    </div>
+                    <h5 class="opportunity__internet">Internet access</h5>
+                    <p>Internet users in Azerbaijan - 61% of the population</p>
+                </div>
+                <div class="opportunity__market wow rotateIn">
+                    <div class="market__circle market__circle_red wow rotateInDownLeft">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="market__circle market__circle_green wow rotateInUpRight">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <div class="market__circle market__circle_blue wow rotateInDownRight">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                </div>
+                <div class="col-md-4 ml-auto wow fadeInRightBig text-right">
+                    <h5>Broad coverage</h5>
+                    <p>Almost 100% of the population view local or/and foreign TV channels</p>
+                    <div class="opportunity__devices">
+                        <h5>Devices</h5>
+                        <p>There are 2-3 devices per household. There are approximately 5000000 TVs in Azerbaijan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!--<div id="implementation" class="container implementation">implementation section</div>-->
+    <!--<div id="partnership" class="container partnership">partnership section</div>-->
+</main>
+
+<!-- jQuery -->
+<script rel="script" src="../public/assets/plugins/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap -->
+<script rel="script" src="../public/assets/plugins/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script rel="script" src="../public/assets/plugins/popper.min.js"></script>
+<!-- Wowjs -->
+<script rel="script" src="../public/assets/plugins/wowjs/wow.min.js"></script>
+<!-- Vivus -->
+<script rel="script" src="../public/assets/plugins/vivus.min.js"></script>
+<!-- Owl carousel -->
+<script rel="script" src="../public/assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<!-- Custom JS -->
+<script rel="script" src="../public/js/script.js"></script>
+</body>
+</html>

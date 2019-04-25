@@ -1,0 +1,996 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Azedunet - CMDB add device</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-table.css">
+    <link rel="stylesheet" href="/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/css/formValidation.min.css">
+    <!--<link rel="stylesheet" href="/css/bootstrap-datetimepicker.min.css">-->
+    <link rel="stylesheet" href="/css/bootstrap-datepicker3.css">
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap-table.js"></script>
+    <script src="/js/bootstrap-select.min.js"></script>
+    <script src="/js/ironleg_utils.js"></script>
+    <script src="/js/formValidation.min.js"></script>
+    <script src="/js/framework/bootstrap.min.js"></script>
+    <script src="/js/bootstrap-datepicker.js"></script>
+    <script src="/js/bootstrap3-typeahead.js"></script>
+    <script src="/js/typeahead.bundle.js"></script>
+
+    <style>
+        .mt-2 { margin-top: 2rem }
+
+        .btn-brand {
+            color: #fff;
+            background: #F58634
+        }
+        .btn-brand:hover {
+            color: #fff;
+            background: #ffa955
+        }
+        .btn-brand:focus { color: #fff }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            height: 5rem;
+        }
+
+        .navbar-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-header img { height: 3rem }
+
+        .header-title {
+            padding-top: 3px;
+            padding-left: 1rem;
+            margin-left: 1rem;
+            border-left: 1px solid #4B4B4D;
+            font-size: 1.8rem;
+            color: #4B4B4D;
+        }
+
+        .container-page { margin-top: 6rem }
+
+        form .row {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #d6d6d6
+        }
+        input[type="text"] {
+            white-space: normal;
+        }
+
+        /* Formvalidation */
+
+        .form-group-withBtn .form-control-feedback { right: 6rem !important }
+        .form-control-feedback.glyphicon { right: 15px }
+        .has-feedback .form-control { padding-right: 0 }
+
+
+        /* PRELOADER */
+
+        .preloader {
+            position: fixed;
+            top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0, 0.5);
+            z-index: 99999;
+        }
+        .lds-dual-ring {
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+        }
+        .lds-dual-ring:after {
+            content: " ";
+            display: block;
+            width: 46px;
+            height: 46px;
+            margin: 1px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            border-color: #fff transparent #fff transparent;
+            animation: lds-dual-ring 1.2s linear infinite;
+        }
+        @keyframes lds-dual-ring {
+            0% { transform: rotate(0deg) }
+            100% { transform: rotate(360deg) }
+        }
+
+
+        /* Result messages */
+
+        .resultMessages {
+            padding: 1rem;
+            text-align: center;
+            color: #fff;
+        }
+        #messageSuccess { background: #5ebc6d }
+        #messageError { background: #e83e3e }
+
+
+        /* Twitter-typeahead */
+
+        span.twitter-typeahead .tt-menu,
+        span.twitter-typeahead .tt-dropdown-menu {
+            cursor: pointer;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            float: left;
+            min-width: 160px;
+            padding: 5px 0;
+            margin: 2px 0 0;
+            list-style: none;
+            font-size: 14px;
+            text-align: left;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            background-clip: padding-box;
+        }
+        span.twitter-typeahead .tt-suggestion {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.42857143;
+            color: #333333;
+            /*white-space: nowrap;*/
+            white-space: normal;
+        }
+        span.twitter-typeahead .tt-suggestion.tt-cursor,
+        span.twitter-typeahead .tt-suggestion:hover,
+        span.twitter-typeahead .tt-suggestion:focus {
+            color: #ffffff;
+            text-decoration: none;
+            outline: 0;
+            background-color: #337ab7;
+        }
+        .input-group.input-group-lg span.twitter-typeahead .form-control {
+            height: 46px;
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            border-radius: 6px;
+        }
+        .input-group.input-group-sm span.twitter-typeahead .form-control {
+            height: 30px;
+            padding: 5px 10px;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 3px;
+        }
+        span.twitter-typeahead {
+            width: 100%;
+        }
+        .input-group span.twitter-typeahead {
+            display: block !important;
+            height: 34px;
+        }
+        .input-group span.twitter-typeahead .tt-menu,
+        .input-group span.twitter-typeahead .tt-dropdown-menu {
+            top: 32px !important;
+        }
+        .input-group span.twitter-typeahead:not(:first-child):not(:last-child) .form-control {
+            border-radius: 0;
+        }
+        .input-group span.twitter-typeahead:first-child .form-control {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .input-group span.twitter-typeahead:last-child .form-control {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        .input-group.input-group-sm span.twitter-typeahead {
+            height: 30px;
+        }
+        .input-group.input-group-sm span.twitter-typeahead .tt-menu,
+        .input-group.input-group-sm span.twitter-typeahead .tt-dropdown-menu {
+            top: 30px !important;
+        }
+        .input-group.input-group-lg span.twitter-typeahead {
+            height: 46px;
+        }
+        .input-group.input-group-lg span.twitter-typeahead .tt-menu,
+        .input-group.input-group-lg span.twitter-typeahead .tt-dropdown-menu {
+            top: 46px !important;
+        }
+
+        @media (min-width: 1450px) {
+            .container { width: 1400px }
+        }
+        @media (max-width: 767px) {
+            textarea { padding-right: 3rem !important; }
+            .btn-textarea { padding: 26px 12px }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header text-center">
+            <img src="/img/logoedu.png">
+            <span class="header-title">Add device</span>
+        </div>
+    </div>
+</nav>
+<div id="preloader" class="hidden"></div>
+<div class="container container-page">
+    <div class="row">
+        <form id="form" action="#" class="col-sm-12 col-md-7">
+            <div class="form-group">
+                <label for="location_type">Location</label>
+                <select
+                        id      = "location_type"
+                        class   = "form-control selectpicker"
+                        name    = "location_type"
+                        v-model = "selectLocation"
+                >
+                    <option value="0">Customer</option>
+                    <option value="1">ATS</option>
+                </select>
+            </div>
+
+            <div class="form-group form-group-withBtn">
+                <label for="customer_id">Autofill by customer (ID or name)</label>
+                <div class="input-group">
+                    <textarea
+                            name="customer_by_id"
+                            id="customerByID"
+                            cols="30"
+                            rows="3"
+                            class="form-control typeahead visible-xs"
+                    ></textarea>
+                    <input
+                            name  = "customer_by_id"
+                            type  = "text"
+                            id    = "customerByID"
+                            class = "form-control typeahead hidden-xs"
+                    >
+                    <div class="input-group-btn">
+                        <button onclick="clearThisInput(this)" class="btn btn-brand btn-textarea">Clear</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="city_id">City</label>
+                <select id="city_id" class="form-control selectpicker" name="city_id" data-live-search="true">
+                    <option value="">—</option>
+                </select>
+            </div>
+
+            <div id="collapse-customers" class="collapse">
+                <div class="form-group">
+                    <label for="customer_type_id">Customer Type</label>
+                    <select id="customer_type_id" class="form-control selectpicker" data-live-search="true" name="customer_type_id">
+                        <option value="">—</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="customer_id">Customer</label>
+                    <select id="customer_id" class="form-control selectpicker" data-live-search="true" name="customer_id">
+                        <option value="notSelected">—</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="collapse-ats" class="collapse">
+                <div class="form-group">
+                    <label for="ats_id">ATS</label>
+                    <select id="ats_id" class="form-control" name="ats_id"></select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="type_id">Equipment type</label>
+                <select id="type_id" class="form-control selectpicker" data-live-search="true" name="type_id"></select>
+            </div>
+            <div class="form-group">
+                <label for="eq_man_id">Equipment manufacturer</label>
+                <select id="eq_man_id" class="form-control selectpicker" data-live-search="true" name="eq_man_id"></select>
+            </div>
+            <div class="form-group">
+                <label for="eq_id">Equipment name (model)</label>
+                <select id="eq_id" class="form-control selectpicker" name="eq_id"></select>
+            </div>
+            <div class="form-group">
+                <label for="level_id">Availability_level</label>
+                <select id="level_id" class="form-control selectpicker" name="level_id"><option>—</option></select>
+            </div>
+            <div class="form-group">
+                <label for="ip">IP</label>
+                <input id="ip" class="form-control" name="ip">
+            </div>
+            <div class="form-group">
+                <label for="mac">Mac</label>
+                <input id="mac" class="form-control" name="mac" pattern="^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})|([0-9A-Fa-f]{4}[\.]?){2}([0-9A-Fa-f]{4})$">
+            </div>
+            <div class="form-group">
+                <label for="serial">Serial</label>
+                <input id="serial" class="form-control" name="serial">
+            </div>
+            <div class="form-group">
+                <label for="host">Hostname</label>
+                <input id="host" class="form-control" name="host">
+            </div>
+            <div class="form-group">
+                <label for="ports">Ports</label>
+                <input id="ports" class="form-control" name="ports">
+            </div>
+            <div class="form-group">
+                <label for="con_id">Connector</label>
+                <select id="con_id" class="form-control selectpicker" data-live-search="true" name="con_id"></select>
+            </div>
+            <div class="form-group">
+                <label for="state_id">State</label>
+                <select id="state_id" class="form-control selectpicker" name="state_id"></select>
+            </div>
+            <div class="form-group date">
+                <label for="date">Instalation Date</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                    <input id="date" type="text" class="form-control" name="date" data-date-format="dd.mm.yyyy" placeholder="dd.mm.yyyy">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="last_changed">Last Changed</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                    <input id="last_changed" type="text" class="form-control" name="last_changed" data-date-format="dd.mm.yyyy" placeholder="dd.mm.yyyy">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="owner_id">Owner</label>
+                <select id="owner_id" class="form-control selectpicker" data-live-search="true" name="owner_id"></select>
+            </div>
+            <div class="form-group col-xs-12 col-sm-4 col-sm-offset-4">
+                <button id="sendData" type="submit" class="form-control btn btn-success">Send</button>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div id="tableContainer" class="col-sm-12" hidden="true">
+            <!-- Bootstrap table -->
+        </div>
+    </div>
+    <div class="row">
+        <div id="messageSuccess" class="resultMessages" hidden>
+            <h2>Device registered successfully</h2>
+        </div>
+        <div id="messageError" class="resultMessages" hidden>
+            <h2>Failed to register device</h2>
+            <h4>Please try again</h4>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    const
+        form = $('#form'),
+        selectCustomerByID = $('#customerByID'),
+        selectCity = $('#city_id'),
+        selectCustomerType = $('#customer_type_id'),
+        selectCustomer = $('#customer_id'),
+        selectATS = $('#ats_id'),
+        selectType = $('#type_id'),
+        selectManufacturer = $('#eq_man_id'),
+        dateInstallation = $('#date'),
+        dateLastChanged = $('#last_changed'),
+        allFields = $('#location_type, #eq_id, #ip, #mac, #serial, #host, #ports, #con_id, #state_id, #date, #last_changed, #owner_id'),
+        tableDataArr = [];
+
+    const validatorCustomer = {
+        validators: {
+            regexp: {
+                message: 'Please, \select from list',
+                regexp: /^ID: \d+? — /i
+            }
+        }
+    };
+
+    let bootstrapTableIndex = 0;
+    let cityIdByCustomerID;
+    let customerTypeIDByCustomerID;
+    let customerIDByCustomerID;
+    let customerNameByCustomerID;
+
+    function recheckField(form_selector,fieldname,validator) {
+        form_selector.formValidation('addField', fieldname, validator);
+        form_selector.data('formValidation').revalidateField(fieldname);
+        var checkValid = form_selector.data('formValidation').isValidField(fieldname);
+        console.log(checkValid,fieldname,validator);
+    }
+
+    function clearThisInput(arg) {
+        arg.parentElement.parentElement.getElementsByClassName('tt-input')[0].value = '';
+
+        selectCity.val('');
+        selectCustomerType.val('');
+        selectCustomer.val('');
+
+        selectCity.selectpicker('refresh');
+        selectCustomerType.selectpicker('refresh');
+        selectCustomer.selectpicker('refresh');
+
+        selectCity.trigger("change");
+        selectCustomerType.trigger("change");
+        selectCustomer.trigger("change");
+
+        selectCustomerByID.prop("readonly", false);
+
+        form.formValidation('revalidateField', 'customer_by_id');
+    }
+
+    $(function () {
+        spoilerToggle("#collapse-customers", true);
+        toggleBetweenSpoilers("#location_type", "#collapse-customers", "#collapse-ats");
+
+        // For mobile <textarea>, for PC <input> in "Autofill by customer"
+        let activeSelectCustomer;
+        if( $(window).width() > 768) {
+            $('textarea[name="customer_by_id"]').removeAttr('name');
+            activeSelectCustomer = $('input[name="customer_by_id"]');
+        }
+        else {
+            $('input[name="customer_by_id"]').removeAttr('name');
+            activeSelectCustomer = $('textarea[name="customer_by_id"]');
+        }
+
+        // Autofill by customer
+        $.ajax({
+            url: '/ironleg/customers/list',
+            method: 'get',
+            dataType: 'json'
+        })
+            .success(function (json) {
+                let arr = $.map(json, (data) => [{id:data[0], value:`ID: ${data[0]} — ${data[1]}`}]);
+                let data = new Bloodhound({
+                    datumTokenizer: function(data) {
+                        return Bloodhound.tokenizers.whitespace(data.value)
+                    },
+                    queryTokenizer: Bloodhound.tokenizers.whitespace,
+                    local: arr
+                });
+
+                $(activeSelectCustomer).typeahead(
+                    {
+                        hint: true,
+                        highlight: true,
+                        minLength: 1
+                    },
+                    {
+                        name: 'il_data',
+                        source: data,
+                        displayKey: 'value'
+                    },
+                )
+                    .on('typeahead:selected typeahead:close', function(e, suggestion, dataSetName) {
+                        form.formValidation('addField', 'customer_by_id', validatorCustomer);
+                        form.formValidation('revalidateField', 'customer_by_id');
+                        selectCustomerByID.prop("readonly", true);
+                    })
+                    .on('typeahead:selected', function(e, data, dataSetName) {
+                        $.ajax({url: IronlegRequestSchoolInfo + data.id})
+                            .success((json) => {
+                                renderCity(json[0].city_id);
+                                renderCustomerType(json[0].type_id);
+                                renderCustomer(json[0].city_id, json[0].type_id, json[0].id);
+                            });
+
+                    })
+            });
+
+        // City select
+        // loadData({
+        //     selector: selectCity,
+        //     url: IronlegCityList
+        // });
+        const renderCity = function(cityID) {
+            $.getJSON(IronlegCityList, function(json) {
+                let dfd = $.Deferred();
+
+                json.sort(function(a, b) {
+                    if(a[1] < b[1]) { return -1; }
+                    if(a[1] > b[1]) { return 1; }
+                    return 0;
+                });
+
+                $.each(json, function(key, val) {
+                    if (val[0] === cityID) {
+                        selectCity.append(`<option value="${val[0]}" selected>${val[1]}</option>`);
+                        selectCity.trigger("change");
+                    }
+                    else {
+                        selectCity.append(`<option value="${val[0]}">${val[1]}</option>`);
+                    }
+                });
+
+                selectCity.selectpicker("refresh");
+                dfd.resolve();
+                return dfd
+            });
+        };
+        renderCity();
+
+        // Customer Type
+        // loadData({
+        //     selector: selectCustomerType,
+        //     url: IronlegCustomerTypeList
+        // });
+        const renderCustomerType = function(customerTypeID) {
+            $.getJSON(IronlegCustomerTypeList, function(json) {
+                let dfd = $.Deferred();
+                // to Alphabet
+                json.sort(function(a, b) {
+                    if(a[1] < b[1]) { return -1; }
+                    if(a[1] > b[1]) { return 1; }
+                    return 0;
+                });
+
+                $.each(json, function(key, val) {
+                    if (val[0] === customerTypeID) {
+                        selectCustomerType.append(`<option value="${val[0]}" selected>${val[1]}</option>`);
+                        selectCustomerType.trigger("change");
+                    }
+                    else {
+                        selectCustomerType.append(`<option value="${val[0]}">${val[1]}</option>`);
+                    }
+                });
+
+                selectCustomerType.selectpicker("refresh");
+                dfd.resolve();
+                return dfd;
+            });
+        };
+        renderCustomerType();
+
+        // Customer select
+        // loadData({
+        //     selector: selectCustomer,
+        //     url: IronlegCustomerListByTypeAndCity,
+        //     params: {
+        //         city_id: selectCity,
+        //         customer_type_id: selectCustomerType
+        //     }
+        // });
+        const renderCustomer = function(cityID, customerTypeID, customerID) {
+            cityID === undefined ? cityID = selectCity.val() : cityID;
+            customerTypeID === undefined ? customerTypeID = selectCustomerType.val() : customerTypeID;
+
+            if (customerID === undefined) {
+                selectCustomer.val('notSelected');
+            }
+            if (selectCustomer.val() === null) {
+                selectCustomer.append(`<option value="notSelected" selected>—</option>`)
+            }
+
+            $.getJSON(IronlegCustomerListByTypeAndCity, {city_id: cityID, customer_type_id: customerTypeID}, function(json) {
+                json.sort(function(a, b) {
+                    if(a[1] < b[1]) { return -1; }
+                    if(a[1] > b[1]) { return 1; }
+                    return 0;
+                });
+
+                $.each(json, function(key, val) {
+                    if (val[0] === customerID) {
+                        selectCustomer.append(`<option value="${val[0]}" selected>${val[1]} (ID: ${val[0]})</option>`);
+                    }
+                    else {
+                        selectCustomer.append(`<option value="${val[0]}">${val[1]} (ID: ${val[0]})</option>`);
+                    }
+                });
+                selectCustomer.selectpicker("refresh");
+                selectCustomer.trigger("change");
+            })
+        };
+
+        // Fields change events
+        selectCity.on("changed.bs.select", function() {
+            if (selectCity.val() && selectCustomerType.val()) {
+                selectCustomer.empty();
+                renderCustomer();
+            }
+        });
+        selectCustomerType.on("changed.bs.select", function() {
+            if (selectCity.val() && selectCustomerType.val()) {
+                selectCustomer.empty();
+                renderCustomer();
+            }
+        });
+        selectCustomer.on("changed.bs.select", function() {
+            // selectCustomerByID.clean();
+        });
+
+        loadData({
+            selector: selectATS,
+            url: IronlegLocationsListByCity,
+            params: {
+                city_id: selectCity
+            }
+        });
+        loadData({
+            selector: selectType,
+            url: IronlegEquipmentTypeList
+        });
+        loadData({
+            selector: selectManufacturer,
+            url: IronlegEquipmentManufacturersList
+        });
+        loadData({
+            //leontiy 10.08.2018
+            selector: selectManufacturer,
+            url: IronlegEquipmentListByManAndType,
+            params: {
+                type_id: selectType
+                //,man_id: eq_man_id
+            }
+        });
+        loadData({
+            //leontiy 10.08.2018
+            selector: eq_id,
+            url: IronlegEquipmentListByManAndType1,
+            params: {
+                type_id: selectType,
+                man_id: selectManufacturer
+            },
+            onDone: function () {
+                $("#sendData").removeAttr("disabled");
+            }
+        });
+        loadData({
+            //leontiy 20.08.2018
+            selector: level_id,
+            url: IronlegEquipmentAvailabilityLevel,
+            empty: false
+        });
+        loadData({
+            selector: con_id,
+            url: IronlegEquipmentConnectorList
+        });
+        loadData({
+            selector: state_id,
+            url: IronlegEquipmentStateList
+        });
+        loadData({
+            selector: owner_id,
+            url: IronlegCMDBOwnerList,
+            empty: true
+        });
+
+        dateInstallation.datepicker({
+            autoClose: true
+        })
+            .datepicker("setDate", 'now');
+        dateInstallation.val("");
+
+        dateLastChanged.datepicker({
+            autoclose: true
+        })
+            .datepicker("setDate", 'now');
+        dateLastChanged.val("");
+
+
+        // Validate every field on change
+        allFields.each(function() {
+            $(this).selectpicker().change(function() {
+                // $(this).trigger('change');
+                $(this).formValidation('revalidateField', $(this)[0].name)
+            })
+        });
+
+        $('#sendData').removeAttr('disabled');
+        $('#sendData').removeClass('disabled');
+
+        // $('#sendData').on('click', function() {
+        //     console.log('clicked');
+        //     fields.trigger("change");
+        // });
+
+        form.formValidation({
+            framework: "bootstrap",
+            excluded: ":disabled",
+            icon: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                ats_id: {
+                    validators: {
+                        callback: {
+                            message: "ATS is required.",
+                            callback: function (value, validator, $field) {
+                                // if ($("#location_type").val() == 0 && (value == "" || value == null)) {
+                                //     return false;
+                                // }
+                                // return true;
+                                return value != null
+                            }
+                        }
+                    }
+                },
+                city_id: {
+                    validators: {
+                        callback: {
+                            message: 'Field is required',
+                            callback: function(value) {
+                                if (value === '') {
+                                    return false
+                                }
+                                return true
+                            }
+                        }
+                    }
+                },
+                customer_type_id: {
+                    validators: {
+                        callback: {
+                            message: 'Field is required',
+                            callback: function(value) {
+                                if (value === '') {
+                                    return false
+                                }
+                                return true
+                            }
+                        }
+                    }
+                },
+                customer_id: {
+                    validators: {
+                        callback: {
+                            message: 'Field is required',
+                            callback: function(value) {
+                                return value !== '' && value !== 'notSelected' && value !== null
+                            }
+                        }
+                    }
+                },
+
+                // customer_id: {
+                //     validators: {
+                //         callback: {
+                //             message: "Customer is required.",
+                //             callback: function (value, validator, $field) {
+                //                 // if ($("#location_type").val() == 1 && (value == "" || value == null)) {
+                //                 //     return false;
+                //                 // }
+                //                 // return true;
+                //                 return value != null
+                //             }
+                //         }
+                //     }
+                // },
+                eq_id: {
+                    validators: {
+                        notEmpty: {
+                            message: "Equipment name is required."
+                        }
+                    }
+                },
+                ip: {
+                    validators: {
+                        ip: {
+                            ipv6: false,
+                            message: "Incorrect IP."
+                        }
+                    }
+                },
+                mac: {
+                    validators: {
+                        regexp: {
+                            regexp: /^[A-F0-9]{12}$/,
+                            message: "Incorrect Mac."
+                        },
+                        remote: {
+                            url: "/ironleg/cmdb/mac_check",
+                            type: "get",
+                            message: "There is already such a Mac existing."
+                        },
+                        callback: {
+                            message: "There is already such a Mac existing in the table.",
+                            callback: function (value, validator, $field) {
+                                let valid = true;
+                                $.each(tableDataArr, function (index, val) {
+                                    if (val.mac === value && value !== "") {
+                                        valid = false;
+                                    }
+                                });
+                                return valid;
+                            }
+                        }
+                    }
+                },
+                serial: {
+                    validators: {
+                        remote: {
+                            url: "/ironleg/cmdb/serial_check",
+                            type: "get",
+                            message: "There is already such a Serial existing."
+                        },
+                        callback: {
+                            message: "There is already such a Serial existing in the table.",
+                            callback: function (value, validator, $field) {
+                                var valid = true;
+                                $.each(tableDataArr, function (index, val) {
+                                    if (val.serial == value && value != "") {
+                                        valid = false;
+                                        return;
+                                    }
+                                });
+                                return valid;
+                            }
+                        }
+                    }
+                },
+                ports: {
+                    validators: {
+                        regexp: {
+                            regexp: /^\d*$/,
+                            message: "Ports number must be a positive integer or zero."
+                        }
+                    }
+                },
+                date: {
+                    validators: {
+                        notEmpty: {
+                            message: "Date is required."
+                        }
+                    }
+                },
+                last_changed: {
+                    validators: {
+                        notEmpty: {
+                            message: "Date is required."
+                        }
+                    }
+                }
+            }
+        })
+            .on('success.form.fv', function (e)  {
+                e.preventDefault();
+
+                const fieldsData = {};
+                const newTableData = {};
+                const lastTableIndex = tableDataArr.length;
+                let tableDataRepeat = false;
+                let bootstrapTableData;
+
+                $.each(allFields, function (key, field) {
+                    newTableData[$(field).attr('name')] = $(field).val();
+                });
+                console.log(allFields);
+
+                // // Проверка есть ли таблица с идентичными данными
+                // $.each(tableDataArr, function (key, table) {
+                //     if (JSON.stringify($(table)[0]) === JSON.stringify(newTableData)) {
+                //         tableDataRepeat = true;
+                //     }
+                // });
+
+                // // Если нет идентичных данных в таблицах, то Формирует данные о таблицах для проверки MAC и SN
+                // if (tableDataRepeat === false) {
+                //
+                //     tableDataArr.push({});
+                //     tableDataArr[lastTableIndex] = newTableData;
+                //     tableDataArr.index = lastTableIndex;
+                //
+                //     // Формирование данных для Bootstrap table
+                //     allFields.each(function () {
+                //         let $this = $(this);
+                //         let key = $this[0].id;
+                //         let selectValue = $this.find('option:selected').text();
+                //         let inputValue = $this.val();
+                //
+                //         if ($(this).is('input')) {
+                //             fieldsData[key] = inputValue
+                //         } else {
+                //             fieldsData[key] = selectValue
+                //         }
+                //     });
+                //     bootstrapTableData = [(fieldsData)];
+                //
+                //     // Рендер таблицы
+                //     tableContainer.attr('hidden', false);
+                //     bootstrapTableIndex++;
+                //     tableContainer.append(`
+                //         <table
+                //             id             = "table-${bootstrapTableIndex}"
+                //             data-card-view = "true"
+                //         >
+                //             <thead>
+                //                 <tr>
+                //                     <th data-field="location_type">Location:</th>
+                //                     <th data-field="eq_id">Equipment:</th>
+                //                     <th data-field="ip">IP:</th>
+                //                     <th data-field="mac">Mac:</th>
+                //                     <th data-field="serial">Serial:</th>
+                //                     <th data-field="host">Hostname:</th>
+                //                     <th data-field="ports">Ports:</th>
+                //                     <th data-field="con_id">Connector:</th>
+                //                     <th data-field="state_id">State:</th>
+                //                     <th data-field="date">Date:</th>
+                //                     <th data-field="last_changed">Last Changed:</th>
+                //                     <th data-field="owner_id">Owner:</th>
+                //                 </tr>
+                //           </thead>
+                //         </table>
+                //     `);
+                //     $('#table-' + bootstrapTableIndex).bootstrapTable({data: bootstrapTableData});
+                //     $('#table-' + bootstrapTableIndex).find('.card-views').append(`
+                //         <button
+                //             onclick = "this.closest('.bootstrap-table').remove()"
+                //             class   = "btn btn-danger col-xs-12 col-md-2 col-md-offset-5 mt-2"
+                //         >Delete this table</button>
+                //     `);
+                // }
+
+                // allFields.change(function() {
+                //   form.validate();
+                // });
+
+
+                preloader_start();
+                $('body').css('overflow', 'hidden');
+
+                // Send data to server
+                $.ajax({
+                    url: 'MISTAKE/ironleg/cmdb/insert/located',
+                    data: {json: JSON.stringify(newTableData)},
+                    success: function() {
+                        setTimeout(function() {
+                            form.hide();
+                            preloader_end();
+                            $('#messageSuccess').show();
+                            $('html, body').animate({ scrollTop: $(document).height() }, 4000);
+                        }, 3000);
+                    },
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        $('body').css('overflow', 'unset');
+                        setTimeout(function() {
+                            preloader_end();
+                            $('#messageError').show();
+                            $('html, body').animate({ scrollTop: $(document).height() }, 1000);
+                            $('#sendData').removeAttr('disabled');
+                            $('#sendData').removeClass('disabled');
+                        }, 3000);
+                    }
+                })
+            })
+            .on('err.form.fv', function() {
+                console.log('err.form.fv')
+            });
+    })
+</script>
+</body>
+</html>

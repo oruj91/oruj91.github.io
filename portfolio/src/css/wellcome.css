@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'SkodaProBold';
+  src: url('../fonts/SkodaProBold.eot');
+  src: url('../fonts/SkodaProBold.eot') format('embedded-opentype'),
+       url('../fonts/SkodaProBold.woff2') format('woff2'),
+       url('../fonts/SkodaProBold.woff') format('woff'),
+       url('../fonts/SkodaProBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SkodaProReg';
+  src: url('../fonts/SkodaProReg.eot');
+  src: url('../fonts/SkodaProReg.eot') format('embedded-opentype'),
+       url('../fonts/SkodaProReg.woff2') format('woff2'),
+       url('../fonts/SkodaProReg.woff') format('woff'),
+       url('../fonts/SkodaProReg.ttf') format('truetype');
+}
+
+html {
+  overflow-x: hidden;
+  height: 100vh;
+}
+body {
+  position: relative;
+  font-family: "SkodaProBold", sans-serif;
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.central-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 210px;
+  width: 210px;
+  transition: all .8s ease;
+  transition-delay: 0.1s;
+  z-index: 1;
+}
+.central-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+  box-shadow: inset 0 0 15px rgb(102, 102, 102);
+  background-color: #fff;
+  
+}
+.central-btn:hover {
+  transform: rotate(360deg);
+}
+.central-btn::before {
+  position: absolute;
+  content: '';
+  top: -12px;
+  bottom: -12px;
+  left: -12px;
+  right: -12px;
+  border-radius: 50%;
+  background: linear-gradient(to right bottom, rgb(139, 139, 139), #fff, rgb(100, 100, 100));
+  box-shadow: 0 0 30px 20px  rgb(255, 255, 255);
+  z-index: -1;
+}
+.central-btn .title {
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  z-index: 2;
+}
+@keyframes title-scaling {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+h1 {
+  font-family: "SkodaProReg";
+  color: #000;
+}
+h2 {
+  font-family: "SkodaProBold";
+  font-size: 30px;
+  color: rgb(160, 160, 160);
+}
+.title img {
+  height: 35px;
+}
+
+.hints {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+}
+.hints span {
+  font-family: "SkodaProBold";
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -2px;  
+  color: red;
+}
+@keyframes hint-anim {
+  0% {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+}
+
+.arcs {
+  position: relative;
+  height: 100vh;
+  width: 500vw;
+  transform: translateX(-40%);
+}
+.arcs div {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.arcs span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arc1-container {
+  width: 328px;
+  height: 328px;
+  animation-duration: 55s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition-property: rotate;
+}
+@keyframes arc1-rotate {
+  0.001% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(385deg);
+  }
+}
+#arc1-text {
+  top: -11px;
+  color: #C2DF0C;
+  font-size: 30px;
+}
+
+.arc2-container {
+  width: 436px;
+  height: 436px;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition-property: rotate;
+}
+@keyframes arc2-rotate {
+  0.001% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(-365deg);
+  }
+}
+#arc2-text {
+  top: -15px;
+  color: #00AF99;
+  font-size: 30px;
+}
+
+.arc3-container {
+  width: 589px;
+  height: 589px;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition-property: rotate;
+}
+@keyframes arc3-rotate {
+  0.001% {
+    transform: rotate(110deg);
+  }
+  100% {
+    transform: rotate(470deg);
+  }
+}
+#arc3-text {
+  top: -13px;
+  color: #14C1DE;
+  font-size: 35px;
+}
+
+.arc4-container {
+  width: 712px;
+  height: 712px;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition-property: rotate;
+}
+@keyframes arc4-rotate {
+  0.001% {
+    transform: rotate(-135deg);
+  }
+  100% {
+    transform: rotate(-495deg);
+  }
+}
+#arc4-text {
+  top: -13px;
+  color: #9661CB;
+  font-size: 35px;
+}
+
+.arc5-container {
+  width: 942px;
+  height: 942px;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition-property: rotate;
+}
+@keyframes arc5-rotate {
+  0.001% {
+    transform: rotate(315deg);
+  }
+  100% {
+    transform: rotate(675deg);
+  }
+}
+#arc5-text {
+  top: -16px;
+  color: #DD006D;
+  font-size: 48px;
+}
+
+.arc6-container {
+  width: 1133px;
+  height: 1133px;
+  animation-duration: 80s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition-property: rotate;
+}
+@keyframes arc6-rotate {
+  0.001% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+#arc6-text {
+  top: -11px;
+  color: #FF8006;
+  font-size: 48px;
+}
+
+.arc7-container {
+  width: 1386px;
+  height: 1386px;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition-property: rotate;
+}
+@keyframes arc7-rotate {
+  0.001% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(540deg);
+  }
+}
+.arcs span#arc7-text {
+  top: -17px;
+  color: #FFD130;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    background: radial-gradient(rgb(85, 85, 85), rgb(0, 0, 0));
+  }
+  .central-btn::before {
+     box-shadow: 0 0 30px  rgb(255, 255, 255);
+  }
+  .arc7-container,
+  .arc6-container,
+  .arc5-container {
+    display: none;
+  }
+  .arcs div {
+    filter: none;
+  }
+}

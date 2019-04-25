@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+    <title>Employer task</title>
+</head>
+<body>
+    <canvas id="bg"></canvas>
+    <div class="app">
+        <header class="main-header">
+            <section class="main-logo-container">
+                <a class="main-logo-btn" href="index.html"><img class="main-logo-img"  src="img/logo-main.svg"></a>
+            </section>
+            <section class="header-navigation-container">
+                <nav class="header-navigation">
+                    <a class="header-navigation-btn" href="#">+ Add User</a>
+                    <a class="header-navigation-btn" href="#">User Preferences</a>
+                    <a class="header-navigation-btn" href="#">Settings</a>
+                </nav>
+                <form action="" method="get" class="search-form">
+                    <button type="submit" id="submit"><i class="ion-md-search"></i></button>
+                    <i class="search-separator">|</i>
+                    <input type="search" name="search" id="search">
+                </form>
+            </section>
+            <section class="user-profile-container">
+                <a class="user-profile-btn" href="">
+                    <img class="user-profile-img" src="img/user-photo.jpg">
+                    <i class="notification-count">2</i>
+                    <span class="user-profile-name">Oruj Tatiyev</span>
+                </a>
+                <input type="checkbox" name="user-settings" id="user-settings-icon">
+                <label for="user-settings-icon"><i class="ion-md-arrow-dropdown"></i></label>
+                <nav class="user-settings-nav">
+                    <a class="user-settings-btn" href="">Account Settings</a>
+                    <a class="user-settings-btn" href="">Selection 1</a>
+                    <a class="user-settings-btn" href="">Selection 2</a>
+                    <a class="user-settings-btn" href="">Selection 3</a>
+                    <a class="user-settings-btn" href="">Exit</a>
+                </nav>
+            </section>
+        </header>
+        <aside id="left-navigation-container">
+            <a href=""><i class="left-navigation-btn ion-md-speedometer active"></i></a>
+            <a href=""><i class="left-navigation-btn ion-ios-person"></i></a>
+            <a href=""><i class="left-navigation-btn ion-md-create"></i></a>
+            <a href=""><i class="left-navigation-btn ion-md-calendar"></i></a>
+            <a href=""><i class="left-navigation-btn ion-md-clipboard"></i></a>
+            <a href=""><i class="left-navigation-btn ion-md-chatboxes"></i></a>
+            <a href=""><i class="left-navigation-btn ion-md-stats"></i></a>
+        </aside>
+        <header class="content-header">
+            <section class="current-section">
+                <p class="current-section-title">Dashboard<i class="ion-ios-settings"></i></p>
+            </section>
+            <section class="statistics-container">
+                <div class="statistics-item limegreen">
+                    <h2 class="statistics-points">267</h2>
+                    <h3 class="statistics-type">Online Players</h3>
+                </div>
+                <div class="statistics-item green">
+                    <h2 class="statistics-points">1890</h2>
+                    <h3 class="statistics-type">Hours played</h3>
+                </div>
+                <div class="statistics-item yellowgreen">
+                    <h2 class="statistics-points">22</h2>
+                    <h3 class="statistics-type">New Tournaments</h3>
+                </div>
+                <div class="statistics-item orangered">
+                    <h2 class="statistics-points">16</h2>
+                    <h3 class="statistics-type">Lifetime Fails</h3>
+                </div>
+                <div class="statistics-item limegreen">
+                    <h2 class="statistics-points">6544</h2>
+                    <h3 class="statistics-type">Comments</h3>
+                </div>
+                <div class="statistics-item crimson">
+                    <h2 class="statistics-points">568</h2>
+                    <h3 class="statistics-type">Games Played</h3>
+                </div>
+            </section>
+        </header>
+        <div id="simplebar-container" data-simplebar>
+            <main class="content-container" >
+                <section class="active-players-container"> 
+                    <p class="section-title">Active Players</p>
+                    <canvas id="activePlayers" height="auto" width="auto"></canvas>
+                    <select name="selectTime" id="selectTime">
+                        <option value="monthly">Monthly</option>
+                        <option value="daily">Daily</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </section>
+                <section class="active-tournaments-container">
+                    <p class="section-title">Active Tournaments</p>
+                    <canvas id="tournamentsChart" auto="auto" width="auto"></canvas>
+                    <select name="selectTime" id="selectTime">
+                        <option value="monthly">Monthly</option>
+                        <option value="daily">Daily</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </section>            
+                <section class="recent-players-container">
+                    <p class="section-title">Recent Players</p>
+                    <button type="submit" name="recentPlayerPrev" id="recentPlayerPrev"></button>
+                    <button type="submit" name="recentPlayerNext" id="recentPlayerNext"></button>
+                    <div class="recent-players-wrapper">
+                        <a class="recent-players-item clearfix" href="">
+                            <img class="recent-players-img" src="img/gamer1.png">
+                            <p class="recent-players-name">Daryl Ginn</p>
+                            <span class="recent-players-location">United Kingdom</span>
+                        </a>
+                        <a class="recent-players-item clearfix" href="">
+                            <img class="recent-players-img" src="img/gamer2.png">
+                            <p class="recent-players-name">John Mac</p>
+                            <span class="recent-players-location">United Kingdom</span>
+                        </a>
+                        <a class="recent-players-item clearfix" href="">
+                            <img class="recent-players-img" src="img/gamer3.jpg">
+                            <p class="recent-players-name">Aaron Sananes</p>
+                            <span class="recent-players-location">United Kingdom</span>
+                        </a>
+                        <a class="recent-players-item clearfix" href="">
+                            <img class="recent-players-img" src="img/gamer4.jpg">
+                            <p class="recent-players-name">Erik Henebratt</p>
+                            <span class="recent-players-location">United Kingdom</span>
+                        </a>
+                        <a class="recent-players-item clearfix" href="">
+                            <img class="recent-players-img" src="img/gamer5.jpg">
+                            <p class="recent-players-name">Lindsay Scott</p>
+                            <span class="recent-players-location">United Kingdom</span>
+                        </a>
+                        <a class="recent-players-item clearfix" href="">
+                            <img class="recent-players-img" src="img/gamer6.png">
+                            <p class="recent-players-name">Jimmy Mars</p>
+                            <span class="recent-players-location">United Kingdom</span>
+                        </a>
+                        <a class="recent-players-item clearfix" href="">
+                            <img class="recent-players-img" src="img/gamer2.png">
+                            <p class="recent-players-name">Daryl Ginn</p>
+                            <span class="recent-players-location">United Kingdom</span>
+                        </a>
+                        <a class="recent-players-item clearfix" href="">
+                            <img class="recent-players-img" src="img/gamer3.jpg">
+                            <p class="recent-players-name">Erik Henebratt</p>
+                            <span class="recent-players-location">United Kingdom</span>
+                        </a>
+                        <a class="recent-players-item clearfix" href="">
+                            <img class="recent-players-img" src="img/gamer1.png">
+                            <p class="recent-players-name">Aaron Sananes</p>
+                            <span class="recent-players-location">United Kingdom</span>
+                        </a>
+                    </div>                
+                </section>
+                <section class="player-statistics-container">
+                    <p class="section-title">Player Statistics</p>
+                        <div class="player-statistics-wrapper">
+                            <div class="player-statistics-item">
+                                <div class="canvas-wrapper">
+                                    <canvas id="newPlayersStatistics" width="100%" height="100%"></canvas>
+                                    <p class="player-statistics-amount" id="newPlayersPerc">58</p>
+                                </div>                        
+                                <p class="player-statistics-title">New Players</p>
+                            </div>
+                            <div class="player-statistics-item">
+                                <div class="canvas-wrapper">
+                                    <canvas id="revistedStatistics" width="100%" height="100%"></canvas>
+                                    <p class="player-statistics-amount" id="revistedPerc">75</p>
+                                </div>                            
+                                <p class="player-statistics-title">Revisted</p>
+                            </div>
+                            <div class="player-statistics-item">
+                                <div class="canvas-wrapper">
+                                    <canvas id="commentedStatistics" width="100%" height="100%"></canvas>
+                                    <p class="player-statistics-amount" id="commentedPerc">28</p>
+                                </div>                            
+                                <p class="player-statistics-title">Commented</p>
+                            </div>
+                            <div class="player-statistics-item">
+                                <div class="canvas-wrapper">
+                                    <canvas id="activePlayersStatistics" width="100%" height="100%"></canvas>
+                                    <p class="player-statistics-amount" id="activePlayersPerc">97</p>
+                                </div>                            
+                                <p class="player-statistics-title">Active Players</p>
+                            </div>
+                        </div>                    
+                </section>
+                <section class="last-section-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores fugit sunt tenetur, magni voluptate similique repudiandae. Nobis aliquam suscipit quibusdam ipsam et, culpa sequi, animi architecto consequuntur, libero provident aspernatur reprehenderit explicabo sit! Officiis, praesentium? Dolores iure, adipisci quod quae fugiat officiis, eius a eveniet nemo nobis at repellat numquam, quisquam eaque nulla cum reiciendis. Deserunt libero, accusantium unde eius ipsa aperiam temporibus maiores magnam repudiandae voluptatum fuga, explicabo alias assumenda dolor ipsam saepe similique animi aut voluptate officia. Quis at quae iusto ea sunt fugit nam minima asperiores exercitationem eos vitae, id quibusdam impedit nostrum a in! Doloribus ea, sunt architecto laudantium nisi soluta laborum vero beatae voluptatibus iste sequi eveniet est harum nesciunt molestiae iusto. Aut ut vitae molestias delectus eos ullam, cumque, ratione laudantium, perspiciatis dolores incidunt. Repellat, perspiciatis consequuntur minus facere mollitia nesciunt dolorum reiciendis iusto veniam tempora, enim quo sunt optio facilis quos. Quisquam animi ipsum doloremque atque beatae. Autem ullam vero est assumenda! Rem esse alias, nam suscipit cumque adipisci libero eligendi nisi veniam, doloremque hic reprehenderit ratione quod, molestias corrupti. Quis similique dicta facere sequi commodi laboriosam accusantium enim quibusdam doloremque tenetur asperiores unde officia voluptatem, deserunt cumque? Dolorum error voluptate molestiae repellendus ea, soluta inventore eaque quisquam doloribus recusandae animi voluptatum harum est nostrum tempore voluptatem quaerat nemo delectus placeat, dicta officia eius, maxime iste? Quaerat reprehenderit ab voluptas cumque provident velit perferendis esse corporis dicta excepturi sint, vitae maxime harum, quod impedit laboriosam eveniet repellat dolorem? Dicta vel alias necessitatibus inventore, fugiat impedit? Dicta odio voluptas rem nisi facere porro quam numquam magnam repudiandae eligendi alias odit omnis totam tempore distinctio ducimus, aperiam provident hic laboriosam deserunt amet. Error delectus modi, eius deleniti rerum dolorem quod? Voluptatem, doloremque modi! Numquam, vero, pariatur perferendis dolore voluptatum, et aliquid harum qui magnam a sunt natus exercitationem blanditiis. Aperiam quia veniam voluptate praesentium magnam delectus, explicabo nostrum velit nesciunt voluptatem odit sequi modi ut expedita culpa sint eveniet officia quod. Sapiente, sequi quia blanditiis, commodi illo debitis incidunt fugit reiciendis et officiis atque dolores reprehenderit quas pariatur ad quidem cumque dolorem doloremque error eius culpa! Non placeat asperiores alias perspiciatis dicta unde incidunt molestiae iste odio. Sunt rerum esse eum sapiente nemo excepturi illo, facilis nesciunt earum impedit numquam distinctio corrupti, minus atque, enim vel? Sed vitae odit iste nobis pariatur cum fuga doloremque repellendus ipsum nesciunt magni, fugit blanditiis tempore ipsam voluptates dicta. Cumque iure commodi aliquid laudantium nesciunt sed ea veniam, doloremque sunt necessitatibus natus, eligendi molestias facilis quam cupiditate dignissimos mollitia id, esse quibusdam similique doloribus deserunt delectus qui. Id quisquam a sit itaque recusandae. Mollitia veniam, assumenda id sequi ducimus temporibus. Distinctio architecto soluta adipisci veritatis beatae molestias similique itaque deserunt doloremque. Fugiat, harum aut veniam saepe deserunt quia quidem magnam, minus deleniti a perferendis, tempora doloribus nostrum? Quod vel accusamus dolorum non suscipit sint voluptas consequatur alias quidem, vero illum et deserunt neque culpa expedita? Explicabo minima error quaerat consectetur, eius, nisi ut natus, quo cum debitis incidunt? Officia, perspiciatis fugiat. Voluptatum, nam, et temporibus culpa reprehenderit itaque consectetur deleniti vero minima distinctio expedita rerum dolorem possimus nostrum necessitatibus doloribus similique nisi sint quasi eius exercitationem aut nemo. Pariatur, earum similique ullam illo voluptatum sequi eius vero molestias sit nam a magnam cupiditate reprehenderit, ex quia? Inventore voluptas veniam officia quibusdam, dicta, a minus suscipit illo deleniti, aspernatur error modi eveniet! Blanditiis neque provident quis qui deleniti sapiente saepe cumque aliquam molestiae doloremque, sequi ducimus eveniet mollitia fugiat optio impedit atque quo et iste incidunt necessitatibus, corrupti iure. Accusamus, voluptas consequuntur. Aspernatur magni sint, nihil maxime adipisci quibusdam velit perferendis dolor reprehenderit ullam natus veritatis aliquid itaque, asperiores alias impedit fuga architecto. Sunt, architecto deleniti cupiditate quaerat debitis tempora fugit omnis, reiciendis repellendus aperiam nobis pariatur consectetur repellat qui quam magnam eveniet deserunt enim quidem minima est voluptas harum vel voluptatibus. Magnam, doloribus aspernatur velit facere fugiat itaque corporis earum a quod minus magni, inventore molestias dolore numquam debitis non eius ab nostrum. Minima placeat et quae eveniet deleniti aut mollitia optio, quisquam hic quod corporis maxime esse excepturi eligendi, in aliquid laborum enim. Suscipit eligendi, saepe pariatur soluta rerum blanditiis sit culpa, nulla porro quidem aperiam ut voluptas consequatur quae facilis magni dolores laudantium ratione minus placeat! Voluptatum natus similique temporibus voluptas dolores eaque aut aliquid delectus molestiae. Vero minima quae numquam natus quibusdam autem molestias, veniam rerum, architecto ratione, distinctio est dolore quam modi ducimus. Asperiores nihil ex fuga amet numquam ipsa autem laudantium nisi consequuntur doloribus quae veniam eius ducimus expedita totam, recusandae a tempore dolores odit ut est illo. Eveniet iste reprehenderit recusandae, totam dolor magnam atque sunt laudantium a natus quibusdam error fuga illum et aliquid. Quidem architecto quaerat quia, libero inventore sit hic vero ex a dolore, veritatis eum, ipsum blanditiis voluptatibus ipsa. At perferendis fugit nesciunt, dignissimos fugiat itaque a illum deserunt aperiam illo accusantium, incidunt molestiae provident, voluptates iste deleniti soluta laudantium veritatis. Molestiae illum veritatis voluptate eius animi iste mollitia quod dolorum repellendus cum minima doloribus aut quae dolore corporis ut voluptatum dolorem culpa eum, iure nulla distinctio molestias recusandae itaque! Esse iusto voluptatum architecto et fuga similique porro id possimus, expedita, repudiandae incidunt, beatae dicta! Exercitationem voluptatibus laboriosam accusantium. Dolorem cupiditate earum eos dolore exercitationem. At corporis non ut accusamus possimus dolor magnam, voluptas doloribus, fugit exercitationem necessitatibus. Doloribus iure repellat sapiente, voluptates, reiciendis, tempore esse vero omnis deleniti fugit porro voluptate deserunt excepturi nam fuga saepe? Laboriosam non quo labore quis obcaecati, incidunt sunt, omnis nihil in eius inventore tempora vitae nam suscipit modi fugiat asperiores quibusdam fugit, enim reprehenderit? Deleniti laboriosam cumque veritatis voluptatibus rerum quibusdam unde aut voluptatum aliquam! Consequatur rem pariatur odit aspernatur libero obcaecati a repellat repudiandae earum enim, rerum, at omnis. Quo debitis, hic sapiente iste est iusto fugiat! Ut aspernatur deleniti explicabo ipsum fugit hic. Sint laudantium quo magnam, illo perferendis ea nesciunt pariatur corporis sequi quaerat modi cum animi non quam voluptate hic quas corrupti! Aspernatur molestias ipsum ut ea?</p>
+                </section>
+            </main>  
+        </div>              
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script src="app.js"></script>    
+</body>
+</html>

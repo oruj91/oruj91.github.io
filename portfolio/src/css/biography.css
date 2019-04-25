@@ -1,0 +1,336 @@
+@font-face {
+    font-family: 'SkodaProMedium';
+    src: url('../fonts/SkodaProMedium.eot');
+    src: url('../fonts/SkodaProMedium.eot') format('embedded-opentype'),
+         url('../fonts/SkodaProMedium.woff2') format('woff2'),
+         url('../fonts/SkodaProMedium.woff') format('woff'),
+         url('../fonts/SkodaProMedium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SkodaProBold';
+    src: url('../fonts/SkodaProBold.eot');
+    src: url('../fonts/SkodaProBold.eot') format('embedded-opentype'),
+         url('../fonts/SkodaProBold.woff2') format('woff2'),
+         url('../fonts/SkodaProBold.woff') format('woff'),
+         url('../fonts/SkodaProBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SkodaProReg';
+    src: url('../fonts/SkodaProReg.eot');
+    src: url('../fonts/SkodaProReg.eot') format('embedded-opentype'),
+         url('../fonts/SkodaProReg.woff2') format('woff2'),
+         url('../fonts/SkodaProReg.woff') format('woff'),
+         url('../fonts/SkodaProReg.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 90px;
+    height: 100vh;
+    font-family: "SkodaProReg", sans-serif;
+    background: radial-gradient(#E6E6E6, #4D4D4D);
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: #5A5A5A;
+    box-shadow: 0 0 30px #000;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90vw;
+    margin: 0 auto;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+.logo a {
+    display: block;
+    height: 30px;
+    width: 26px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.menu a {
+    display: block;
+    padding: 0 20px;
+    font-family: "SkodaProMedium", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.5s;
+    transition-property: color, background-color;
+}
+@keyframes hvr-back-pulse {
+    50% {
+        background: #5A5A5A;
+    }
+}
+.hvr-back-pulse {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: color, background-color;
+}
+  header nav a:hover, header nav a:focus, header nav a:active {
+    animation-name: hvr-back-pulse;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: #acacacbb;
+}
+
+.toggle-label {
+    display: none;
+    color: #fff;
+    font-size: 30px;
+}
+#toggle {
+    display: none;
+}
+#toggle:checked ~ .menu {
+    display: flex;
+    max-height: 500px;
+}
+@media only screen and (max-width: 685px) {
+    .toggle-label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .5s;
+    }
+    .menu a {
+        font-size: 25px;
+        width: 100%;
+        font-family: "SkodaProBold", sans-serif;
+        color: rgb(102, 102, 102);
+        background-color: rgb(216, 216, 216);
+        border-bottom: 2px solid gray;
+    }
+}
+
+h1 {
+    font-family: "SkodaProBold", sans-serif;
+    font-size: 39px;
+    line-height: 45px;
+    width: 130px;
+}
+h2 {
+    margin-right: 10px;
+    font-family: "SkodaProBold", sans-serif;
+    font-size: 18px;
+    color: rgb(112, 112, 112);
+    min-width: 180px;
+}
+h3 {
+    font-size: 17px;
+}
+h4 {
+    font-size: 14px;
+}
+h5 {
+    font-size: 14px;
+    font-family: "SkodaProReg", sans-serif;
+    color: rgb(112, 112, 112);
+}
+h6 {
+    margin-bottom: auto;
+    font-size: 12px;
+    color: rgb(112, 112, 112);
+}
+ul {
+    font-size: 14px;
+    width: 60%;
+}
+p {
+    font-size: 15px;
+}
+hr {
+    width: 100%;
+    margin: 15px 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 850px;
+    height: auto;
+    margin: 30px auto;
+    background: #fcfcfc;
+    box-shadow: 0 0 10px #4D4D4D;
+}
+table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+th, td {
+    padding: 5px 20px;
+    border: 1px solid rgb(167, 167, 167);
+    border-bottom: none;
+    border-left: none;
+}
+th {
+    border-top: none;
+}
+th:last-child {
+    border-right: none;
+}
+td:nth-child(2n) {
+    border-right: none;
+}
+
+.main-wrap {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section-separator {
+    width: 85%;
+    margin: 25px auto;
+}
+
+.first-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 70px;
+}
+.my-photo {
+    height: 150px;
+    margin: 20px 40px 3px;
+}
+.name-position {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+.address {
+    font-family: "SkodaProMedium", sans-serif;
+    font-size: 14px;
+}
+
+.personal-info p {
+    text-indent: 1.5em;
+    text-align: justify;
+}
+
+.job-container {
+    display: flex;
+    flex-direction: row;
+}
+.left-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.logo-maxprint {
+    width: 100px;
+}
+.logo-to,
+.logo-midas {
+    max-height: 35px;
+    width: 35px;
+    margin-top: 10px;
+}
+
+.skill-icon-content-wrap {
+    width: 150px;
+}
+.skill-icon-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+.skill-icon {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    max-width: 35px;
+    height: 40px;
+}
+
+.adnsu-logo {
+    width: 130px;
+}
+
+@media only screen and (max-width: 690px) {
+    body {
+        margin-top: 50px;
+    }
+    main {
+        margin: 0;
+    }
+    .first-info {
+        margin: 0;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 39px;
+        line-height: 45px;
+        width: auto;
+    }
+    .name-position {
+        align-items: center;
+    }
+    .address {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .main-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        align-self: flex-start;
+        margin-bottom: 10px;
+    }
+    ul {
+        width: 75%;
+    }
+    .skill-icon-content {
+        width: auto;
+        margin-right: 0;
+        margin: 10px 0;
+    }
+    .adnsu-logo {
+        margin: 10px auto;
+    }
+    .adnsu-text {
+        margin-top: 15px;
+    }
+}

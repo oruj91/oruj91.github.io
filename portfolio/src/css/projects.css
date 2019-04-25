@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'SkodaProMedium';
+    src: url('../fonts/SkodaProMedium.eot');
+    src: url('../fonts/SkodaProMedium.eot') format('embedded-opentype'),
+         url('../fonts/SkodaProMedium.woff2') format('woff2'),
+         url('../fonts/SkodaProMedium.woff') format('woff'),
+         url('../fonts/SkodaProMedium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SkodaProBold';
+    src: url('../fonts/SkodaProBold.eot');
+    src: url('../fonts/SkodaProBold.eot') format('embedded-opentype'),
+         url('../fonts/SkodaProBold.woff2') format('woff2'),
+         url('../fonts/SkodaProBold.woff') format('woff'),
+         url('../fonts/SkodaProBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SkodaProReg';
+    src: url('../fonts/SkodaProReg.eot');
+    src: url('../fonts/SkodaProReg.eot') format('embedded-opentype'),
+         url('../fonts/SkodaProReg.woff2') format('woff2'),
+         url('../fonts/SkodaProReg.woff') format('woff'),
+         url('../fonts/SkodaProReg.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    margin-top: 90px;
+    height: 100vh;
+    font-family: "SkodaProReg", sans-serif;
+    background: radial-gradient(#E6E6E6, #4D4D4D);
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: #5A5A5A;
+    box-shadow: 0 0 30px #000;
+    z-index: 2;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90vw;
+    margin: 0 auto;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+.logo a {
+    display: block;
+    height: 30px;
+    width: 26px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.menu a {
+    display: block;
+    padding: 0 20px;
+    font-family: "SkodaProMedium", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.5s;
+    transition-property: color, background-color;
+}
+@keyframes hvr-back-pulse {
+    50% {
+        background: #5A5A5A;
+    }
+}
+.hvr-back-pulse {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: color, background-color;
+}
+header nav a:hover, header nav a:focus, header nav a:active {
+    animation-name: hvr-back-pulse;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: #acacacbb;
+}
+
+.toggle-label {
+    display: none;
+    color: #fff;
+    font-size: 30px;
+}
+#toggle {
+    display: none;
+}
+#toggle:checked ~ .menu {
+    display: flex;
+    max-height: 500px;
+}
+
+main {
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 92%;
+}
+.project-btn {
+    display: inline-block;
+    max-width: 31%;
+    margin-right: 3.5%;
+    margin-bottom: 3%;
+    overflow: hidden;
+    box-shadow: 0 0 20px 2px rgb(78, 78, 78);
+    background-image: linear-gradient(to right, rgb(104, 104, 104), rgb(180, 180, 180));
+}
+.project-btn:nth-child(3n) {
+    margin-right: 0;
+}
+.image-wrap {
+    position: relative;
+}
+.project-btn img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.project-btn p {
+    line-height: 30px;
+    padding-left: 15px;
+    color: #fff;
+    vertical-align: middle;
+}
+.image-wrap::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    transform: translateX(100%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%);
+}
+main a:nth-child(1) .image-wrap::before  {
+    animation: shine 10s infinite;
+}
+main a:nth-child(2) .image-wrap::before  {
+    animation: shine 10s infinite;
+    animation-delay: 5s;
+}
+main a:nth-child(3) .image-wrap::before  {
+    animation: shine 10s infinite;
+    animation-delay: 2s;
+}
+main a:nth-child(3) .image-wrap::before  {
+    animation: shine 10s infinite;
+    animation-delay: 2s;
+}
+main a:nth-child(4) .image-wrap::before  {
+    animation: shine 10s infinite;
+    animation-delay: 7s;
+}
+main a:nth-child(5) .image-wrap::before  {
+    animation: shine 10s infinite;
+    animation-delay: 1s;
+}
+main a:nth-child(6) .image-wrap::before  {
+    animation: shine 10s infinite;
+    animation-delay: 3s;
+}
+@keyframes shine {
+    0% {transform: translateX(-100%);}
+    10% {transform: translateX(100%);}
+}
+
+@media only screen and (max-width: 685px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle-label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .5s;
+    }
+    .menu a {
+        font-size: 25px;
+        width: 100%;
+        font-family: "SkodaProBold", sans-serif;
+        color: rgb(102, 102, 102);
+        background-color: rgb(216, 216, 216);
+        border-bottom: 2px solid gray;
+    }
+    
+    .project-btn {
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+}

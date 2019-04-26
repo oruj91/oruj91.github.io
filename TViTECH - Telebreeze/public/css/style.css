@@ -17,8 +17,8 @@ body {
     font-family: 'RobotoReg', sans-serif;
 }
 
-a { color: #e01e25 }
-a { color: #e01e25 }
+a { color: #e31e25 }
+a { color: #e31e25 }
 a:hover {
     color: #171b1c;
     text-decoration: none;
@@ -32,12 +32,39 @@ h5 {
 .dropdown-toggle::after {
     display: none;
 }
-.btn_light {
-    color:#fff;
+
+.btn:focus,.btn:active {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(227, 30, 37, 0.6);
+    outline: 0 none;
 }
-.btn_light:hover {
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: gray;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(155, 155, 155);
+    outline: 0 none;
+}
+
+.btn-brand {
     color: #fff;
+    background: #e31e25
 }
+.btn_light { color:#fff }
+.btn_light:hover { color: #fff }
 .btn_light.active::after {
     content: '';
     position: absolute;
@@ -46,16 +73,16 @@ h5 {
     transform: translateX(-50%);
     width: 11rem;
     height: .2rem;
-    background: #e01e25;
+    background: #e31e25;
     z-index: 10;
 }
 
 .list-group-item { background: transparent }
 .list-group-item::before {
     position: absolute;
-    content: "•";
+    content: "\2022";
     top: 15px;
-    color: #e01e25;
+    color: #E31E25;
     font-size: 1.5rem;
     font-weight: bold;
     display: inline-block;
@@ -204,7 +231,7 @@ h5 {
 
 /* DEVICES */
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link { background: #e01e25 }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link { background: #e31e25 }
 
 /* Reason */
 
@@ -445,7 +472,7 @@ h5 {
         margin-top: 0;
     }
 }
-.market__circle_#e01e25 {
+.market__circle_#e31e25 {
     margin: auto;
     top: 0;
     left: 0;

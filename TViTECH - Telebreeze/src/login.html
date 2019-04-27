@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-signin-client_id" content="819493003816-oieip2jsvaahg52m1ifa0p8t5g2g0t05.apps.googleusercontent.com">
 <title>TViTECH | Login</title>
 
 <!-- Font Awesome-->
@@ -25,38 +26,15 @@
         display: flex;
         -ms-flex-align: center;
         align-items: center;
-        padding-top: 40px;
-        padding-bottom: 40px;
         background-color: lightgrey;
     }
 
-    .form-signIn {
+    .wrapper {
         padding: 3rem;
-        width: 100%;
-        max-width: 330px;
+        width: 330px;
         margin: auto;
         background: #fff;
-    }
-    .form-signIn .checkbox {
-        font-weight: 400;
-    }
-    .form-signIn .form-control {
-        position: relative;
-        box-sizing: border-box;
-        height: auto;
-        padding: 10px;
-        font-size: 15px;
-    }
-    .form-signIn .form-control:focus {
-        z-index: 2;
-    }
-    .form-signIn input[type="email"] {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-    .form-signIn input[type="password"] {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(155, 155, 155);
     }
 
     .social-btn .btn {
@@ -73,31 +51,49 @@
     .social-btn .btn-danger {
         background: #df4930;
     }
+
+    @media (min-width: 700px) {
+        body { overflow: hidden }
+    }
 </style>
 </head>
 <body class="text-center">
-<form class="form-signIn" method="post">
-    <img class="mb-4" src="../public/assets/img/header_logo.png">
+<div class="wrapper">
+    <img class="mb-5" src="../public/assets/img/header_logo.png">
+    <form id="login" class="form-signIn" method="post">
+        <div class="form-group">
+            <input name="userNumber" class="form-control" placeholder="Phone number" autofocus>
+        </div>
+        <div class="form-group">
+            <input name="userPassword" type="password" class="form-control" placeholder="Password">
+        </div>
+        <button class="btn btn-brand btn-block form-control mb-5">Sign in</button>
 
-    <div class="form-group row">
-        <input name="phoneNumber" id="inputEmail" class="form-control" placeholder="Phone number" autofocus>
-    </div>
-    <div class="form-group row">
-        <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password">
-    </div>
-    <div class="checkbox mb-3">
-        <label>
-            <input type="checkbox" value="remember-me"> Remember me
-        </label>
-    </div>
-    <button class="btn btn-lg btn-brand btn-block mb-5" type="submit">Sign in</button>
-    <p class="text-center">Login with your social media account</p>
-    <div class="text-center social-btn">
-        <a href="#" class="btn btn-primary"><i class="fab fa-facebook-f"></i></i>&nbsp; Facebook</a>
-        <a href="#" class="btn btn-danger"><i class="fab fa-google"></i></i>&nbsp; Google</a>
-    </div>
-    <p class="mt-5 mb-3 text-muted">TViTECH © 2019</p>
-</form>
+        <p class="text-center text-muted">Login with your social media account</p>
+        <div class="text-center social-btn mb-5">
+            <a href="#" class="btn btn-primary"><i class="fab fa-facebook-f"></i></i>&nbsp; Facebook</a>
+            <a href="#" class="btn btn-danger" data-onsuccess="onSignIn"><i class="fab fa-google"></i></i>&nbsp; Google</a>
+        </div>
+        <p class="mt-5 text-muted">Don't have an account?</p>
+    </form>
+
+    <button id="switchForm" class="btn btn-block btn-brand-outline mb-4">Register</button>
+
+    <form id="register" class="form-register" method="post" hidden>
+        <div class="form-group">
+            <input type="text" name="registerNumber" class="form-control" placeholder="Phone number">
+        </div>
+        <div class="form-group">
+            <input type="password" name="registerPassword" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <input type="password" name="registerPasswordRepeat" class="form-control" placeholder="Password repeat">
+        </div>
+        <button type="submit" class="btn btn-brand btn-block form-control ">Register</button>
+    </form>
+
+    <p class="mt-5 text-muted">TViTECH © 2019</p>
+</div>
 
 <!-- jQuery -->
 <script src="../public/assets/plugins/jquery-3.3.1.min.js"></script>
@@ -107,9 +103,29 @@
 <!-- FormValidation.io -->
 <script src="../public/assets/plugins/formvalidation-master/dist/js/formValidation.min.js"></script>
 <script src="../public/assets/plugins/formvalidation-master/dist/js/framework/bootstrap.min.js"></script>
-
+<!-- Google authorization -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 <!-- Custom scripts-->
 <script>
+const
+    btnSwitchForm = $('#switchForm'),
+    formLogin = $('#login'),
+    formRegister = $('#register');
+
+btnSwitchForm.click(function () {
+    formLogin.slideToggle();
+    if (formRegister.attr('hidden')) {
+        formRegister.removeAttr('hidden');
+        formRegister.slideDown();
+        btnSwitchForm.text('Go back to login');
+    } else {
+        formRegister.slideUp();
+        formRegister.attr('hidden', true);
+        btnSwitchForm.text('Register');
+    }
+});
+
+
 $('.form-signIn').formValidation({
     icon: {
         valid: 'glyphicon glyphicon-ok',
@@ -117,7 +133,7 @@ $('.form-signIn').formValidation({
         validating: 'glyphicon glyphicon-refresh'
     },
     fields: {
-        phoneNumber: {
+        userNumber: {
             validators: {
                 regexp: {
                     regexp: /^0\d{9}$/,
@@ -128,7 +144,7 @@ $('.form-signIn').formValidation({
                 }
             }
         },
-        password: {
+        userPassword: {
             validators: {
                 notEmpty: {
                     message: '• Required field'
@@ -141,12 +157,44 @@ $('.form-signIn').formValidation({
     .on('success.form.fv', function(e) {
         e.preventDefault();
         console.log('success');
-        window.location.href = "index.html";
+        // window.location.href = "index.html";
+        onSignIn()
     })
     .on('err.form.fv', function(e) {
         e.preventDefault();
         console.log('err');
     })
+
+
+//// Google Authorization
+
+// Client ID: 819493003816-oieip2jsvaahg52m1ifa0p8t5g2g0t05.apps.googleusercontent.com
+// Client Secret: JtmfWoHIPK3u3ACXSjyxmfDP
+// g-signin2
+
+function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+
+//// Sign out google
+// <a href="#" onclick="signOut();">Sign out</a>
+// function signOut() {
+//     var auth2 = gapi.auth2.getAuthInstance();
+//     auth2.signOut().then(function () {
+//         console.log('User signed out.');
+//     });
+// }
+
 </script>
+
+<script>
+
+
+</script>
+
 </body>
 </html>

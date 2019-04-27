@@ -29,33 +29,26 @@ button:focus {
 h5 {
     font-family: 'RobotoMed', sans-serif;
 }
+
+.text-muted { color: #6c757d }
+
 .dropdown-toggle::after {
     display: none;
 }
 
-.btn:focus,.btn:active {
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(227, 30, 37, 0.6);
-    outline: 0 none;
-}
 
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
+.form-control:hover,
+.form-control:focus,
 .uneditable-input:focus {
     border-color: gray;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(155, 155, 155);
+    outline: 0 none;
+}
+
+.btn:focus { box-shadow: none }
+.btn:hover {
+    border-color: #e31e25;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(227, 30, 37, 0.6);
     outline: 0 none;
 }
 
@@ -63,6 +56,16 @@ input[type="color"]:focus,
     color: #fff;
     background: #e31e25
 }
+.btn-brand-outline {
+    color: #e31e25;
+    background-color: transparent;
+    border: 1px solid #e31e25;
+}
+.btn-brand-outline:hover {
+    color: #fff;
+    background-color: #e31e25;
+}
+
 .btn_light { color:#fff }
 .btn_light:hover { color: #fff }
 .btn_light.active::after {

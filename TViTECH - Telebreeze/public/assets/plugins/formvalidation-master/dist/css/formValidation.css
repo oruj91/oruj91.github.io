@@ -18,17 +18,17 @@
     display: block;
     font-size: 1rem;
     font-family: "Icons";
-    width: 43px;
+    width: 38px;
     text-align: center;
 }
 
 .form-control-feedback.glyphicon-remove::before {
-    line-height: 43px;
+    line-height: 38px;
     content: '\e0db';
     color: red;
 }
 .form-control-feedback.glyphicon-ok::before {
-    line-height: 43px;
+    line-height: 38px;
     content: '\e033';
     color: #00a800;
 }

@@ -173,18 +173,17 @@ btnSwitchForm.click(function () {
     btnSwitchForm.text(btnSwitchForm.text() === "Register" ? "Go back to login" : "Register");
 });
 
-inputPhoneLogin.on('keyup', function (e) {
+inputPhoneLogin.on('keyup mousedown', function (e) {
     let value = $(this).val();
-    let key = e.keyCode;
-    let cursorPosition = $(this).caret();
-    let output = '';
     let array = value.split('');
     let numbers = array.filter((val) => val !== '-' && val !== ' ');
-    console.log('numbers', numbers);
+    let output = '';
+    let key = e.keyCode;
+    let cursorPosition = $(this).caret();
 
     for (let i = 0; i < numbers.length; i++) {
         if (i === 3) {
-            output = output + ' - ' + numbers[3]
+            output = output + ' - ' + numbers[3];
         }
         else if (i === 5) {
             output = output + ' - ' + numbers[5]
@@ -195,55 +194,24 @@ inputPhoneLogin.on('keyup', function (e) {
     }
     inputPhoneLogin.val(output);
 
-});
+    if (key === 39 && cursorPosition === 4) {
+        inputPhoneLogin.caret(6)
+    }
+    if (key === 37 && cursorPosition === 6) {
+        inputPhoneLogin.caret(3)
+    }
+    if (key === 39 && cursorPosition === 9) {
+        inputPhoneLogin.caret(11)
+    }
+    if (key === 37 && cursorPosition === 10) {
+        inputPhoneLogin.caret(8)
+    }
 
-// inputPhoneLogin.on('keydown', function (e) {
-//     let value = $(this).val();
-//     let valueLength = $(this).val().length;
-//     let key = e.keyCode;
-//     let cursorPosition = $(this).caret();
-//     let output = '';
-//     console.log('valueLength: ', valueLength);
-//     console.log('cursorPosition', cursorPosition);
-//
-//     if (valueLength === 3) {
-//         let s = value.split('');
-//
-//         s.push(' - ');
-//         for (let i = 0; i < s.length; i++) {
-//             output += s[i]
-//         }
-//         inputPhoneLogin.val(output)
-//     }
-//     if (valueLength === 8) {
-//         let s = value.split('');
-//         s.push(' - ');
-//         for (let i = 0; i < s.length; i++) {
-//             output += s[i]
-//         }
-//         inputPhoneLogin.val(output)
-//     }
-//
-//     if (key === 8 && cursorPosition === 6) {
-//         inputPhoneLogin.val(value.slice(0,3))
-//     }
-//     if (key === 8 && cursorPosition === 11) {
-//         inputPhoneLogin.val(value.slice(0,8))
-//     }
-//
-//     if (key === 39 && cursorPosition === 3) {
-//         inputPhoneLogin.caret(5)
-//     }
-//     if (key === 37 && cursorPosition === 6) {
-//         inputPhoneLogin.caret(4)
-//     }
-//     if (key === 39 && cursorPosition === 8) {
-//         inputPhoneLogin.caret(10)
-//     }
-//     if (key === 37 && cursorPosition === 11) {
-//         inputPhoneLogin.caret(9)
-//     }
-// });
+    if (key === 8) {
+        inputPhoneLogin.caret(cursorPosition)
+    }
+    console.log('cursorPosition', cursorPosition);
+});
 
 formLogin.formValidation({
     icon: {
@@ -254,10 +222,11 @@ formLogin.formValidation({
     fields: {
         phoneLogin: {
             validators: {
-                // regexp: {
-                //     regexp: /^0\d{9}$/,
-                //     message: '• Only mobile phones 050... 055...'
-                // },
+                regexp: {
+                    regexp: /\d{3} - \d{2} - \d{2}/,
+                    // regexp: /^0\d{9}$/,
+                    message: '• Only mobile phones 050... 055...'
+                },
                 notEmpty: {
                     message: '• Required field'
                 },

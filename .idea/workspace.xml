@@ -3,6 +3,486 @@
   <component name="ChangeListManager">
     <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/img/icon-checkmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/ROADMAP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/dist/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/dist/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/dist/assets/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/css/docs.theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/img/bird_blue_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/img/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/img/feature-drag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/img/feature-modern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/img/feature-module.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/img/feature-options.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/img/feature-responsive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/img/feature-zombie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/img/owl-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/img/twitter_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/js/foundation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.green.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/vendors/foundation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/vendors/highlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.mousewheel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/animate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/autoheight.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/autoplay.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/autowidth.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/center.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/demos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/lazyLoad.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/merge.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/mousewheel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/responsive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/rtl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/stagepadding.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/urlhashnav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/demos/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/api-classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/api-events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/api-options.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/dev-buildin-plugins.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/dev-external.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/dev-plugin-api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/dev-styles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/started-faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/started-installation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/started-welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/support-changelog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/support-contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/docs/support-contributing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/img/bird_blue_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/img/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/img/feature-drag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/img/feature-modern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/img/feature-module.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/img/feature-options.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/img/feature-responsive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/img/feature-zombie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/img/owl-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/img/twitter_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/js/foundation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/scss/_settings.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/scss/custom.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/scss/demos.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/scss/docs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/scss/docs.theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/scss/highlight.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/vendors/foundation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/vendors/highlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.mousewheel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/data/classes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/data/events.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/data/features.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/data/options.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/helpers/modulo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/helpers/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/layouts/demos.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/layouts/docs.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/layouts/home.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/animate.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/autoheight.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/autoplay.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/autowidth.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/basic.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/center.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/demos.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/events.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/lazyLoad.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/merge.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/mousewheel.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/responsive.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/rtl.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/stagepadding.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/test.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/urlhashnav.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/video.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/api-classes.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/api-events.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/api-options.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-buildin-plugins.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-external.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-plugin-api.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-styles.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/started-faq.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/started-installation.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/started-welcome.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/support-changelog.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/support-contact.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/support-contributing.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/pages/index.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/partials/footer.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/partials/head.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/partials/header.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/partials/home-carousel.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/partials/home-features.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/partials/home-hero.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/partials/home-teaser-text.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/partials/javascripts.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/partials/releated-docs.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/partials/sidenav-docs.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/partials/title.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/docs_src/templates/partials/vendors.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/img/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/img/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/.jscsrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/owl.animate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/owl.autoheight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/owl.autoplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/owl.autorefresh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/owl.hash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/owl.lazyload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/owl.navigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/owl.support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/owl.support.modernizr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/js/owl.video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/scss/_animate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/scss/_autoheight.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/scss/_lazyload.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/scss/_theme.default.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/scss/_theme.green.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/scss/_theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/scss/_video.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/scss/owl.carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/scss/owl.theme.default.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/src/scss/owl.theme.green.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/test/unit/autoplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/OwlCarousel2-2.3.4/test/unit/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/CONTRIBUTORS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/ajaxSubmit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/ajaxSubmit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/attribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/choice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/collapse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/container.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/container2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/container3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/container4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/date.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/defaultMessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/dynamic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/dynamic2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/dynamic3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/dynamic4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/enable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/enable2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/event.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/event2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/event3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/foundation/horizontalForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/foundation/horizontalFormTooltip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/html5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/i18n.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/icon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/ignored.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/invisible.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/mailgun.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/multiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/multipleAsOne.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/pure/horizontalForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/pure/stackedForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/remote.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/remote.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/remote2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/reset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/row.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/selector.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/selector2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/semantic/horizontalForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/semantic/horizontalFormTooltip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/semantic/stackedForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/semantic/stackedFormTooltip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/specialName.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/submitHandler.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/tab.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/target.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/tooltip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/typehead.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/uikit/horizontalForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/uikit/horizontalFormTooltip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/uikit/stackedForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/uikit/stackedFormTooltip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/demo/validators.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/css/formValidation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/css/formValidation.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/formValidation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/formValidation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/framework/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/framework/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/framework/foundation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/framework/foundation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/framework/pure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/framework/pure.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/framework/semantic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/framework/semantic.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/framework/uikit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/framework/uikit.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/ar_MA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/be_FR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/be_NL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/bg_BG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/ca_ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/cs_CZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/da_DK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/de_DE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/en_US.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/es_CL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/es_ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/eu_ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/fa_IR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/fi_FI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/fr_FR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/gr_EL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/he_IL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/hi_IN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/hu_HU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/id_ID.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/it_IT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/ja_JP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/nl_NL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/no_NO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/pl_PL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/pt_BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/pt_PT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/ro_RO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/ru_RU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/sk_SK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/sq_AL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/sr_RS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/sv_SE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/th_TH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/tr_TR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/ua_UA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/vi_VN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/language/zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/screenshots/bootstrap.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/screenshots/foundation.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/screenshots/pure.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/screenshots/semantic.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/screenshots/uikit.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/css/formValidation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/framework/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/framework/foundation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/framework/pure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/framework/semantic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/framework/uikit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/ar_MA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/be_FR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/be_NL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/bg_BG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/ca_ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/cs_CZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/da_DK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/de_DE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/en_US.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/es_CL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/es_ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/eu_ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/fa_IR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/fi_FI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/fr_FR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/gr_EL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/he_IL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/hi_IN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/hu_HU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/id_ID.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/it_IT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/ja_JP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/nl_NL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/no_NO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/pl_PL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/pt_BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/pt_PT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/ro_RO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/ru_RU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/sk_SK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/sq_AL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/sr_RS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/sv_SE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/th_TH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/tr_TR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/ua_UA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/vi_VN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/language/zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/base64.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/between.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/bic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/blank.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/callback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/choice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/creditCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/cusip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/cvv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/different.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/digits.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/ean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/ein.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/emailAddress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/file.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/greaterThan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/hex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/iban.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/identical.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/imei.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/imo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/integer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/ip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/isbn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/isin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/ismn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/issn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/lessThan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/mac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/meid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/notEmpty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/numeric.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/phone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/regexp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/remote.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/rtn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/sedol.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/siren.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/siret.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/step.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/stringCase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/stringLength.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/uri.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/uuid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/vat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/vin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/src/js/validator/zipCode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/autoFocus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/dynamic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/enable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/excluded.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/i18n.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/message.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/row.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/submit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/transformer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/between.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/bic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/callback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/creditCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/cusip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/ean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/ein.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/emailAddress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/greaterThan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/iban.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/identical.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/imo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/ip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/isbn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/isin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/ismn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/issn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/lessThan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/meid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/phone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/stringLength.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/uri.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/vat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/validator/zipCode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/spec/verbose.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/test/valid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/bootstrap/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/jasmine/boot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/jasmine/console.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/jasmine/jasmine-html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/jasmine/jasmine.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/jasmine/jasmine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/jasmine/jasmine_favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/vivus.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +499,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+            <state relative-caret-position="3009">
+              <caret line="177" column="26" selection-start-line="177" selection-start-column="26" selection-end-line="177" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -28,11 +508,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="164" column="27" lean-forward="true" selection-start-line="164" selection-start-column="27" selection-end-line="164" selection-end-column="27" />
+            <state relative-caret-position="374">
+              <caret line="188" column="24" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="24" />
               <folding>
-                <element signature="e#2954#2960#0" expanded="true" />
-                <element signature="e#3084#3090#0" expanded="true" />
+                <element signature="n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#6509#6629#0" />
+                <marker date="1556470468347" expanded="true" signature="7195:7249" ph="..." />
               </folding>
             </state>
           </provider>
@@ -41,8 +522,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="81" />
+            <state relative-caret-position="102">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="832">
+              <caret line="50" column="71" selection-start-line="50" selection-start-column="71" selection-end-line="50" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -65,7 +555,6 @@
       <find>fv</find>
       <find>ok</find>
       <find>check</find>
-      <find>help-block</find>
       <find>glyph=x</find>
       <find>g-signin2</find>
       <find>exit</find>
@@ -76,6 +565,13 @@
       <find>text</find>
       <find>btnFormSwitch</find>
       <find>formSwitch</find>
+      <find>help</find>
+      <find>help-block</find>
+      <find>switchForm</find>
+      <find>viv</find>
+      <find>form-register</find>
+      <find>onSignIn</find>
+      <find>times</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -95,8 +591,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" />
-        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/css/formValidation.css" />
+        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" />
+        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/fontawesome-pro-5.8.1/css/solid.css" />
+        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/css/formValidation.css" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html" />
       </list>
@@ -135,44 +633,6 @@
               <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="formvalidation-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="formvalidation-master" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="formvalidation-master" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -180,30 +640,13 @@
               <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="open-iconic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="open-iconic-master" type="462c0819:PsiDirectoryNode" />
-              <item name="font" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="open-iconic-master" type="462c0819:PsiDirectoryNode" />
-              <item name="font" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,17 +705,20 @@
       <workItem from="1556283083387" duration="2594000" />
       <workItem from="1556285699168" duration="3000" />
       <workItem from="1556285752775" duration="10123000" />
-      <workItem from="1556339454849" duration="9103000" />
+      <workItem from="1556339454849" duration="11141000" />
+      <workItem from="1556435269686" duration="14848000" />
+      <workItem from="1556457362446" duration="7959000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34112000" />
+    <option name="totallyTimeSpent" value="58957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3846154" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26923078" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -284,7 +730,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32932165" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.6695843" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.39824945" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -296,20 +742,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.nojekyll" />
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/formValidation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/js/formValidation.js" />
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/open-iconic-master/font/css/open-iconic-bootstrap.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1071" />
@@ -322,34 +755,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/css/formValidation.css" />
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/fontawesome-pro-5.8.1/css/solid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+        <state relative-caret-position="136">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/css/formValidation.css">
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/fontawesome-pro-5.8.1/css/all.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        <state relative-caret-position="244">
+          <caret line="986" column="5" lean-forward="true" selection-start-line="986" selection-start-column="4" selection-end-line="986" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/fontawesome-pro-5.8.1/js/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2703">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/css/formValidation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3009">
+          <caret line="177" column="26" selection-start-line="177" selection-start-column="26" selection-end-line="177" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="81" />
+        <state relative-caret-position="102">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="50" column="71" selection-start-line="50" selection-start-column="71" selection-end-line="50" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="164" column="27" lean-forward="true" selection-start-line="164" selection-start-column="27" selection-end-line="164" selection-end-column="27" />
+        <state relative-caret-position="374">
+          <caret line="188" column="24" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="24" />
           <folding>
-            <element signature="e#2954#2960#0" expanded="true" />
-            <element signature="e#3084#3090#0" expanded="true" />
+            <element signature="n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#6509#6629#0" />
+            <marker date="1556470468347" expanded="true" signature="7195:7249" ph="..." />
           </folding>
         </state>
       </provider>

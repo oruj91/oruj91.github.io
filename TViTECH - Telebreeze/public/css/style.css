@@ -18,32 +18,13 @@ body {
 }
 
 a { color: #e31e25 }
-a { color: #e31e25 }
 a:hover {
     color: #171b1c;
     text-decoration: none;
 }
-button:focus {
-    outline: none;
-}
-h5 {
-    font-family: 'RobotoMed', sans-serif;
-}
 
-.text-muted { color: #6c757d }
-
-.dropdown-toggle::after {
-    display: none;
-}
-
-
-.form-control:hover,
-.form-control:focus,
-.uneditable-input:focus {
-    border-color: gray;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(155, 155, 155);
-    outline: 0 none;
-}
+button:focus,
+select:focus { outline: none }
 
 .btn:focus { box-shadow: none }
 .btn:hover {
@@ -80,6 +61,26 @@ h5 {
     z-index: 10;
 }
 
+h5 { font-family: 'RobotoMed', sans-serif }
+
+input, select { font-size: .95rem !important; }
+input::placeholder { color: #b8b8b8 !important }
+
+.text-muted {
+    text-align: center;
+    color: #6c757d
+}
+
+.dropdown-toggle::after { display: none }
+
+.form-control:hover,
+.form-control:focus,
+.uneditable-input:focus {
+    border-color: gray;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(155, 155, 155);
+    outline: 0 none;
+}
+
 .list-group-item { background: transparent }
 .list-group-item::before {
     position: absolute;
@@ -94,10 +95,7 @@ h5 {
     margin-left: -1rem;
 }
 
-.owl-carousel .owl-stage {
-    display: flex;
-}
-
+.owl-carousel .owl-stage { display: flex }
 .owl-carousel .owl-item img {
     height: 40vh;
     width: 100%;

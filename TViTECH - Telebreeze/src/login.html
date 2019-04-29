@@ -143,7 +143,6 @@
         </div>
         <button type="submit" class="btn btn-brand btn-block form-control ">Register</button>
     </form>
-
     <p class="mt-5 text-muted">TViTECH © 2019</p>
 </div>
 
@@ -173,13 +172,18 @@ btnSwitchForm.click(function () {
     btnSwitchForm.text(btnSwitchForm.text() === "Register" ? "Go back to login" : "Register");
 });
 
-inputPhoneLogin.on('keyup mousedown', function (e) {
+
+let cursorPosition;
+let lastCursorPosition;
+
+inputPhoneLogin.on('keyup mouseup', function (e) {
     let value = $(this).val();
     let array = value.split('');
     let numbers = array.filter((val) => val !== '-' && val !== ' ');
     let output = '';
     let key = e.keyCode;
-    let cursorPosition = $(this).caret();
+
+    lastCursorPosition = cursorPosition;
 
     for (let i = 0; i < numbers.length; i++) {
         if (i === 3) {
@@ -194,23 +198,39 @@ inputPhoneLogin.on('keyup mousedown', function (e) {
     }
     inputPhoneLogin.val(output);
 
-    if (key === 39 && cursorPosition === 4) {
+    // Press right arrow first
+    if (key === 39 && cursorPosition === 3) {
         inputPhoneLogin.caret(6)
     }
+    // Press right arrow second
+    if (key === 39 && cursorPosition === 8) {
+        inputPhoneLogin.caret(11)
+    }
+    // Press left arrow first
     if (key === 37 && cursorPosition === 6) {
         inputPhoneLogin.caret(3)
     }
-    if (key === 39 && cursorPosition === 9) {
-        inputPhoneLogin.caret(11)
-    }
-    if (key === 37 && cursorPosition === 10) {
+    // Press left arrow second
+    if (key === 37 && cursorPosition === 11) {
         inputPhoneLogin.caret(8)
     }
 
+
     if (key === 8) {
-        inputPhoneLogin.caret(cursorPosition)
+        inputPhoneLogin.caret(lastCursorPosition - 1);
     }
-    console.log('cursorPosition', cursorPosition);
+    else {
+        // inputPhoneLogin.caret(lastCursorPosition)
+    }
+
+    // inputPhoneLogin.caret(lastCursorPosition);
+
+    cursorPosition = inputPhoneLogin.caret();
+
+    // inputPhoneLogin.caret(lastCursorPosition);
+
+    console.log('Now cursorPosition: ', cursorPosition);
+    console.log('Last cursorPosition: ', lastCursorPosition);
 });
 
 formLogin.formValidation({
@@ -225,7 +245,7 @@ formLogin.formValidation({
                 regexp: {
                     regexp: /\d{3} - \d{2} - \d{2}/,
                     // regexp: /^0\d{9}$/,
-                    message: '• Only mobile phones 050... 055...'
+                    message: '• Please\, finish number'
                 },
                 notEmpty: {
                     message: '• Required field'

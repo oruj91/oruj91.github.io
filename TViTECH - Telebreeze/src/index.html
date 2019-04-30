@@ -157,7 +157,11 @@
         <div class="container">
 
             <div class="card-container">
-                <h5 class="card-container-header">Connected services:</h5>
+                <div class="card-container-header">
+                    <span class="font-weight-bold">Connected services:</span>
+                    <span class="fa-pull-right pl-2">26₼</span>
+                    <span class="fa-pull-right font-weight-bold">Balance:</span>
+                </div>
                 <div class="row">
                     <div class="card-container-body">
                         <div class="col-sm-12 col-md-6 col-lg-3">
@@ -167,8 +171,33 @@
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">SmartTV</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <button id="smartTv" class="btn btn-brand-outline btn-block" data-type="toPay">Pay</button>
+                                    <div class="card-status">
+                                        <span class="card-status-title">Service cost:</span>
+                                        <span class="card-status-value">15₼</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-status-title">Status:</span>
+                                        <span class="card-status-value">active</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-icon card-icon-2">
+                                    <i class="fal fa-hdd"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">STB</h5>
+                                    <div class="card-status">
+                                        <span class="card-status-title">Service cost:</span>
+                                        <span class="card-status-value">11₼</span>
+                                    </div>
+                                    <div class="card-status">
+                                        <span class="card-status-title">Status:</span>
+                                        <span class="card-status-value">not active</span>
+                                    </div>
+                                    <button id="stb" class="btn btn-brand-outline btn-block mt-3" data-type="toPay">Pay</button>
                                 </div>
                             </div>
                         </div>
@@ -177,42 +206,38 @@
             </div>
 
             <div class="card-container">
-                <h5 class="card-container-header">We suggest:</h5>
+                <div class="card-container-header">
+                    <span class="font-weight-bold">We suggest:</span>
+                </div>
                 <div class="row">
                     <div class="card-container-body">
                         <div class="col-sm-12 col-md-6 col-lg-3">
-                            <div class="card">
-                                <div class="card-icon">
-                                    <i class="fal fa-hdd"></i>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">STB</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <button id="stb" class="btn btn-brand-outline btn-block" data-type="toConnect">Connect</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3">
-                            <div class="card">
+                            <div class="card card-suggest">
                                 <div class="card-icon card-icon-3">
                                     <i class="fal fa-tablet-android-alt"></i>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Phone/TABLET</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <button id="phoneTablet" class="btn btn-brand-outline btn-block" data-type="toConnect">Connect</button>
+                                    <div class="card-status">
+                                        <span class="card-status-title">Service cost:</span>
+                                        <span class="card-status-value">7₼</span>
+                                    </div>
+                                    <button id="phoneTablet" class="btn btn-brand-outline btn-block mt-3" data-type="toConnect">Connect</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3">
-                            <div class="card">
+                            <div class="card card-suggest">
                                 <div class="card-icon card-icon-4">
                                     <i class="fal fa-laptop"></i>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body flex-column justify-content-between">
                                     <h5 class="card-title">PC/MAC</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <button id="pcMac" class="btn btn-brand-outline btn-block" data-type="toConnect">Connect</button>
+                                    <div class="card-status">
+                                        <span class="card-status-title">Service cost:</span>
+                                        <span class="card-status-value">9₼</span>
+                                    </div>
+                                    <button id="pcMac" class="btn btn-brand-outline btn-block mt-3" data-type="toConnect">Connect</button>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +268,7 @@
 
 
                 <article class="card">
-                    <div class="card-body p-5">
+                    <div class="card-body">
 
                         <ul class="nav bg radius nav-pills nav-fill mb-3" role="tablist">
                             <li class="nav-item">
@@ -259,7 +284,6 @@
 
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="nav-tab-card">
-                                <p class="alert alert-success">Some text success or error</p>
                                 <form role="form">
                                     <div class="form-group">
                                         <label for="username">Full name (on the card)</label>
@@ -296,7 +320,7 @@
                                             </div> <!-- form-group.// -->
                                         </div>
                                     </div> <!-- row.// -->
-                                    <button class="subscribe btn btn-primary btn-block" type="button"> Confirm  </button>
+<!--                                    <button class="subscribe btn btn-primary btn-block" type="button"> Confirm  </button>-->
                                 </form>
                             </div> <!-- tab-pane.// -->
                             <div class="tab-pane fade" id="nav-tab-paypal">

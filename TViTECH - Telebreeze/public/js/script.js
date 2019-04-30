@@ -26,7 +26,6 @@ $(document).ready(function(){
       const id = e.target.id;
       const title = $(e.target).siblings('.card-title').text();
       const modalTitle = $('#modalPay .modal-title');
-      console.log(title);
 
       modalTitle.text(title);
       modalPay.modal();

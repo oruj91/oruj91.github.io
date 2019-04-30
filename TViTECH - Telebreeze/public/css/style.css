@@ -276,6 +276,8 @@ input::placeholder { color: #b8b8b8 !important }
     width: 100%;
 }
 
+.card-container-body .card { height: 21rem }
+.card-container-body .card-suggest { height: 20rem }
 .card:not(:last-child) { margin-bottom: 2rem }
 
 .card-icon {
@@ -283,7 +285,6 @@ input::placeholder { color: #b8b8b8 !important }
     justify-content: center;
     align-items: center;
     height: 10rem;
-    background-color: #e31e25;
 }
 .card-icon-1 { background-color: #16B6AA }
 .card-icon-2 { background-color: #E5187F }
@@ -295,12 +296,29 @@ input::placeholder { color: #b8b8b8 !important }
     color: #fff;
 }
 
+.card-status-title {
+    display: inline-block;
+    width: 6rem;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #aaaaaa;
+}
+.card-status-value {
+    padding-left: 0.3rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
 .modal-open {
     /*position: fixed;*/
     overflow: scroll;
     width: 100%;
     padding-right: 0!important;
 }
+
+.modal .card { border: none }
+.modal .card-body { padding-bottom: 0 }
+
 
 @media (max-width: 991px) {
     .card { margin-bottom: 2rem }

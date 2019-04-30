@@ -17,9 +17,6 @@ body {
     font-family: 'RobotoReg', sans-serif;
 }
 
-.mb-sm-0 { margin-bottom: 0 !important }
-.mt-sm-1 { margin-top: 1rem !important; }
-
 a { color: #e31e25 }
 a:hover {
     color: #171b1c;
@@ -104,6 +101,7 @@ input::placeholder { color: #b8b8b8 !important }
     width: 100%;
     object-fit: cover;
 }
+
 
 /* Header */
 
@@ -204,50 +202,30 @@ input::placeholder { color: #b8b8b8 !important }
 /* Content */
 
 .content>div {
-    padding-top: 10rem;
+    padding-top: 5rem;
     min-height: 100vh;
 }
 
-.reason { background: rgba(222, 213, 224, 0.69) }
+.whyWe {
+    padding-top: 10rem !important;
+    background: rgba(222, 213, 224, 0.69)
+}
 .packets { background: rgba(222, 213, 224, 0.69) }
 
 
 /* Why we */
 
-.reason__logo {
+.whyWe__logo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
 }
-.reason__logo img {
+.whyWe__logo img {
     width: 12rem;
 }
-.reason__description p {
+.whyWe__description p {
     margin-bottom: 4rem;
-}
-.factor__item span {
-    text-align: center;
-    font-size: .8rem;
-    font-family: 'RobotoMed', sans-serif;
-}
-.factor__item__circle .fa-puzzle-piece {
-    position: relative;
-    top: -2px;
-    left: 3px;
-}
-
-.increase__item i {
-    position: absolute;
-    top: -4rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2.5rem;
-    font-style: normal;
-}
-.increase__item p {
-    padding: 2rem 0 3rem;
-    font-size: 1rem;
 }
 
 
@@ -257,6 +235,23 @@ input::placeholder { color: #b8b8b8 !important }
 
 
 /* Payment */
+
+.card-container {
+    margin-bottom: 5rem;
+    border: 1px solid #e5e5e5;
+}
+.card-container-body {
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+}
+.card-container-header {
+    padding: .75rem 1.25rem;
+    background-color: #f5f5f5;
+    border-bottom: none;
+}
+
+.card:not(:last-child) { margin-bottom: 2rem }
 
 .card-icon {
     display: flex;

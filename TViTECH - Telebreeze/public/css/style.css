@@ -81,6 +81,30 @@ input::placeholder { color: #b8b8b8 !important }
     outline: 0 none;
 }
 
+.select-operator {
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+    border-color: #ced4da;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;       /* remove default arrow */
+    background-image: url('../assets/icons/chevron-down-solid.svg');
+    background-size: .75rem;
+    background-repeat: no-repeat;
+    background-position: 0.5rem;
+    cursor: pointer;
+}
+.select-operator:hover {
+    background-color: #efefef;
+}
+.select-operator option {
+    padding: .5rem;
+    margin: 40px;
+}
+
 .list-group-item { background: transparent }
 .list-group-item::before {
     position: absolute;
@@ -240,15 +264,16 @@ input::placeholder { color: #b8b8b8 !important }
     margin-bottom: 5rem;
     border: 1px solid #e5e5e5;
 }
-.card-container-body {
-    display: flex;
-    padding: 2rem;
-    width: 100%;
-}
 .card-container-header {
     padding: .75rem 1.25rem;
     background-color: #f5f5f5;
     border-bottom: none;
+}
+.card-container-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    width: 100%;
 }
 
 .card:not(:last-child) { margin-bottom: 2rem }
@@ -268,4 +293,15 @@ input::placeholder { color: #b8b8b8 !important }
 .card-icon i {
     font-size: 5rem;
     color: #fff;
+}
+
+.modal-open {
+    /*position: fixed;*/
+    overflow: scroll;
+    width: 100%;
+    padding-right: 0!important;
+}
+
+@media (max-width: 991px) {
+    .card { margin-bottom: 2rem }
 }

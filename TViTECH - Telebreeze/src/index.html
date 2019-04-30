@@ -160,7 +160,7 @@
                 <h5 class="card-container-header">Connected services:</h5>
                 <div class="row">
                     <div class="card-container-body">
-                        <div class="col-sm-3 col-md-6 col-lg-3">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
                             <div class="card">
                                 <div class="card-icon card-icon-1">
                                     <i class="fal fa-tv"></i>
@@ -168,7 +168,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">SmartTV</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-brand-outline btn-block">To pay</a>
+                                    <button id="smartTv" class="btn btn-brand-outline btn-block" data-type="toPay">Pay</button>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +180,7 @@
                 <h5 class="card-container-header">We suggest:</h5>
                 <div class="row">
                     <div class="card-container-body">
-                        <div class="col-sm-3 col-md-6 col-lg-3">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
                             <div class="card">
                                 <div class="card-icon">
                                     <i class="fal fa-hdd"></i>
@@ -188,11 +188,11 @@
                                 <div class="card-body">
                                     <h5 class="card-title">STB</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-brand-outline btn-block">Connect</a>
+                                    <button id="stb" class="btn btn-brand-outline btn-block" data-type="toConnect">Connect</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-md-6 col-lg-3">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
                             <div class="card">
                                 <div class="card-icon card-icon-3">
                                     <i class="fal fa-tablet-android-alt"></i>
@@ -200,11 +200,11 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Phone/TABLET</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-brand-outline btn-block">Connect</a>
+                                    <button id="phoneTablet" class="btn btn-brand-outline btn-block" data-type="toConnect">Connect</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-md-6 col-lg-3">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
                             <div class="card">
                                 <div class="card-icon card-icon-4">
                                     <i class="fal fa-laptop"></i>
@@ -212,7 +212,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">PC/MAC</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-brand-outline btn-block">Connect</a>
+                                    <button id="pcMac" class="btn btn-brand-outline btn-block" data-type="toConnect">Connect</button>
                                 </div>
                             </div>
                         </div>
@@ -224,8 +224,179 @@
 
 </main>
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPay">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div id="modalPay" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+                <article class="card">
+                    <div class="card-body p-5">
+
+                        <ul class="nav bg radius nav-pills nav-fill mb-3" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
+                                    <i class="fa fa-credit-card"></i> Credit Card</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+                                    <i class="fab fa-paypal"></i>  Paypal</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
+                                    <i class="fa fa-university"></i>  Bank Transfer</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="nav-tab-card">
+                                <p class="alert alert-success">Some text success or error</p>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="username">Full name (on the card)</label>
+                                        <input type="text" class="form-control" name="username" placeholder="" required="">
+                                    </div> <!-- form-group.// -->
+
+                                    <div class="form-group">
+                                        <label for="cardNumber">Card number</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="cardNumber" placeholder="">
+                                            <div class="input-group-append">
+				<span class="input-group-text text-muted">
+					<i class="fab fa-cc-visa"></i> &nbsp; <i class="fab fa-cc-amex"></i> &nbsp;
+					<i class="fab fa-cc-mastercard"></i>
+				</span>
+                                            </div>
+                                        </div>
+                                    </div> <!-- form-group.// -->
+
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <div class="form-group">
+                                                <label><span class="hidden-xs">Expiration</span> </label>
+                                                <div class="input-group">
+                                                    <input type="number" class="form-control" placeholder="MM" name="">
+                                                    <input type="number" class="form-control" placeholder="YY" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
+                                                <input type="number" class="form-control" required="">
+                                            </div> <!-- form-group.// -->
+                                        </div>
+                                    </div> <!-- row.// -->
+                                    <button class="subscribe btn btn-primary btn-block" type="button"> Confirm  </button>
+                                </form>
+                            </div> <!-- tab-pane.// -->
+                            <div class="tab-pane fade" id="nav-tab-paypal">
+                                <p>Paypal is easiest way to pay online</p>
+                                <p>
+                                    <button type="button" class="btn btn-primary"> <i class="fab fa-paypal"></i> Log in my Paypal </button>
+                                </p>
+                                <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-tab-bank">
+                                <p>Bank accaunt details</p>
+                                <dl class="param">
+                                    <dt>BANK: </dt>
+                                    <dd> THE WORLD BANK</dd>
+                                </dl>
+                                <dl class="param">
+                                    <dt>Accaunt number: </dt>
+                                    <dd> 12345678912345</dd>
+                                </dl>
+                                <dl class="param">
+                                    <dt>IBAN: </dt>
+                                    <dd> 123456789</dd>
+                                </dl>
+                                <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. </p>
+                            </div> <!-- tab-pane.// -->
+                        </div> <!-- tab-content .// -->
+
+                    </div> <!-- card-body.// -->
+                </article> <!-- card.// -->
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-brand-outline" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-brand">Pay</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalConnect" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>For connecting this service please fill out this form</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="userName">Your name</label>
+                        <input type="text" id="userName" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="userSurname">Your surname</label>
+                        <input type="text" id="userSurname" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="userAddress">Your address</label>
+                        <input type="text" id="userAddress" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Your contacts</label>
+                        <div class="input-group">
+                            <select class="select-operator input-group-prepend">
+                                <option value="050" selected>050</option>
+                                <option value="051">051</option>
+                                <option value="055">055</option>
+                                <option value="070">070</option>
+                                <option value="077">077</option>
+                            </select>
+                            <input
+                                id          = "userContacts"
+                                type        = "text"
+                                class       = "form-control"
+                                placeholder = "123 - 45 - 67"
+                                autofocus
+                                maxlength   = "13"
+                            >
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-brand">Connect me</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- jQuery -->
 <script rel="script" src="../public/assets/plugins/jquery-3.3.1.min.js"></script>
+<script src="../public/assets/plugins/Inputmask-4.x/min/inputmask/inputmask.min.js"></script>
 <!-- Bootstrap -->
 <script rel="script" src="../public/assets/plugins/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 <script rel="script" src="../public/assets/plugins/popper.min.js"></script>

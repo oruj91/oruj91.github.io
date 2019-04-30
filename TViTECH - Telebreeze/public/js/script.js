@@ -1,24 +1,58 @@
 $(document).ready(function(){
+  const
+      modalPay = $('#modalPay'),
+      modalConnect = $('#modalConnect'),
+      inputMaskPhone = new Inputmask("999 - 99 - 99"),
+      inputMaskCredit = new Inputmask("9999 - 9999 - 9999 - 9999"),
+      inputPayCredit = $('#payCredit'),
+      inputConnectContacts = $('#userContacts');
+
+  inputMaskPhone.mask(inputConnectContacts);
+  inputMaskCredit.mask(inputPayCredit);
+
+  $('[data-type ="toConnect"]').each(function (idx, el) {
+    $(el).click(function (e) {
+      const id = e.target.id;
+      const title = $(e.target).siblings('.card-title').text();
+      const modalTitle = $('#modalPay .modal-title');
+
+      modalTitle.text(title);
+      modalConnect.modal();
+    })
+  });
+
+  $('[data-type ="toPay"]').each(function (idx, el) {
+    $(el).click(function (e) {
+      const id = e.target.id;
+      const title = $(e.target).siblings('.card-title').text();
+      const modalTitle = $('#modalPay .modal-title');
+      console.log(title);
+
+      modalTitle.text(title);
+      modalPay.modal();
+    })
+  });
+
   // WOWJS
   new WOW().init();
-  
+
   // HIDE HEADER'S USER PROFILE ON SCROLL-DOWN
-  var $navbar = $('.header__user');
-  var navbarHeight = $navbar.outerHeight();
-  var lastScrollTop = 0;
-  var lastDirection = 0;
-  var movement = 0;
+  let $navbar = $('.header__user');
+  let navbarHeight = $navbar.outerHeight();
+  let lastScrollTop = 0;
+  let lastDirection = 0;
+  let movement = 0;
 
   $(window).scroll(function(event){
-    
-    var st = $(this).scrollTop();
+
+    let st = $(this).scrollTop();
     movement += st - lastScrollTop;
 
     if (st > lastScrollTop) { // scroll down
       if (lastDirection != 1) {
         movement = 0;
       }
-      var margin = Math.abs(movement);
+      let margin = Math.abs(movement);
       if (margin > navbarHeight) {
         margin = navbarHeight;
       }
@@ -30,7 +64,7 @@ $(document).ready(function(){
       if (lastDirection != -1) {
         movement = 0;
       }
-      var margin = Math.abs(movement);
+      let margin = Math.abs(movement);
       if (margin > navbarHeight) {
         margin = navbarHeight;
       }
@@ -55,7 +89,7 @@ $(document).ready(function(){
       event.preventDefault();
 
       // Store hash
-      var hash = this.hash;
+      let hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
@@ -74,7 +108,7 @@ $(document).ready(function(){
   // LANGUAGE CHANGE
   let $btnLanguages = $('.user__lang .dropdown-item');
   let $currentLangWrapper = $('.user__lang .dropdown-toggle');
-  
+
   $btnLanguages.each(function(key, lang) {
     $(lang).click(function(e) {
       let $currentLang = $('.dropdown-toggle .lang__item');
@@ -84,7 +118,7 @@ $(document).ready(function(){
       $currentLang.remove();
       $currentLangWrapper.append($selectedLang);
     })
-  })
+  });
 
   // Slider
   $(".owl-carousel").owlCarousel({
@@ -93,8 +127,8 @@ $(document).ready(function(){
     loop: true,
     autoplay: true,
     slideTransition: 'linear',
-    autoplayTimeout: 3000,
-    autoplaySpeed: 3000,
+    autoplayTimeout: 2000,
+    autoplaySpeed: 4000,
     autoplayHoverPause: false
   });
 });

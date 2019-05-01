@@ -14,7 +14,7 @@ $(document).ready(function(){
     $(el).click(function (e) {
       const id = e.target.id;
       const title = $(e.target).siblings('.card-title').text();
-      const modalTitle = $('#modalPay .modal-title');
+      const modalTitle = $('#connectTitle');
 
       modalTitle.text(title);
       modalConnect.modal();
@@ -25,9 +25,9 @@ $(document).ready(function(){
     $(el).click(function (e) {
       const id = e.target.id;
       const title = $(e.target).siblings('.card-title').text();
-      const modalTitle = $('#modalPay .modal-title');
+      const paymentFor = $('#paymentFor');
 
-      modalTitle.text(title);
+      paymentFor.text(title);
       modalPay.modal();
     })
   });

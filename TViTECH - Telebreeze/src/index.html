@@ -166,6 +166,7 @@
                     <div class="card-container-body">
                         <div class="col-sm-12 col-md-6 col-lg-3">
                             <div class="card">
+                                <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
                                 <div class="card-icon card-icon-1">
                                     <i class="fal fa-tv"></i>
                                 </div>
@@ -252,49 +253,51 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Payment for <span id="paymentFor"></span></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-
-
                 <article class="card">
                     <div class="card-body">
-
                         <ul class="nav bg radius nav-pills nav-fill mb-3" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
-                                    <i class="fa fa-credit-card"></i> Credit Card</a></li>
+                                    <i class="fa fa-credit-card"></i> Credit Card
+                                </a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
-                                    <i class="fab fa-paypal"></i>  Paypal</a></li>
+                                    <i class="fab fa-paypal"></i>  Paypal
+                                </a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
-                                    <i class="fa fa-university"></i>  Bank Transfer</a></li>
+                                    <i class="fa fa-university"></i>  Bank Transfer
+                                </a>
+                            </li>
                         </ul>
-
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="nav-tab-card">
                                 <form role="form">
                                     <div class="form-group">
-                                        <label for="username">Full name (on the card)</label>
-                                        <input type="text" class="form-control" name="username" placeholder="" required="">
+                                        <label for="connectUsername">Full name (on the card)</label>
+                                        <input type="text" id="connectUsername" class="form-control" name="username" placeholder="" required="">
                                     </div> <!-- form-group.// -->
 
                                     <div class="form-group">
-                                        <label for="cardNumber">Card number</label>
+                                        <label for="connectSurname">Card number</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="cardNumber" placeholder="">
+                                            <input type="text" id="connectSurname" class="form-control" name="cardNumber" placeholder="">
                                             <div class="input-group-append">
-				<span class="input-group-text text-muted">
-					<i class="fab fa-cc-visa"></i> &nbsp; <i class="fab fa-cc-amex"></i> &nbsp;
-					<i class="fab fa-cc-mastercard"></i>
-				</span>
+                                                <span class="input-group-text text-muted">
+                                                    <i class="fab fa-cc-visa"></i> &nbsp;
+                                                    <i class="fab fa-cc-mastercard"></i>
+                                                </span>
                                             </div>
                                         </div>
-                                    </div> <!-- form-group.// -->
+                                    </div>
 
                                     <div class="row">
                                         <div class="col-sm-8">
@@ -360,14 +363,13 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
+                <h5 class="modal-title"><span id="connectTitle"></span> connecting</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p>For connecting this service please fill out this form</p>
-
+                <p>For connecting to this service please fill out form bellow:</p>
                 <form>
                     <div class="form-group">
                         <label for="userName">Your name</label>
@@ -390,6 +392,7 @@
                                 <option value="055">055</option>
                                 <option value="070">070</option>
                                 <option value="077">077</option>
+                                <option value="012">012</option>
                             </select>
                             <input
                                 id          = "userContacts"
@@ -404,7 +407,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-brand-outline" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-brand">Connect me</button>
             </div>
         </div>

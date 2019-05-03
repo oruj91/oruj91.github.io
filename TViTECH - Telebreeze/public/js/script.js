@@ -77,7 +77,7 @@ $(document).ready(function(){
   });
 
   // SCROLLSPY
-  $('body').scrollspy({target: ".navbar", offset: 50});
+  $('body').scrollspy({target: ".navbar", offset: 100});
 
   // Add smooth scrolling on all links inside the navbar
   $("#myTab a").on('click', function(event) {
@@ -99,9 +99,33 @@ $(document).ready(function(){
       // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-
     } // End if
+  });
 
+
+
+  // Change navigation status on scroll
+  $(window).on('scroll load', function() {
+    let sections = $('.content>div');
+    let screenPosition = window.pageYOffset;
+    let id = [];
+    let idLength;
+    console.log(location.hash);
+    $(`a[href="#${location.hash}"]`);
+
+    $.each(sections, function (key, el) {
+
+      if (screenPosition >= el.offsetTop) {
+        id.push(el.id);
+        idLength = id.length;
+      }
+    });
+
+    location.hash = id[idLength - 1];
+
+    let button = $(`a[href="#${id[idLength - 1]}"]`);
+    $('#myTab .btn_light').removeClass('active');
+    button.addClass('active');
   });
 
   // LANGUAGE CHANGE

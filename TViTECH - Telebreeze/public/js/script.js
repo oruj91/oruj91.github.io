@@ -1,11 +1,11 @@
 $(document).ready(function(){
   const
-      modalPay = $('#modalPay'),
-      modalConnect = $('#modalConnect'),
-      inputMaskPhone = new Inputmask("999 - 99 - 99"),
-      inputMaskCredit = new Inputmask("9999 - 9999 - 9999 - 9999"),
-      inputPayCredit = $('#payCredit'),
-      inputConnectContacts = $('#userContacts');
+    modalPay = $('#modalPay'),
+    modalConnect = $('#modalConnect'),
+    inputMaskPhone = new Inputmask("999 - 99 - 99"),
+    inputMaskCredit = new Inputmask("9999 - 9999 - 9999 - 9999"),
+    inputPayCredit = $('#payCredit'),
+    inputConnectContacts = $('#userContacts');
 
   inputMaskPhone.mask(inputConnectContacts);
   inputMaskCredit.mask(inputPayCredit);
@@ -20,7 +20,6 @@ $(document).ready(function(){
       modalConnect.modal();
     })
   });
-
   $('[data-type ="toPay"]').each(function (idx, el) {
     $(el).click(function (e) {
       const id = e.target.id;
@@ -36,39 +35,39 @@ $(document).ready(function(){
   new WOW().init();
 
   // HIDE HEADER'S USER PROFILE ON SCROLL-DOWN
-  let $navbar = $('.header__user');
-  let navbarHeight = $navbar.outerHeight();
+  let nav = $('.header__user');
+  let navH = nav.outerHeight();
   let lastScrollTop = 0;
   let lastDirection = 0;
   let movement = 0;
 
   $(window).scroll(function(event){
-
     let st = $(this).scrollTop();
     movement += st - lastScrollTop;
 
     if (st > lastScrollTop) { // scroll down
-      if (lastDirection != 1) {
+      if (lastDirection !== 1) {
         movement = 0;
       }
       let margin = Math.abs(movement);
-      if (margin > navbarHeight) {
-        margin = navbarHeight;
+      if (margin > navH) {
+        margin = navH;
       }
       margin = -margin;
-      $navbar.css('margin-top', margin+"px")
+      nav.css('margin-top', margin+"px");
 
       lastDirection = 1;
-    } else { // scroll up
-      if (lastDirection != -1) {
+    }
+    else { // scroll up
+      if (lastDirection !== -1) {
         movement = 0;
       }
       let margin = Math.abs(movement);
-      if (margin > navbarHeight) {
-        margin = navbarHeight;
+      if (margin > navH) {
+        margin = navH;
       }
-      margin = margin-navbarHeight;
-      $navbar.css('margin-top', margin+"px")
+      margin = margin-navH;
+      nav.css('margin-top', margin+"px");
 
       lastDirection = -1;
     }
@@ -76,33 +75,23 @@ $(document).ready(function(){
     lastScrollTop = st;
   });
 
-  // SCROLLSPY
+  // Scroll spy
   $('body').scrollspy({target: ".navbar", offset: 100});
 
   // Add smooth scrolling on all links inside the navbar
   $("#myTab a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
       let hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
+      event.preventDefault();
+
+      $('html').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
-
-
 
   // Change navigation status on scroll
   $(window).on('scroll load', function() {
@@ -110,11 +99,10 @@ $(document).ready(function(){
     let screenPosition = window.pageYOffset;
     let id = [];
     let idLength;
-    console.log(location.hash);
+
     $(`a[href="#${location.hash}"]`);
 
     $.each(sections, function (key, el) {
-
       if (screenPosition >= el.offsetTop) {
         id.push(el.id);
         idLength = id.length;
@@ -128,7 +116,7 @@ $(document).ready(function(){
     button.addClass('active');
   });
 
-  // LANGUAGE CHANGE
+  // Language change
   let $btnLanguages = $('.user__lang .dropdown-item');
   let $currentLangWrapper = $('.user__lang .dropdown-toggle');
 

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,37 +17,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2074">
-              <caret line="122" column="68" selection-start-line="122" selection-start-column="68" selection-end-line="123" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="80" column="86" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4743">
-              <caret line="279" column="47" selection-start-line="279" selection-start-column="47" selection-end-line="279" selection-end-column="47" />
+            <state relative-caret-position="1207">
+              <caret line="71" column="86" selection-start-line="71" selection-start-column="86" selection-end-line="71" selection-end-column="86" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
+        <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="184">
+              <caret line="314" column="17" selection-start-line="314" selection-start-column="17" selection-end-line="314" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -135,6 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,49 +129,17 @@
               <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjectVue-First" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters.JSHint" />
@@ -239,6 +194,8 @@
       <workItem from="1556691973148" duration="3780000" />
       <workItem from="1556777128676" duration="4491000" />
       <workItem from="1556881936508" duration="4632000" />
+      <workItem from="1557235679406" duration="629000" />
+      <workItem from="1557295636611" duration="655000" />
     </task>
     <task id="LOCAL-00001" summary="phone input spaces support">
       <created>1556480760201</created>
@@ -251,7 +208,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108918000" />
+    <option name="totallyTimeSpent" value="110728000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -263,10 +220,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="1912" y="46" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19017094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1899841" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,7 +233,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32932165" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.30743983" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.30680507" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3979239" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -367,20 +323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4743">
-          <caret line="279" column="47" selection-start-line="279" selection-start-column="47" selection-end-line="279" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="80" column="86" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/jquery-3.3.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -388,10 +330,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="86" selection-start-line="71" selection-start-column="86" selection-end-line="71" selection-end-column="86" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="17">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+          <folding>
+            <element signature="e#455#696#0" />
+            <element signature="e#486#691#0" />
+            <element signature="e#751#986#0" />
+            <element signature="e#782#981#0" />
+            <element signature="e#2104#2342#0" />
+            <element signature="e#2427#2921#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="314" column="17" selection-start-line="314" selection-start-column="17" selection-end-line="314" selection-end-column="17" />
         </state>
       </provider>
     </entry>

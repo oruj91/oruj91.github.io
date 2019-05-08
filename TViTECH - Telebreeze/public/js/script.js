@@ -41,7 +41,7 @@ $(document).ready(function(){
   let lastDirection = 0;
   let movement = 0;
 
-  $(window).scroll(function(event){
+  $(window).scroll(function(){
     let st = $(this).scrollTop();
     movement += st - lastScrollTop;
 

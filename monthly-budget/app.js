@@ -20,7 +20,7 @@ var budgetController = (function() {
         this.id = id;
         this.description = description;
         this.value = value;
-    };п
+    };
 
     var calculateTotals = function(type) {
         var sum = 0;

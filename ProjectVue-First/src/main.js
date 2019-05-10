@@ -18,5 +18,8 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+<<<<<<< HEAD
 
 // 94 lesion
+=======
+>>>>>>> 9859c093461cebe99c44f850f4c7b75717ce360d

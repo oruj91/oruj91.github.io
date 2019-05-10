@@ -69,7 +69,23 @@ export default {
     email: '',
     password: '',
     passwordConfirm: '',
+<<<<<<< HEAD
     valid: false
+=======
+    valid: false,
+    ruleEmail: [
+      v => !!v || 'E-mail is required',
+      v => /.+@.+/.test(v) || 'E-mail must be valid'
+    ],
+    rulePassword: [
+      v => !!v || 'Password is required',
+      v => (v && v.length >= 6) || 'Password must be more than 5 characters'
+    ],
+    rulePasswordConfirm: [
+      v => !!v || 'Password is required',
+      v => v === this.password || 'Passwords must be match'
+    ]
+>>>>>>> 9859c093461cebe99c44f850f4c7b75717ce360d
   }),
   props: {
     source: String
@@ -90,6 +106,7 @@ export default {
     keypress () {
       console.log(this.valid)
     }
+<<<<<<< HEAD
   },
   computed: {
     ruleEmail () {
@@ -109,6 +126,8 @@ export default {
         () => (this.password === this.passwordConfirm) || 'Passwords must be match'
       ]
     }
+=======
+>>>>>>> 9859c093461cebe99c44f850f4c7b75717ce360d
   }
 }
 </script>

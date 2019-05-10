@@ -62,7 +62,7 @@ var budgetController = (function() {
             }
 
             data.allItems[typ].push(newItem);
-            
+
             return newItem;
         },
         deleteItem: function(type, id) {
@@ -106,7 +106,7 @@ var budgetController = (function() {
 })();
 
 var UIcontroller = (function() {
-    
+
     var DOMstrings = {
         inputType: '.add__type',
         inputDescription: '.add__description',
@@ -228,11 +228,11 @@ var controller = (function(budgetCtrl, UIctrl) {
             if (event.keyCode === 13 || event.which === 13) {
                 ctrlAddItem();
             };
-        });        
+        });
         document.querySelector(DOM.container).addEventListener('click', ctrlDeleteItem);
         document.querySelector(DOM.inputType).addEventListener('change', UIctrl.changedType);
     };
-    
+
     var updateBudget = function() {
         budgetCtrl.calculateBudget();
         var budget = budgetCtrl.getBudget();

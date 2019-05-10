@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectVue-First/build/webpack.base.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.0ff611e53fe8012bf93d5416ae793fe2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.0ff611e53fe8012bf93d5416ae793fe2.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/fonts/MaterialIcons-Regular.012cf6a.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/fonts/MaterialIcons-Regular.570eb83.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/fonts/MaterialIcons-Regular.a37b0c0.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/fonts/MaterialIcons-Regular.e79bfd8.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/js/app.854bd1a282c055b0a7e4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/js/app.854bd1a282c055b0a7e4.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/js/manifest.3ad1d5771e9b13dbdad2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/js/vendor.60e5805145adf50dff1e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/js/vendor.60e5805145adf50dff1e.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-First/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectVue-First/src/App.vue" afterDir="false" />
-    </list>
+    <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -168,9 +151,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="2143" />
+    <option name="y" value="46" />
     <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -234,7 +218,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectVue-First/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IL" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -326,7 +310,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122398000" />
+    <option name="totallyTimeSpent" value="123038000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,22 +323,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="46" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="npm" sideWeight="0.31465518" side_tool="true" visible="true" weight="0.1899841" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6853448" visible="true" weight="0.1899841" />
+      <window_info id="npm" sideWeight="0.31490016" side_tool="true" visible="true" weight="0.1899841" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.68509984" visible="true" weight="0.1899841" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19723183" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19723183" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3979239" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32871974" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.30680507" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" weight="0.24913494" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" visible="true" weight="0.24913494" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.39761648" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />

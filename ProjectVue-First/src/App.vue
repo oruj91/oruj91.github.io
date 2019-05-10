@@ -28,9 +28,10 @@
           to    = "/"
           tag   = "span"
           class = "pointer"
-        ></router-link>
+        >
+          Ad application
+        </router-link>
       </v-toolbar-title>
-      <v-toolbar-title>Ad application</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn

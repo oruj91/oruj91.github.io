@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div>
     <v-container fluid>
       <v-layout row>
@@ -91,21 +90,4 @@ export default {
   background: rgba(0,0,0,.5);
   transform: translate(-50%, 0);
 }
-=======
-  <v-container>
-    <v-layout>
-      <v-flex xs12>
-        <h1>Home</h1>
-      </v-flex>
-    </v-layout>
-  </v-container>
-</template>
-
-<script>
-
-</script>
-
-<style scoped>
-
->>>>>>> 9859c093461cebe99c44f850f4c7b75717ce360d
 </style>

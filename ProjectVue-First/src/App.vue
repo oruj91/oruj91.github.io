@@ -23,7 +23,6 @@
     </v-navigation-drawer>
     <v-toolbar app dark color="primary">
       <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>
-<<<<<<< HEAD
       <v-toolbar-title>
         <router-link
           to    = "/"
@@ -33,9 +32,7 @@
           Ad application
         </router-link>
       </v-toolbar-title>
-=======
       <v-toolbar-title>Ad application</v-toolbar-title>
->>>>>>> 9859c093461cebe99c44f850f4c7b75717ce360d
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
@@ -73,10 +70,7 @@ export default {
   }
 }
 </script>
-<<<<<<< HEAD
 
 <style>
   .pointer { cursor: pointer }
 </style>
-=======
->>>>>>> 9859c093461cebe99c44f850f4c7b75717ce360d

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="" />
+    <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/fonts/MaterialIcons-Regular.012cf6a.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/fonts/MaterialIcons-Regular.570eb83.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/fonts/MaterialIcons-Regular.a37b0c0.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/fonts/MaterialIcons-Regular.e79bfd8.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/js/app.854bd1a282c055b0a7e4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/js/app.854bd1a282c055b0a7e4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/js/manifest.3ad1d5771e9b13dbdad2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/js/vendor.60e5805145adf50dff1e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-First/dist/static/js/vendor.60e5805145adf50dff1e.js.map" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -37,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            <state relative-caret-position="476">
+              <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -47,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+              <caret column="31" selection-start-column="31" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -56,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/ProjectVue-First/build/webpack.base.conf.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+              <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -265,8 +276,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
         <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
@@ -310,7 +321,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123038000" />
+    <option name="totallyTimeSpent" value="123335000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,14 +598,14 @@
     <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectVue-First/build/webpack.base.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -607,8 +618,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="476">
+          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
         </state>
       </provider>
     </entry>

@@ -48,10 +48,10 @@ export default new Router({
       name: 'ad',
       component: Ad
     },
-    {
-      path: '*',
-      component: error404
-    }
+    // {
+    //   path: '*',
+    //   component: error404
+    // }
   ]
   // mode: 'history'
 })

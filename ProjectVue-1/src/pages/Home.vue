@@ -7,10 +7,13 @@
             <v-carousel-item
               v-for = "ad in ads"
               :key  = "ad.id"
-              :src  = "ad.imageSrc"
+              :src  = "ad.imgSrc"
             >
               <div class="carousel-link">
-                <v-btn class="error" :to = "'/ad/' + ad.id" target="_blank">{{ad.title}}</v-btn>
+                <v-btn
+                  class     = "error"
+                  v-bind:to = "{name: 'ad', params: ad.id, query: {title: ad.title, imgSrc: ad.imgSrc, desc: ad.desc}}"
+                >{{ad.title}}</v-btn>
               </div>
             </v-carousel-item>
           </v-carousel>
@@ -26,20 +29,25 @@
         >
           <v-card>
             <v-img
-              :src         = ad.imageSrc
+              :src         = ad.imgSrc
               height       = "200px"
               aspect-ratio = "2.75"
             ></v-img>
             <v-card-title primary-title>
               <div>
                 <h3 class="headline mb-0">{{ad.title}}</h3>
-                <div> {{ ad.description }} </div>
+                <div> {{ ad.desc }} </div>
               </div>
             </v-card-title>
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn flat color="orange" :to="'/ad/' + ad.id">Open</v-btn>
+              <v-btn
+                v-bind:to = "{name: 'ad', params: ad.id, query: {title: ad.title, imgSrc: ad.imgSrc, desc: ad.desc}}"
+                flat color="orange"
+              >
+                Open
+              </v-btn>
               <v-btn flat raised class="primary">Buy</v-btn>
             </v-card-actions>
           </v-card>
@@ -57,23 +65,23 @@ export default {
         {
           id: '1',
           title: 'Squirrel',
-          description: 'Это белка',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloribus esse iste perferendis quas recusandae reprehenderit repudiandae totam unde vel!',
           promo: false,
-          imageSrc: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+          imgSrc: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
         },
         {
           id: '2',
           title: 'Sky',
-          description: 'Это фото неба',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, reiciendis.',
           promo: false,
-          imageSrc: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+          imgSrc: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
         },
         {
           id: '3',
           title: 'Eagle',
-          description: 'Это фото орла',
+          desc: 'Lorem ipsum dolor sit.',
           promo: false,
-          imageSrc: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+          imgSrc: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
         }
       ]
     }

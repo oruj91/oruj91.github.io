@@ -44,19 +44,14 @@ export default new Router({
       component: Registration
     },
     {
-      path: '/ad/',
+      path: '/ad',
       name: 'ad',
-      component: Ad
-    },
-    {
-      path: '/test',
-      name: 'text',
       component: Ad
     },
     {
       path: '*',
       component: error404
     }
-  ],
+  ]
   // mode: 'history'
 })

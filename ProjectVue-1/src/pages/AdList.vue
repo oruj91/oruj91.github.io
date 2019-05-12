@@ -16,7 +16,7 @@
               <v-card-actions>
                 <v-spacer></v-spacer>
                 <v-btn
-                  v-bind:to = "{ name: 'ad', params: ad.id, query: {title: ad.title, imgSrc: ad.imgSrc, desc: ad.desc}}"
+                  v-bind:to = "{name: 'ad', params: ad.id, query: {title: ad.title, imgSrc: ad.imgSrc, desc: ad.desc}}"
                   class     = "info"
                 >
                   Open
@@ -59,7 +59,8 @@ export default {
         }
       ]
     }
-  }
+  },
+  methods: {}
 }
 </script>
 

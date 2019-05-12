@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="" />
+    <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/static/css/app.337fa7e84a9dffa6f1d49355066d7070.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/static/css/app.337fa7e84a9dffa6f1d49355066d7070.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/static/fonts/MaterialIcons-Regular.012cf6a.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/static/fonts/MaterialIcons-Regular.570eb83.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/static/fonts/MaterialIcons-Regular.a37b0c0.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/static/fonts/MaterialIcons-Regular.e79bfd8.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/static/js/app.1029d2c216528ea4fcbb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/static/js/app.1029d2c216528ea4fcbb.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/static/js/manifest.3ad1d5771e9b13dbdad2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/static/js/vendor.60e5805145adf50dff1e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/dist/static/js/vendor.60e5805145adf50dff1e.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectVue-1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectVue-1/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/components/404.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectVue-1/src/components/404.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/components/Ad.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectVue-1/src/components/Ad.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/pages/AdList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectVue-1/src/pages/AdList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectVue-1/src/router.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -12,51 +34,73 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/main.js">
+        <entry file="file://$PROJECT_DIR$/ProjectVue-1/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+            <state relative-caret-position="119">
+              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#140#161#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjectVue-First/config/index.js">
+        <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="52" column="20" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/App.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/index.html">
+        <entry file="file://$PROJECT_DIR$/ProjectVue-1/.eslintrc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="99" lean-forward="true" selection-start-column="99" selection-end-column="99" />
+            <state relative-caret-position="221">
+              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjectVue-First/build/webpack.base.conf.js">
+        <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+            <state relative-caret-position="178">
+              <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/pages/AdList.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/components/Ad.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -67,12 +111,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>times</find>
       <find>reas</find>
       <find>.mb-sm-0</find>
       <find>.reason</find>
@@ -102,6 +146,7 @@
       <find>-cp('-R', 'static</find>
       <find>assetsPath</find>
       <find>url-loader</find>
+      <find>'@': resolve('src')</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -147,14 +192,20 @@
         <option value="$PROJECT_DIR$/ProjectVue-First/build/webpack.base.conf.js" />
         <option value="$PROJECT_DIR$/ProjectVue-First/config/index.js" />
         <option value="$PROJECT_DIR$/ProjectVue-First/src/App.vue" />
+        <option value="$PROJECT_DIR$/ProjectVue-1/dist/index.html" />
+        <option value="$PROJECT_DIR$/ProjectVue-1/src/App.vue" />
+        <option value="$PROJECT_DIR$/ProjectVue-1/index.html" />
+        <option value="$PROJECT_DIR$/ProjectVue-1/src/components/404.vue" />
+        <option value="$PROJECT_DIR$/ProjectVue-1/src/pages/AdList.vue" />
+        <option value="$PROJECT_DIR$/ProjectVue-1/src/components/Ad.vue" />
+        <option value="$PROJECT_DIR$/ProjectVue-1/src/router.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2143" />
-    <option name="y" value="46" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
     <option name="width" value="974" />
-    <option name="height" value="735" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -172,28 +223,13 @@
             <path>
               <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectVue-First" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectVue-1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectVue-First" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectVue-First" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectVue-First" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectVue-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -206,11 +242,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectVue-1/build/webpack.base.conf.js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters.JSHint" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -224,11 +260,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.login.html">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/oruj91.github.io/TViTECH - Telebreeze/src/index.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/oruj91.github.io/ProjectVue-1/dist/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/oruj91.github.io/TViTECH - Telebreeze/src/login.html" useBuiltInWebServerPort="true">
+    <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/ProjectVue-1/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -236,6 +279,16 @@
       <command value="run" />
       <scripts>
         <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/ProjectVue-1/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -253,10 +306,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.build (1)" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
-        <item itemvalue="JavaScript Debug.login.html" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -286,6 +340,7 @@
       <workItem from="1556881936508" duration="4632000" />
       <workItem from="1557235679406" duration="629000" />
       <workItem from="1557295636611" duration="655000" />
+      <workItem from="1557661062696" duration="841000" />
     </task>
     <task id="LOCAL-00001" summary="phone input spaces support">
       <created>1556480760201</created>
@@ -298,7 +353,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125762000" />
+    <option name="totallyTimeSpent" value="134314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -310,17 +365,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="46" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info id="npm" sideWeight="0.31490016" side_tool="true" visible="true" weight="0.1899841" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68509984" visible="true" weight="0.1899841" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6816667" visible="true" weight="0.23290598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="npm" order="3" sideWeight="0.31833333" side_tool="true" weight="0.23290598" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19723183" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3979239" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34354487" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39715537" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32871974" />
@@ -328,7 +382,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.30680507" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.39761648" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49947312" visible="true" weight="0.24913494" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49947312" weight="0.28774616" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -384,13 +438,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/ProjectVue-First/config/index.js</url>
           <line>50</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/ProjectVue-First/build/webpack.base.conf.js</url>
           <line>75</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -426,24 +478,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/css/formValidation.css" />
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="122" column="68" selection-start-line="122" selection-start-column="68" selection-end-line="123" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/jquery-3.3.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="41578" selection-start-line="1" selection-start-column="41578" selection-end-line="1" selection-end-column="41578" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="86" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
         </state>
       </provider>
     </entry>
@@ -454,153 +492,143 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.8ecf333f2485db6dc30aaf4bf1d0e668.css" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/pages/Home.vue" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/pages/Registration.vue" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/main.js" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.200619d5a68c04b59f761870ff42ea9b.css" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/config/prod.env.js" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/css/app.ba2548d20f921417b482d5b208084574.css" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.0ff611e53fe8012bf93d5416ae793fe2.css.map" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/build/utils.js" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.0ff611e53fe8012bf93d5416ae793fe2.css" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/static/css/app.0ff611e53fe8012bf93d5416ae793fe2.css" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/dist/css/app.1b864c3f84972a56089fd5f29e682b38.css" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/css/app.baaad86396c694be3afff408b0fb8cec.css" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.ccab469feebfff594a28ef6a2546ac9d.css" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/build/build.js" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/build/webpack.prod.conf.js" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.fa9792a52fda2f3f9705f5e6d9ff7699.css" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/build/webpack.base.conf.js" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/config/index.js" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/js/app.c355f99cf71a060cad8f.js" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/App.vue" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/index.html" />
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monthly-budget/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monthly-budget/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4675">
+        <state relative-caret-position="605">
           <caret line="275" column="16" selection-start-line="275" selection-start-column="16" selection-end-line="275" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.8ecf333f2485db6dc30aaf4bf1d0e668.css">
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="21" column="216242" selection-start-line="21" selection-start-column="216235" selection-end-line="21" selection-end-column="216242" />
+        <state relative-caret-position="605">
+          <caret line="80" column="86" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/pages/Home.vue">
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+        <state relative-caret-position="605">
+          <caret line="122" column="68" selection-start-line="122" selection-start-column="68" selection-end-line="123" selection-end-column="93" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/pages/Registration.vue">
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/build/webpack.base.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/main.js">
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/components/404.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        <state relative-caret-position="170">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/pages/AdList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/components/Ad.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.200619d5a68c04b59f761870ff42ea9b.css">
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="21" column="216244" selection-start-line="21" selection-start-column="216237" selection-end-line="21" selection-end-column="216244" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/config/prod.env.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/css/app.ba2548d20f921417b482d5b208084574.css">
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="216235" selection-start-line="21" selection-start-column="216235" selection-end-line="21" selection-end-column="216235" />
-          <caret line="21" column="216339" selection-start-line="21" selection-start-column="216339" selection-end-line="21" selection-end-column="216339" />
-          <caret line="21" column="216402" selection-start-line="21" selection-start-column="216402" selection-end-line="21" selection-end-column="216402" />
-          <caret line="21" column="216463" selection-start-line="21" selection-start-column="216463" selection-end-line="21" selection-end-column="216463" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.0ff611e53fe8012bf93d5416ae793fe2.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1887" />
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/build/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.0ff611e53fe8012bf93d5416ae793fe2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="21" column="216235" selection-start-line="21" selection-start-column="216235" selection-end-line="21" selection-end-column="216235" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/static/css/app.0ff611e53fe8012bf93d5416ae793fe2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36371" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/dist/css/app.1b864c3f84972a56089fd5f29e682b38.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36371" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/css/app.baaad86396c694be3afff408b0fb8cec.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.ccab469feebfff594a28ef6a2546ac9d.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="22" column="68" lean-forward="true" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/build/build.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/build/webpack.prod.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.fa9792a52fda2f3f9705f5e6d9ff7699.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="22" column="68" lean-forward="true" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/build/webpack.base.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/js/app.c355f99cf71a060cad8f.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="99" lean-forward="true" selection-start-column="99" selection-end-column="99" />
+        <state relative-caret-position="221">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
         </state>
       </provider>
     </entry>

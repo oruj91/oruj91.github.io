@@ -1,7 +1,7 @@
 <template>
   <v-container fluid fill-height>
     <v-layout align-center justify-center>
-      <v-flex xs12 sm8 md6>
+      <v-flex xs12 sm8 md6 lg4>
         <v-card class="elevation-12">
           <v-toolbar dark color="primary">
             <v-toolbar-title>Registration form</v-toolbar-title>
@@ -69,19 +69,7 @@ export default {
     email: '',
     password: '',
     passwordConfirm: '',
-    valid: false,
-    ruleEmail: [
-      v => !!v || 'E-mail is required',
-      v => /.+@.+/.test(v) || 'E-mail must be valid'
-    ],
-    rulePassword: [
-      v => !!v || 'Password is required',
-      v => (v && v.length >= 6) || 'Password must be more than 5 characters'
-    ],
-    rulePasswordConfirm: [
-      v => !!v || 'Password is required',
-      v => v === this.password || 'Passwords must be match'
-    ]
+    valid: false
   }),
   props: {
     source: String
@@ -102,18 +90,29 @@ export default {
     keypress () {
       console.log(this.valid)
     }
+  },
+  computed: {
+    ruleEmail () {
+      return [
+        v => !!v || 'E-mail is required',
+        v => /.+@.+/.test(v) || 'E-mail must be valid'
+      ]
+    },
+    rulePassword () {
+      return [
+        v => !!v || 'Password is required',
+        v => (v && v.length >= 6) || 'Password must be more than 5 characters'
+      ]
+    },
+    rulePasswordConfirm () {
+      return [
+        () => (this.password === this.passwordConfirm) || 'Passwords must be match'
+      ]
+    }
   }
 }
 </script>
 
 <style scoped>
-.v-card__actions { flex-wrap: wrap }
 
-@media (max-width: 959px) {
-  .v-btn {
-    margin-left: 0 !important;
-    width: 100%
-  }
-  .v-btn:not(:last-child) { margin-bottom: .5rem }
-  }
 </style>

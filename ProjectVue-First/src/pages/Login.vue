@@ -1,7 +1,7 @@
 <template>
   <v-container fluid fill-height>
     <v-layout align-center justify-center>
-      <v-flex xs12 sm8 md6>
+      <v-flex xs12 sm8 md6 lg4>
         <v-card class="elevation-12">
           <v-toolbar dark color="primary">
             <v-toolbar-title>Login form</v-toolbar-title>
@@ -31,20 +31,22 @@
             </v-form>
           </v-card-text>
           <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-btn
-              color     = "primary"
-              @click    = "validate"
-              :disabled = !valid
-            >Login</v-btn>
-            <v-btn
-              color     = "error"
-              @click    = "reset"
-            >Reset</v-btn>
-            <v-btn
-              color     = "warning"
-              @click    = "resetValidation"
-            >Reset validation</v-btn>
+            <v-layout wrap>
+              <v-spacer></v-spacer>
+              <v-btn
+                color     = "primary"
+                @click    = "validate"
+                :disabled = !valid
+              >Login</v-btn>
+              <v-btn
+                color     = "error"
+                @click    = "reset"
+              >Reset</v-btn>
+              <v-btn
+                color     = "warning"
+                @click    = "resetValidation"
+              >Reset validation</v-btn>
+            </v-layout>
           </v-card-actions>
         </v-card>
       </v-flex>

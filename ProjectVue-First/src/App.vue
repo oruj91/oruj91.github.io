@@ -23,7 +23,15 @@
     </v-navigation-drawer>
     <v-toolbar app dark color="primary">
       <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>Ad application</v-toolbar-title>
+      <v-toolbar-title>
+        <router-link
+          to    = "/"
+          tag   = "span"
+          class = "pointer"
+        >
+          Ad application
+        </router-link>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
@@ -55,9 +63,24 @@ export default {
         {title: 'Registration', icon: 'face', url: '/registration'},
         {title: 'Orders', icon: 'bookmark_border', url: '/orders'},
         {title: 'New ad', icon: 'note_add', url: '/new'},
-        {title: 'My ads', icon: 'list', url: '/list'}
+        {title: 'My ads', icon: 'list', url: '/list'},
+        {title: 'Test', icon: 'list', url: '/test'}
       ]
     }
   }
 }
 </script>
+
+<style>
+  .pointer { cursor: pointer }
+
+  .v-card__actions { flex-wrap: wrap }
+
+  @media (max-width: 959px) {
+    .v-card__actions .v-btn {
+      margin-left: 0 !important;
+      width: 100%
+    }
+    .v-card__actions .v-btn:not(:last-child) { margin-bottom: .5rem }
+  }
+</style>

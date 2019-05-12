@@ -57,6 +57,6 @@ export default new Router({
       path: '*',
       component: error404
     }
-  ]
-  // mode: 'history'
+  ],
+  mode: 'history'
 })

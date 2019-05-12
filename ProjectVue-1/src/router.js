@@ -58,5 +58,5 @@ export default new Router({
       component: error404
     }
   ],
-  mode: 'history'
+  // mode: 'history'
 })

@@ -18,7 +18,6 @@
                 <v-btn
                   v-bind:to = "{ name: 'ad', params: ad.id, query: {title: ad.title, imgSrc: ad.imgSrc, desc: ad.desc}}"
                   class     = "info"
-                  target    = "_blank"
                 >
                   Open
                 </v-btn>

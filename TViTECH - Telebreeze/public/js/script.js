@@ -1,11 +1,34 @@
+const
+  navButtons           = $('#myTab .btn--light'),
+  modalPay             = $('#modalPay'),
+  modalConnect         = $('#modalConnect'),
+  inputMaskPhone       = new Inputmask("999 - 99 - 99"),
+  inputMaskCredit      = new Inputmask("9999 - 9999 - 9999 - 9999"),
+  inputPayCredit       = $('#payCredit'),
+  inputConnectContacts = $('#userContacts');
+
+$(window).on('load', function() {
+  navButtons.removeClass('active')
+  $(`a[href="${location.hash}"]`).addClass('active');
+});
+
+$(window).on('scroll', function () {
+  let sections = $('.content>div');
+  let screenPosition = window.pageYOffset;
+  let sectionID;
+
+  $.each(sections, function (key, el) {
+    if (screenPosition >= el.offsetTop) {
+      sectionID = el.id;
+    }
+  });
+  if (sectionID) {
+    navButtons.removeClass('active');
+    $(`a[href="#${sectionID}"]`).addClass('active');
+  }
+})
+
 $(document).ready(function(){
-  const
-    modalPay = $('#modalPay'),
-    modalConnect = $('#modalConnect'),
-    inputMaskPhone = new Inputmask("999 - 99 - 99"),
-    inputMaskCredit = new Inputmask("9999 - 9999 - 9999 - 9999"),
-    inputPayCredit = $('#payCredit'),
-    inputConnectContacts = $('#userContacts');
 
   inputMaskPhone.mask(inputConnectContacts);
   inputMaskCredit.mask(inputPayCredit);
@@ -93,29 +116,6 @@ $(document).ready(function(){
     }
   });
 
-  // Change navigation status on scroll
-  $(window).on('scroll load', function() {
-    let sections = $('.content>div');
-    let screenPosition = window.pageYOffset;
-    let id = [];
-    let idLength;
-
-    $(`a[href="#${location.hash}"]`);
-
-    $.each(sections, function (key, el) {
-      if (screenPosition >= el.offsetTop) {
-        id.push(el.id);
-        idLength = id.length;
-      }
-    });
-
-    location.hash = id[idLength - 1];
-
-    let button = $(`a[href="#${id[idLength - 1]}"]`);
-    $('#myTab .btn_light').removeClass('active');
-    button.addClass('active');
-  });
-
   // Language change
   let $btnLanguages = $('.user__lang .dropdown-item');
   let $currentLangWrapper = $('.user__lang .dropdown-toggle');
@@ -135,11 +135,10 @@ $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     dots: false,
     rtl: true,
-    loop: true,
     autoplay: true,
     slideTransition: 'linear',
-    autoplayTimeout: 2000,
-    autoplaySpeed: 4000,
+    autoplayTimeout: 0,
+    autoplaySpeed: 50000,
     autoplayHoverPause: false
   });
 });

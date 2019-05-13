@@ -113,6 +113,11 @@ $(".owl-carousel").owlCarousel({
   autoplayHoverPause: false
 });
 
+function redirectToChannel (id) {
+  $.redirect('channel.html', {'arg1': id});
+  console.log(id)
+}
+
 // Packets
 $(function () {
   const json = [
@@ -126,7 +131,7 @@ $(function () {
 
   $.each(json, function (key, val) {
     $('#packetAll .packet__container').append(`
-      <a class="packet__item" href="#">
+      <a onclick="redirectToChannel(${val.id})" class="packet__item">
         <img src="${val.imgSrc}">
       </a>
     `)

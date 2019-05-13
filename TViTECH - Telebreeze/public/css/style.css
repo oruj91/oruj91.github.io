@@ -325,7 +325,6 @@ input::placeholder {
 .packet__container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  /*grid-template-columns: repeat(auto-fill, calc( (100% / 6) - 1rem ) );*/
   grid-gap: 1rem;
   padding-top: 1rem;
 }
@@ -337,9 +336,9 @@ input::placeholder {
 @media (max-width: 991px) {
   .packet__container { grid-template-columns: repeat(4, 1fr) }
 }
-/*@media (max-width: 991px) {*/
-/*  .packet__container { grid-template-columns: repeat(4, 1fr) }*/
-/*}*/
+@media (max-width: 767px) {
+  .packet__container { grid-template-columns: repeat(3, 1fr) }
+}
 
 /* Payment */
 
@@ -380,21 +379,10 @@ input::placeholder {
   height: 10rem;
 }
 
-.card-icon-1 {
-  background-color: #16B6AA
-}
-
-.card-icon-2 {
-  background-color: #E5187F
-}
-
-.card-icon-3 {
-  background-color: #BCD63D
-}
-
-.card-icon-4 {
-  background-color: #F05924
-}
+.card-icon-1 { background-color: #16B6AA }
+.card-icon-2 { background-color: #E5187F }
+.card-icon-3 { background-color: #BCD63D }
+.card-icon-4 { background-color: #F05924 }
 
 .card-icon i {
   font-size: 5rem;

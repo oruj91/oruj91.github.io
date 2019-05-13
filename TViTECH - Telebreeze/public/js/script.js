@@ -18,7 +18,7 @@ $(window).on('scroll', function () {
   let sectionID;
 
   $.each(sections, function (key, el) {
-    if (screenPosition >= el.offsetTop) {
+    if (screenPosition + 200 >= el.offsetTop) {
       sectionID = el.id;
     }
   });

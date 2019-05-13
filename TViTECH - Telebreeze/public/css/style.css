@@ -317,9 +317,9 @@ input::placeholder {
 
 /* DEVICES */
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background: #e31e25
-}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link { background: #e31e25 }
+.nav__devices .nav-link:hover { background-color: rgba(255, 0, 0, 0.06) }
+.nav__devices .nav-link.active:hover { background: #e31e25 }
 
 
 /* Payment */

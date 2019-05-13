@@ -287,14 +287,12 @@ input::placeholder {
   min-height: 100vh;
 }
 
-.whyWe {
+.content__whyWe {
   padding-top: 10rem !important;
   background: rgba(222, 213, 224, 0.69)
 }
 
-.packets {
-  background: rgba(222, 213, 224, 0.69)
-}
+.content__packets { background: #f1f1f1 }
 
 
 /* Why we */
@@ -321,6 +319,27 @@ input::placeholder {
 .nav__devices .nav-link:hover { background-color: rgba(255, 0, 0, 0.06) }
 .nav__devices .nav-link.active:hover { background: #e31e25 }
 
+
+/* Packets */
+
+.packet__container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /*grid-template-columns: repeat(auto-fill, calc( (100% / 6) - 1rem ) );*/
+  grid-gap: 1rem;
+  padding-top: 1rem;
+}
+.packet__item {
+
+}
+.packet__item img { width: 100%}
+
+@media (max-width: 991px) {
+  .packet__container { grid-template-columns: repeat(4, 1fr) }
+}
+/*@media (max-width: 991px) {*/
+/*  .packet__container { grid-template-columns: repeat(4, 1fr) }*/
+/*}*/
 
 /* Payment */
 

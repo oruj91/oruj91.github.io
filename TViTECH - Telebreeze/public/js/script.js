@@ -65,7 +65,10 @@ $(function () {
 })
 
 // Navbar active button on load
-$(window).scroll(function () {
+$(window).on('load', function () {
+  if (location.hash === '') {
+    location.hash = 'whyWe'
+  }
   navButtons.removeClass('active')
   $(`a[href="${location.hash}"]`).addClass('active');
 });
@@ -113,33 +116,168 @@ $(".owl-carousel").owlCarousel({
   autoplayHoverPause: false
 });
 
-function redirectToChannel (id) {
-  $.redirect('channel.html', {'arg1': id});
-  console.log(id)
+function showModalChannel (title, imgSrc) {
+  $('#modalChannelTitle').text(title);
+  $('#modalChannelImg').attr('src', imgSrc);
+
+  $('#modalChannel').modal();
+  // $.ajax({
+  //   url: 'requestChannelByID',
+  //   data: id,
+  //   success: function (json) {
+  //     $('#modalChannel').modal();
+  //   }
+  // })
 }
 
-// Packets
+// Media
 $(function () {
+  const containerChannelAll = $('#channelAll .media__container');
   const json = [
-    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg', id: '3'},
-    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png', id: '4'},
-    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png', id: '9'},
-    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png', id: '9'},
-    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg', id: '3'},
-    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg', id: '3'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'}
   ];
+  let item;
+  let channelAllArr = [];
 
   $.each(json, function (key, val) {
-    $('#packetAll .packet__container').append(`
-      <a onclick="redirectToChannel(${val.id})" class="packet__item">
-        <img src="${val.imgSrc}">
-      </a>
-    `)
+    item = `
+      <a onclick="showModalChannel('${val.name}', '${val.imgSrc}')" class="media__item">
+        <img src="${val.imgSrc}" alt="${val.name}">      
+      </a>`;
+    channelAllArr.push(item);
   })
+
+  $('#channelAll .media__pagination').pagination({
+    dataSource: channelAllArr,
+    pageSize: 24,
+    callback: function (data) {
+      containerChannelAll.empty();
+      $.each(data, function (key, obj) {
+        containerChannelAll.append(obj);
+      })
+    }
+  })
+
   $.each(json, function (key, val) {
     if (val.type === 'fun') {
-      $('#packetFun .packet__container').append(`
-      <a class="packet__item" href="#">
+      $('#channelFun .media__container').append(`
+      <a onclick="showModalChannel(${val.name}, ${val.imgSrc})" class="media__item" href="#">
         <img src="${val.imgSrc}">
       </a>
     `)
@@ -147,8 +285,8 @@ $(function () {
   })
   $.each(json, function (key, val) {
     if (val.type === 'news') {
-      $('#packetNews .packet__container').append(`
-      <a class="packet__item" href="#">
+      $('#channelNews .media__container').append(`
+      <a onclick="showModalChannel(${val.name}, ${val.imgSrc})" class="media__item" href="#">
         <img src="${val.imgSrc}">
       </a>
     `)
@@ -156,8 +294,8 @@ $(function () {
   })
   $.each(json, function (key, val) {
     if (val.type === 'sport') {
-      $('#packetSport .packet__container').append(`
-      <a class="packet__item" href="#">
+      $('#channelSport .media__container').append(`
+      <a class="media__item" href="#">
         <img src="${val.imgSrc}">
       </a>
     `)
@@ -165,8 +303,8 @@ $(function () {
   })
   $.each(json, function (key, val) {
     if (val.type === 'music') {
-      $('#packetMusic .packet__container').append(`
-      <a class="packet__item" href="#">
+      $('#channelMusic .media__container').append(`
+      <a class="media__item" href="#">
         <img src="${val.imgSrc}">
       </a>
     `)
@@ -174,13 +312,16 @@ $(function () {
   })
   $.each(json, function (key, val) {
     if (val.type === 'kids') {
-      $('#packetKids .packet__container').append(`
-      <a class="packet__item" href="#">
+      $('#channelKids .media__container').append(`
+      <a class="media__item" href="#">
         <img src="${val.imgSrc}">
       </a>
     `)
     }
   })
+
+  // 30 per page
+  // alert();
 })
 
 // Payment modals
@@ -207,6 +348,7 @@ $('[data-type ="toPay"]').each(function (idx, el) {
 
 // Other initialisations
 $(function () {
+
   new WOW().init();
 
   inputMaskPhone.mask(inputConnectContacts);

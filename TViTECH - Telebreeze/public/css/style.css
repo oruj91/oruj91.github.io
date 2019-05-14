@@ -283,16 +283,48 @@ input::placeholder {
 /* Content */
 
 .content > div {
-  padding-top: 5rem;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
   min-height: 100vh;
+  overflow: hidden;
 }
 
-.content__whyWe {
-  padding-top: 10rem !important;
-  background: rgba(222, 213, 224, 0.69)
+.content__whyWe { padding-top: 10rem !important }
+
+.content__devices,
+.content__payment {
+  color: #fff;
+  background: #5C5C5B
 }
 
-.content__packets { background: #f1f1f1 }
+.card-container {
+  margin-bottom: 4rem;
+  background-color: #fff;
+  box-shadow: 0 0 1.5rem #000000;
+}
+.card-container-dark {
+  color: #fff;
+  background-color: #5C5C5B;
+  overflow: hidden;
+  box-shadow: 0 0 1.5rem #a5a5a5;
+}
+
+.card-container-header {
+  padding: .75rem 1.25rem;
+  color: #fff;
+  background-color: #0D0F0F;
+  border-bottom: none;
+  z-index: 10;
+  overflow: hidden;
+}
+.card-container-body { padding: 2rem 1rem }
+.card-container-dark-body { padding: 2rem }
+
+
+
+.card-container-body .card { height: 21rem }
+.card-container-body .card-suggest { height: 20rem }
+/*.card-container-body .card:not(:last-child) { margin-bottom: 2rem }*/
 
 
 /* Why we */
@@ -316,61 +348,39 @@ input::placeholder {
 /* DEVICES */
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link { background: #e31e25 }
-.nav__devices .nav-link:hover { background-color: rgba(255, 0, 0, 0.06) }
+.nav__devices .nav-link:hover {
+  color: #fff;
+  background-color: rgb(145, 145, 145)
+}
 .nav__devices .nav-link.active:hover { background: #e31e25 }
 
 
 /* Packets */
 
-.packet__container {
-  display: grid;
+.media__container {
+  display: grid !important;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 1rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
-.packet__item {
+.media__item { cursor: pointer }
+.media__item img { width: 100% }
 
+.card-container-dark-body .nav-tabs .nav-link:hover {
+  color: #fff;
+  background-color: #6f6f6f;
 }
-.packet__item img { width: 100%}
+
+.modal-body img { width: 100% }
 
 @media (max-width: 991px) {
-  .packet__container { grid-template-columns: repeat(4, 1fr) }
+  .media__container { grid-template-columns: repeat(4, 1fr) }
 }
 @media (max-width: 767px) {
-  .packet__container { grid-template-columns: repeat(3, 1fr) }
+  .media__container { grid-template-columns: repeat(3, 1fr) }
 }
 
 /* Payment */
-
-.card-container {
-  margin-bottom: 5rem;
-  border: 1px solid #e5e5e5;
-}
-
-.card-container-header {
-  padding: .75rem 1.25rem;
-  background-color: #f5f5f5;
-  border-bottom: none;
-}
-
-.card-container-body {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem;
-  width: 100%;
-}
-
-.card-container-body .card {
-  height: 21rem
-}
-
-.card-container-body .card-suggest {
-  height: 20rem
-}
-
-.card:not(:last-child) {
-  margin-bottom: 2rem
-}
 
 .card-icon {
   display: flex;

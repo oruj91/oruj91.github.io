@@ -15,11 +15,12 @@
   <!-- Owl carousel -->
   <link rel="stylesheet" href="../public/assets/plugins/OwlCarousel2-2.3.4/owl.carousel.min.css">
   <link rel="stylesheet" href="../public/assets/plugins/OwlCarousel2-2.3.4/owl.theme.default.min.css">
+  <!-- PaginationJS -->
+  <link rel="stylesheet" href="../public/assets/plugins/pagination.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../public/css/style.css">
 </head>
 <body>
-<!--<body data-spy="scroll" data-target=".navbar" data-offset="50">-->
 <header class="header">
   <div class="header__user">
     <div class="container navbar">
@@ -76,9 +77,10 @@
         <ul id="myTab" class="navbar-nav nav menu__wrapper">
           <li class="nav-item"><a class="btn--light" href="#whyWe">Why we</a></li>
           <li class="nav-item"><a class="btn--light" href="#devices" >Devices</a></li>
-          <li class="nav-item"><a class="btn--light" href="#packets">Packets</a></li>
-          <li class="nav-item"><a class="btn--light" href="#payment">Payment</a></li>
+          <li class="nav-item"><a class="btn--light" href="#media">Media</a></li>
+<!--          <li class="nav-item"><a class="btn&#45;&#45;light" href="#payment">Payment</a></li>-->
           <li class="nav-item"><a class="btn--light" href="#">About us</a></li>
+          <li class="nav-item"><a class="btn--light" href="#register">Register</a></li>
         </ul>
       </div>
     </div>
@@ -136,7 +138,7 @@
                   <p>The technology that enables smart TVs is also incorporated in external devices such as set-top boxes and some Blu-ray players, game consoles, digital media players, hotel television systems, smartphones, and other network-connected interactive devices that utilize television-type display outputs. These devices allow viewers to find and play videos, movies, TV shows, photos and other content from the Web, cable or satellite TV channel, or from a local storage device.</p>
                 </div>
                 <div class="col-lg-5">
-                  <img src="../public/assets/img/smart-TV.jpeg" style="width: 100%; margin-bottom: 2rem">
+                  <img src="../public/assets/img/smart-TV.png" style="height: 50rem">
                 </div>
               </div>
             </div>
@@ -148,102 +150,114 @@
       </div>
     </div>
   </div>
-  <div id="packets" class="content__packets">
+  <div id="media">
     <div class="container">
-      <h1>PACKETS</h1>
-      <ul id="" class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#packetAll" role="tab" aria-selected="true">All Channels</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#packetFun" role="tab" aria-selected="false">Fun</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#packetNews" role="tab" aria-selected="false">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#packetSport" role="tab" aria-selected="false">Sport</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#packetMusic" role="tab" aria-selected="false">Music</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#packetKids" role="tab" aria-selected="false">Kids</a>
-        </li>
-      </ul>
-      <div class="tab-content">
-        <div class="tab-pane fade show active" id="packetAll" role="tabpanel">
-          <div class="packet__container">
-            <!--<a class="packet__item" href="#">
-              <img src="../public/assets/img/chanels/discovery.jpg">
-            </a>-->
+      <div class="card-container-dark">
+        <div class="card-container-header">
+          <span>Channels</span>
+        </div>
+        <div class="card-container-dark-body">
+          <ul id="" class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#channelAll" role="tab" aria-selected="true">All Channels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#channelFun" role="tab" aria-selected="false">Fun</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#channelNews" role="tab" aria-selected="false">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#channelSport" role="tab" aria-selected="false">Sport</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#channelMusic" role="tab" aria-selected="false">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#channelKids" role="tab" aria-selected="false">Kids</a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="channelAll" role="tabpanel">
+              <div class="media__container">
+                <!--<a class="packet__item" href="#">
+                  <img src="../public/assets/img/chanels/discovery.jpg">
+                </a>-->
+              </div>
+              <div class="media__pagination"></div>
+            </div>
+            <div class="tab-pane fade" id="channelFun" role="tabpanel">
+              <div class="media__container"></div>
+              <div class="media__pagination"></div>
+            </div>
+            <div class="tab-pane fade" id="channelNews" role="tabpanel">
+              <div class="media__container"></div>
+              <div class="media__pagination"></div>
+            </div>
+            <div class="tab-pane fade" id="channelSport" role="tabpanel">
+              <div class="media__container"></div>
+              <div class="media__pagination"></div>
+            </div>
+            <div class="tab-pane fade" id="channelMusic" role="tabpanel">
+              <div class="media__container"></div>
+              <div class="media__pagination"></div>
+            </div>
+            <div class="tab-pane fade" id="channelKids" role="tabpanel">
+              <div class="media__container"></div>
+              <div class="media__pagination"></div>
+            </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="packetFun" role="tabpanel">
-          <div class="packet__container"></div>
-        </div>
-        <div class="tab-pane fade" id="packetNews" role="tabpanel">
-          <div class="packet__container"></div>
-        </div>
-        <div class="tab-pane fade" id="packetSport" role="tabpanel">
-          <div class="packet__container"></div>
-        </div>
-        <div class="tab-pane fade" id="packetMusic" role="tabpanel">
-          <div class="packet__container"></div>
-        </div>
-        <div class="tab-pane fade" id="packetKids" role="tabpanel">
-          <div class="packet__container"></div>
-        </div>
       </div>
+
     </div>
   </div>
-  <div id="payment" class="payment">
+  <!--<div id="payment" class="content__payment">
     <div class="container">
 
       <div class="card-container">
         <div class="card-container-header">
-          <span class="font-weight-bold">Connected services:</span>
+          <span>Connected services:</span>
           <span class="fa-pull-right pl-2">26₼</span>
-          <span class="fa-pull-right font-weight-bold">Balance:</span>
+          <span class="fa-pull-right">Balance:</span>
         </div>
-        <div class="row">
-          <div class="card-container-body">
-            <div class="col-sm-12 col-md-6 col-lg-3">
-              <div class="card">
-                <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
-                <div class="card-icon card-icon-1">
-                  <i class="fal fa-tv"></i>
+        <div class="card-container-body d-flex flex-wrap">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+              <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+              <div class="card-icon card-icon-1">
+                <i class="fal fa-tv"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">SmartTV</h5>
+                <div class="card-status">
+                  <span class="card-status-title">Service cost:</span>
+                  <span class="card-status-value">15₼</span>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title">SmartTV</h5>
-                  <div class="card-status">
-                    <span class="card-status-title">Service cost:</span>
-                    <span class="card-status-value">15₼</span>
-                  </div>
-                  <div>
-                    <span class="card-status-title">Status:</span>
-                    <span class="card-status-value">active</span>
-                  </div>
+                <div>
+                  <span class="card-status-title">Status:</span>
+                  <span class="card-status-value">active</span>
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-              <div class="card">
-                <div class="card-icon card-icon-2">
-                  <i class="fal fa-hdd"></i>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-icon card-icon-2">
+                <i class="fal fa-hdd"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">STB</h5>
+                <div class="card-status">
+                  <span class="card-status-title">Service cost:</span>
+                  <span class="card-status-value">11₼</span>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title">STB</h5>
-                  <div class="card-status">
-                    <span class="card-status-title">Service cost:</span>
-                    <span class="card-status-value">11₼</span>
-                  </div>
-                  <div class="card-status">
-                    <span class="card-status-title">Status:</span>
-                    <span class="card-status-value">not active</span>
-                  </div>
-                  <button id="stb" class="btn btn-brand-outline btn-block mt-3" data-type="toPay">Pay</button>
+                <div class="card-status">
+                  <span class="card-status-title">Status:</span>
+                  <span class="card-status-value">not active</span>
                 </div>
+                <button id="stb" class="btn btn-brand-outline btn-block mt-3" data-type="toPay">Pay</button>
               </div>
             </div>
           </div>
@@ -252,46 +266,64 @@
 
       <div class="card-container">
         <div class="card-container-header">
-          <span class="font-weight-bold">We suggest:</span>
+          <span>We suggest:</span>
         </div>
-        <div class="row">
-          <div class="card-container-body">
-            <div class="col-sm-12 col-md-6 col-lg-3">
-              <div class="card card-suggest">
-                <div class="card-icon card-icon-3">
-                  <i class="fal fa-tablet-android-alt"></i>
+        <div class="card-container-body d-flex flex-wrap">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card card-suggest">
+              <div class="card-icon card-icon-3">
+                <i class="fal fa-tablet-android-alt"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Phone/TABLET</h5>
+                <div class="card-status">
+                  <span class="card-status-title">Service cost:</span>
+                  <span class="card-status-value">7₼</span>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title">Phone/TABLET</h5>
-                  <div class="card-status">
-                    <span class="card-status-title">Service cost:</span>
-                    <span class="card-status-value">7₼</span>
-                  </div>
-                  <button id="phoneTablet" class="btn btn-brand-outline btn-block mt-3" data-type="toConnect">Connect</button>
-                </div>
+                <button id="phoneTablet" class="btn btn-brand-outline btn-block mt-3" data-type="toConnect">Connect</button>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-              <div class="card card-suggest">
-                <div class="card-icon card-icon-4">
-                  <i class="fal fa-laptop"></i>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card card-suggest">
+              <div class="card-icon card-icon-4">
+                <i class="fal fa-laptop"></i>
+              </div>
+              <div class="card-body flex-column justify-content-between">
+                <h5 class="card-title">PC/MAC</h5>
+                <div class="card-status">
+                  <span class="card-status-title">Service cost:</span>
+                  <span class="card-status-value">9₼</span>
                 </div>
-                <div class="card-body flex-column justify-content-between">
-                  <h5 class="card-title">PC/MAC</h5>
-                  <div class="card-status">
-                    <span class="card-status-title">Service cost:</span>
-                    <span class="card-status-value">9₼</span>
-                  </div>
-                  <button id="pcMac" class="btn btn-brand-outline btn-block mt-3" data-type="toConnect">Connect</button>
-                </div>
+                <button id="pcMac" class="btn btn-brand-outline btn-block mt-3" data-type="toConnect">Connect</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 </main>
+
+<div id="modalChannel" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="modalChannelTitle" class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="modalChannelImg">
+        <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque consectetur ea eaque fugit laudantium reiciendis repellendus rerum tempora. Accusantium ad aspernatur consequuntur dignissimos eaque error esse exercitationem explicabo hic itaque, molestiae mollitia nam pariatur praesentium quod sunt vero voluptate?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div id="modalPay" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -469,6 +501,8 @@
 <script rel="script" src="../public/assets/plugins/wowjs/wow.min.js"></script>
 <!-- Owl carousel -->
 <script rel="script" src="../public/assets/plugins/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+<!-- PaginationJS -->
+<script rel="script" src="../public/assets/plugins/pagination.min.js"></script>
 <!-- Custom JS -->
 <script rel="script" src="../public/js/script.js"></script>
 </body>

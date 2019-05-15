@@ -355,7 +355,7 @@ input::placeholder {
 .nav__devices .nav-link.active:hover { background: #e31e25 }
 
 
-/* Packets */
+/* Media */
 
 .media__container {
   display: grid !important;
@@ -372,6 +372,12 @@ input::placeholder {
 }
 
 .modal-body img { width: 100% }
+
+.media__pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
 
 @media (max-width: 991px) {
   .media__container { grid-template-columns: repeat(4, 1fr) }

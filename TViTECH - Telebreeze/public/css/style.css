@@ -36,16 +36,18 @@ select:focus {
 .btn:focus {
   box-shadow: none
 }
-
-.btn:hover {
-  border-color: #e31e25;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(227, 30, 37, 0.6);
-  outline: 0 none;
+.btn.disabled { background-color: #bcbcbc
 }
 
 .btn-brand {
   color: #fff;
   background: #e31e25
+}
+.btn-brand:hover,
+.btn-brand-outline:hover {
+  border-color: #e31e25;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(227, 30, 37, 0.6);
+  outline: 0 none;
 }
 
 .btn-brand-outline {
@@ -92,7 +94,7 @@ input::placeholder {
 }
 
 .text-muted {
-  text-align: center;
+  font-family: "RobotoReg", Sans-serif;
   color: #6c757d
 }
 
@@ -260,10 +262,6 @@ input::placeholder {
   background: #424242;
 }
 
-.header__menu .nav-item:last-child a {
-  padding-right: 0;
-}
-
 @media (max-width: 1199px) {
   .header__menu .nav-item a {
     padding: .8rem 1rem;
@@ -296,6 +294,7 @@ input::placeholder {
   color: #fff;
   background: #5C5C5B
 }
+.content__register { background: #f1f1f1 }
 
 .card-container {
   margin-bottom: 4rem;
@@ -307,7 +306,7 @@ input::placeholder {
   color: #fff;
   background-color: #5C5C5B;
   overflow: hidden;
-  box-shadow: 0 0 1.5rem #a5a5a5;
+  box-shadow: 0 0 1.5rem #5d5d5d;
 }
 
 .card-container-header {
@@ -389,6 +388,33 @@ input::placeholder {
 @media (max-width: 767px) {
   .media__container { grid-template-columns: repeat(3, 1fr) }
 }
+
+
+/* Register */
+
+.register__social .btn {
+  width: 100%;
+}
+.register__social .btn:hover { opacity: 0.9 }
+.register__social .btn-primary { background: #507cc0 }
+.register__social .btn-danger { background: #df4930 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Payment */
 

@@ -2,10 +2,9 @@ const
   nav = $('.header__user'),
   navButtons = $('#myTab .btn--light'),
   navH = nav.outerHeight(),
-  modalPay = $('#modalPay'),
-  modalConnect = $('#modalConnect'),
   inputMaskPhone = new Inputmask("999 - 99 - 99"),
   inputMaskCredit = new Inputmask("9999 - 9999 - 9999 - 9999"),
+  inputPhoneRegister = $('#registerPhone'),
   inputPayCredit = $('#payCredit'),
   inputConnectContacts = $('#userContacts');
 
@@ -116,20 +115,6 @@ $(".owl-carousel").owlCarousel({
   autoplayHoverPause: false
 });
 
-function showModalChannel (title, imgSrc) {
-  $('#modalChannelTitle').text(title);
-  $('#modalChannelImg').attr('src', imgSrc);
-
-  $('#modalChannel').modal();
-  // $.ajax({
-  //   url: 'requestChannelByID',
-  //   data: id,
-  //   success: function (jsonChannels) {
-  //     $('#modalChannel').modal();
-  //   }
-  // })
-}
-
 // Media
 $(function () {
   const containerChannelAll = $('#channelAll .media__container');
@@ -217,9 +202,24 @@ $(function () {
     {name: 'Kids', packet: 'family', imgSrc: '../public/assets/img/chanels/kids.jpg'},
     {name: 'Kids', packet: 'premium', imgSrc: '../public/assets/img/chanels/kids.jpg'}
   ];
+
   let item;
   let channelAllArr = [];
   let packetStandard = [];
+
+  function showModalChannel (title, imgSrc) {
+    $('#modalChannelTitle').text(title);
+    $('#modalChannelImg').attr('src', imgSrc);
+
+    $('#modalChannel').modal();
+    // $.ajax({
+    //   url: 'requestChannelByID',
+    //   data: id,
+    //   success: function (jsonChannels) {
+    //     $('#modalChannel').modal();
+    //   }
+    // })
+  }
 
   $.each(jsonChannels, function (key, val) {
     item = `
@@ -381,11 +381,62 @@ $(function () {
   })
 })
 
+// Registration
+$(function () {
+  inputMaskPhone.mask(inputPhoneRegister);
+
+  $('#formRegister').formValidation({
+    icon: {
+      valid: 'fontawesome-check',
+      invalid: 'fontawesome-times',
+      validating: 'fontawesome-sync'
+    },
+    fields: {
+      registerPhone: {
+        validators: {
+          regexp: {
+            regexp: /\d{3} - \d{2} - \d{2}/,
+            // regexp: /^0\d{9}$/,
+            message: '• Please\, finish number'
+          },
+          notEmpty: {
+            message: '• Required field'
+          },
+
+        }
+      },
+      registerPassword: {
+        validators: {
+          notEmpty: {
+            message: '• Required field'
+          }
+        }
+      },
+      registerPasswordRepeat: {
+        validators: {
+          notEmpty: {
+            message: '• Required field'
+          }
+        }
+      }
+    }
+  })
+  .on('success.form.fv', function(e) {
+    e.preventDefault();
+    console.log('form success');
+    window.location.href = "index.html";
+  })
+  .on('err.form.fv', function(e) {
+    e.preventDefault();
+    console.log('form error');
+    console.log( $('#registerPhone').val() );
+  });
+})
+
 // Other initialisations
 $(function () {
 
   new WOW().init();
 
-  inputMaskPhone.mask(inputConnectContacts);
   inputMaskCredit.mask(inputPayCredit);
 });

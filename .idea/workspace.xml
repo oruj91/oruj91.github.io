@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-design-components/material-components-web.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-design-components/material-components-web.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/oruj91.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/oruj91.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/jquery.caret.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/pagination.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/paginationjs/pagination.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/pagination.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/paginationjs/pagination.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" afterDir="false" />
     </list>
@@ -20,16 +28,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="406" column="101" selection-start-line="406" selection-start-column="101" selection-end-line="406" selection-end-column="101" />
+            <state relative-caret-position="225">
+              <caret line="296" column="8" selection-start-line="296" selection-start-column="8" selection-end-line="296" selection-end-column="9" />
               <folding>
                 <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -39,15 +45,13 @@
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#4;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#5;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#11802#15514#0" />
+                <element signature="n#div#0;n#div#0;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#16808#20520#0" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -55,20 +59,81 @@
                 <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#0;n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#2;n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#2;n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#span#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#p#1;n#div#1;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#p#2;n#div#1;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#dl#0;n#div#2;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#dl#1;n#div#2;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#dl#2;n#div#2;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#p#1;n#div#2;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#select#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#input#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="100" column="14" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="100" selection-end-column="14" />
+              <folding>
+                <element signature="e#5469#6160#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="368" column="15" lean-forward="true" selection-start-line="368" selection-start-column="15" selection-end-line="368" selection-end-column="15" />
+            <state relative-caret-position="102">
+              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
               <folding>
                 <element signature="e#492#1132#0" />
                 <element signature="e#587#841#0" />
@@ -80,58 +145,73 @@
                 <element signature="e#1169#1652#0" />
                 <element signature="e#1332#1648#0" />
                 <element signature="e#1365#1643#0" />
-                <element signature="e#3192#8074#0" />
-                <element signature="e#8158#8366#0" />
-                <element signature="e#8418#8636#0" />
-                <element signature="e#8682#8919#0" />
-                <element signature="e#8712#8915#0" />
+                <element signature="e#1720#1874#0" />
+                <element signature="e#1750#1783#0" />
+                <element signature="e#1941#2280#0" />
+                <element signature="e#2078#2162#0" />
+                <element signature="e#2126#2158#0" />
+                <element signature="e#2182#2278#0" />
+                <element signature="e#2338#2554#0" />
+                <element signature="e#2364#2552#0" />
+                <element signature="e#2440#2485#0" />
+                <element signature="e#2504#2546#0" />
+                <element signature="e#2599#2751#0" />
+                <element signature="e#3192#8236#0" />
+                <element signature="e#8260#10926#0" />
                 <element signature="n#a#0;n#!!top" />
-                <element signature="e#8964#9203#0" />
-                <element signature="e#8995#9199#0" />
+                <element signature="e#11296#11514#0" />
+                <element signature="e#11377#11510#0" />
+                <element signature="e#11453#11503#0" />
+                <element signature="e#11560#11797#0" />
+                <element signature="e#11590#11793#0" />
                 <element signature="n#a#0;n#!!top" />
-                <element signature="e#11131#11370#0" />
-                <element signature="e#11162#11366#0" />
+                <element signature="e#11842#12081#0" />
+                <element signature="e#11873#12077#0" />
                 <element signature="n#a#0;n#!!top" />
-                <element signature="e#11421#11666#0" />
-                <element signature="e#11455#11662#0" />
+                <element signature="e#12126#12371#0" />
+                <element signature="e#12160#12367#0" />
                 <element signature="n#a#0;n#!!top" />
-                <element signature="e#9248#9434#0" />
-                <element signature="e#9280#9430#0" />
+                <element signature="e#12416#12659#0" />
+                <element signature="e#12449#12655#0" />
                 <element signature="n#a#0;n#!!top" />
-                <element signature="e#9479#9665#0" />
-                <element signature="e#9511#9661#0" />
+                <element signature="e#12704#12890#0" />
+                <element signature="e#12736#12886#0" />
                 <element signature="n#a#0;n#!!top" />
-                <element signature="e#15350#15534#0" />
-                <element signature="e#15381#15530#0" />
+                <element signature="e#12935#13121#0" />
+                <element signature="e#12967#13117#0" />
                 <element signature="n#a#0;n#!!top" />
-                <element signature="e#13396#13633#0" />
-                <element signature="e#13426#13629#0" />
+                <element signature="e#13166#13350#0" />
+                <element signature="e#13197#13346#0" />
                 <element signature="n#a#0;n#!!top" />
-                <element signature="e#13734#14029#0" />
-                <element signature="e#13771#14025#0" />
+                <element signature="e#13395#13690#0" />
+                <element signature="e#13432#13686#0" />
                 <element signature="n#a#0;n#!!top" />
-                <element signature="e#14067#14358#0" />
-                <element signature="e#14102#14354#0" />
+                <element signature="e#13734#14025#0" />
+                <element signature="e#13769#14021#0" />
                 <element signature="n#a#0;n#!!top" />
-                <element signature="e#14404#14695#0" />
-                <element signature="e#14439#14691#0" />
+                <element signature="e#14069#14360#0" />
+                <element signature="e#14104#14356#0" />
                 <element signature="n#a#0;n#!!top" />
-                <element signature="e#14739#15032#0" />
-                <element signature="e#14775#15028#0" />
+                <element signature="e#14404#14697#0" />
+                <element signature="e#14440#14693#0" />
                 <element signature="n#a#0;n#!!top" />
-                <element signature="e#15072#15361#0" />
-                <element signature="e#15106#15357#0" />
+                <element signature="e#14741#15030#0" />
+                <element signature="e#14775#15026#0" />
                 <element signature="n#a#0;n#!!top" />
+                <element signature="e#15074#15367#0" />
+                <element signature="e#15110#15363#0" />
+                <element signature="n#a#0;n#!!top" />
+                <element signature="e#15554#15650#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="367" column="19" selection-start-line="367" selection-start-column="19" selection-end-line="367" selection-end-column="19" />
+            <state relative-caret-position="482">
+              <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -148,17 +228,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>url-loader</find>
-      <find>'@': resolve('src')</find>
-      <find>imageSrc</find>
-      <find>.btn_lig</find>
-      <find>btn_light</find>
-      <find>btn--light</find>
-      <find>btn-light</find>
-      <find>nav flex-column nav-pills</find>
-      <find>whyWe</find>
-      <find>card-container</find>
-      <find>card-container-header</find>
       <find>card-g</find>
       <find>card-container-body</find>
       <find>bra</find>
@@ -178,6 +247,17 @@
       <find>media__item</find>
       <find>nav nav-tabs</find>
       <find>modalPay</find>
+      <find>.card-container-dark</find>
+      <find>button</find>
+      <find>btn--light</find>
+      <find>.conten</find>
+      <find>payCredit</find>
+      <find>FormValidation</find>
+      <find>showModalChannel</find>
+      <find>.content</find>
+      <find>social-btn</find>
+      <find>text-muted</find>
+      <find>text-m</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -217,7 +297,6 @@
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/dist/css/formValidation.css" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/fontawesome-pro-5.8.1/css/solid.css" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/css/formValidation.css" />
-        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html" />
         <option value="$PROJECT_DIR$/monthly-budget/app.js" />
         <option value="$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.8ecf333f2485db6dc30aaf4bf1d0e668.css" />
         <option value="$PROJECT_DIR$/ProjectVue-First/dist/index.html" />
@@ -240,9 +319,12 @@
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/formatter.html" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/src/channel.html" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/pagination.min.css" />
-        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" />
-        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" />
+        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/Material-Design-components/material-components-web.min.js" />
+        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/Material-Design-components/material-components-web.min.css" />
+        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" />
+        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" />
+        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" />
       </list>
     </option>
   </component>
@@ -295,6 +377,15 @@
               <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="formvalidation-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -308,11 +399,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FunsReactor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="liveEdit" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oruj91\Documents\oruj91.github.io\TViTECH - Telebreeze\public\assets\plugins" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oruj91\Documents\oruj91.github.io\TViTECH - Telebreeze\public\assets\plugins\paginationjs" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -395,7 +495,8 @@
       <workItem from="1557661062696" duration="2066000" />
       <workItem from="1557726570406" duration="24784000" />
       <workItem from="1557810054259" duration="25224000" />
-      <workItem from="1557896300503" duration="6976000" />
+      <workItem from="1557896300503" duration="11437000" />
+      <workItem from="1557908047918" duration="13539000" />
     </task>
     <task id="LOCAL-00001" summary="phone input spaces support">
       <created>1556480760201</created>
@@ -408,7 +509,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193028000" />
+    <option name="totallyTimeSpent" value="211028000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -423,13 +524,14 @@
     <frame x="1912" y="46" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6839677" visible="true" weight="0.1899841" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6839677" visible="true" weight="0.2400636" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" sideWeight="0.3160323" side_tool="true" weight="0.1899841" />
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34354487" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34256056" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39677048" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -529,34 +631,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/fontawesome-pro-5.8.1/css/all.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="986" column="5" lean-forward="true" selection-start-line="986" selection-start-column="4" selection-end-line="986" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/fontawesome-pro-5.8.1/js/all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2703">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/formvalidation-master/css/formValidation.css" />
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/jquery-3.3.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="41578" selection-start-line="1" selection-start-column="41578" selection-end-line="1" selection-end-column="41578" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.8ecf333f2485db6dc30aaf4bf1d0e668.css" />
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/pages/Home.vue" />
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/pages/Registration.vue" />
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/src/main.js" />
     <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.200619d5a68c04b59f761870ff42ea9b.css" />
     <entry file="file://$PROJECT_DIR$/ProjectVue-First/config/prod.env.js" />
     <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/css/app.ba2548d20f921417b482d5b208084574.css" />
@@ -591,13 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="122" column="68" selection-start-line="122" selection-start-column="68" selection-end-line="123" selection-end-column="93" />
         </state>
       </provider>
     </entry>
@@ -704,7 +771,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/channel.html" />
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/pagination.min.js">
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/paginationjs/pagination.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -713,69 +780,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/pagination.min.css">
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/paginationjs/pagination.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="367" column="19" selection-start-line="367" selection-start-column="19" selection-end-line="367" selection-end-column="19" />
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-design-lite/_textfield.scss" />
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-design-lite/snippets/textfield-text.html" />
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-components-web-master/material-components-web-master/docs/code/README.md" />
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-components-web-master/mdc-dom/index.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-components-web-master/mdc-textfield/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-components-web-master/mdc-textfield/mdc-text-field.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="406" column="101" selection-start-line="406" selection-start-column="101" selection-end-line="406" selection-end-column="101" />
+        <state relative-caret-position="-561" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-design-components/material-components-web.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-design-components/material-components-web.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
           <folding>
-            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#5;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#11802#15514#0" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#99801#100108#2" expanded="true" />
+            <element signature="e#138389#138855#1" expanded="true" />
+            <element signature="e#139348#139814#1" expanded="true" />
+            <element signature="e#149679#150145#1" expanded="true" />
+            <element signature="e#150501#150967#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="100" column="14" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="100" selection-end-column="14" />
+          <folding>
+            <element signature="e#5469#6160#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="368" column="15" lean-forward="true" selection-start-line="368" selection-start-column="15" selection-end-line="368" selection-end-column="15" />
+        <state relative-caret-position="102">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
           <folding>
             <element signature="e#492#1132#0" />
             <element signature="e#587#841#0" />
@@ -787,49 +852,161 @@
             <element signature="e#1169#1652#0" />
             <element signature="e#1332#1648#0" />
             <element signature="e#1365#1643#0" />
-            <element signature="e#3192#8074#0" />
-            <element signature="e#8158#8366#0" />
-            <element signature="e#8418#8636#0" />
-            <element signature="e#8682#8919#0" />
-            <element signature="e#8712#8915#0" />
+            <element signature="e#1720#1874#0" />
+            <element signature="e#1750#1783#0" />
+            <element signature="e#1941#2280#0" />
+            <element signature="e#2078#2162#0" />
+            <element signature="e#2126#2158#0" />
+            <element signature="e#2182#2278#0" />
+            <element signature="e#2338#2554#0" />
+            <element signature="e#2364#2552#0" />
+            <element signature="e#2440#2485#0" />
+            <element signature="e#2504#2546#0" />
+            <element signature="e#2599#2751#0" />
+            <element signature="e#3192#8236#0" />
+            <element signature="e#8260#10926#0" />
             <element signature="n#a#0;n#!!top" />
-            <element signature="e#8964#9203#0" />
-            <element signature="e#8995#9199#0" />
+            <element signature="e#11296#11514#0" />
+            <element signature="e#11377#11510#0" />
+            <element signature="e#11453#11503#0" />
+            <element signature="e#11560#11797#0" />
+            <element signature="e#11590#11793#0" />
             <element signature="n#a#0;n#!!top" />
-            <element signature="e#11131#11370#0" />
-            <element signature="e#11162#11366#0" />
+            <element signature="e#11842#12081#0" />
+            <element signature="e#11873#12077#0" />
             <element signature="n#a#0;n#!!top" />
-            <element signature="e#11421#11666#0" />
-            <element signature="e#11455#11662#0" />
+            <element signature="e#12126#12371#0" />
+            <element signature="e#12160#12367#0" />
             <element signature="n#a#0;n#!!top" />
-            <element signature="e#9248#9434#0" />
-            <element signature="e#9280#9430#0" />
+            <element signature="e#12416#12659#0" />
+            <element signature="e#12449#12655#0" />
             <element signature="n#a#0;n#!!top" />
-            <element signature="e#9479#9665#0" />
-            <element signature="e#9511#9661#0" />
+            <element signature="e#12704#12890#0" />
+            <element signature="e#12736#12886#0" />
             <element signature="n#a#0;n#!!top" />
-            <element signature="e#15350#15534#0" />
-            <element signature="e#15381#15530#0" />
+            <element signature="e#12935#13121#0" />
+            <element signature="e#12967#13117#0" />
             <element signature="n#a#0;n#!!top" />
-            <element signature="e#13396#13633#0" />
-            <element signature="e#13426#13629#0" />
+            <element signature="e#13166#13350#0" />
+            <element signature="e#13197#13346#0" />
             <element signature="n#a#0;n#!!top" />
-            <element signature="e#13734#14029#0" />
-            <element signature="e#13771#14025#0" />
+            <element signature="e#13395#13690#0" />
+            <element signature="e#13432#13686#0" />
             <element signature="n#a#0;n#!!top" />
-            <element signature="e#14067#14358#0" />
-            <element signature="e#14102#14354#0" />
+            <element signature="e#13734#14025#0" />
+            <element signature="e#13769#14021#0" />
             <element signature="n#a#0;n#!!top" />
-            <element signature="e#14404#14695#0" />
-            <element signature="e#14439#14691#0" />
+            <element signature="e#14069#14360#0" />
+            <element signature="e#14104#14356#0" />
             <element signature="n#a#0;n#!!top" />
-            <element signature="e#14739#15032#0" />
-            <element signature="e#14775#15028#0" />
+            <element signature="e#14404#14697#0" />
+            <element signature="e#14440#14693#0" />
             <element signature="n#a#0;n#!!top" />
-            <element signature="e#15072#15361#0" />
-            <element signature="e#15106#15357#0" />
+            <element signature="e#14741#15030#0" />
+            <element signature="e#14775#15026#0" />
             <element signature="n#a#0;n#!!top" />
+            <element signature="e#15074#15367#0" />
+            <element signature="e#15110#15363#0" />
+            <element signature="n#a#0;n#!!top" />
+            <element signature="e#15554#15650#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="296" column="8" selection-start-line="296" selection-start-column="8" selection-end-line="296" selection-end-column="9" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#16808#20520#0" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#2;n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#2;n#ul#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#span#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#p#1;n#div#1;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#p#2;n#div#1;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#dl#0;n#div#2;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#dl#1;n#div#2;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#dl#2;n#div#2;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#p#1;n#div#2;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
         </state>
       </provider>
     </entry>

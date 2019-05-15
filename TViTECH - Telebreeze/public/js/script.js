@@ -365,27 +365,21 @@ $(function () {
   })
 })
 
-// Payment modals
-$('[data-type ="toConnect"]').each(function (idx, el) {
-  $(el).click(function (e) {
-    const id = e.target.id;
-    const title = $(e.target).siblings('.card-title').text();
-    const modalTitle = $('#connectTitle');
+// Payment
+$(function () {
+  const $packetNavButtons = $('#navPacket .nav-link');
+  let $activePacketBtn = $('#navPacket .nav-link.active');
 
-    modalTitle.text(title);
-    modalConnect.modal();
+  $packetNavButtons.click(function (e) {
+    $activePacketBtn = $(e.target);
+    $('#modalPayTitle').text($activePacketBtn.text());
   })
-});
-$('[data-type ="toPay"]').each(function (idx, el) {
-  $(el).click(function (e) {
-    const id = e.target.id;
-    const title = $(e.target).siblings('.card-title').text();
-    const paymentFor = $('#paymentFor');
 
-    paymentFor.text(title);
-    modalPay.modal();
+  $('#buyPacket').click(function () {
+    $('#modalPayTitle').text($activePacketBtn.text());
+    $('#modalPay').modal();
   })
-});
+})
 
 // Other initialisations
 $(function () {

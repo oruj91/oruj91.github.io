@@ -157,7 +157,7 @@
           <span>Channels</span>
         </div>
         <div class="card-container-dark-body">
-          <ul id="" class="nav nav-tabs" role="tablist">
+          <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" data-toggle="tab" href="#channelAll" role="tab" aria-selected="true">All Channels</a>
             </li>
@@ -229,27 +229,35 @@
           <span>Packets</span>
         </div>
         <div class="card-container-dark-body">
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#packetStandard" role="tab" aria-selected="true">Standard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#packetEconom" role="tab" aria-selected="false">Econom</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#packetFamily" role="tab" aria-selected="false">Family</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#packetStudent" role="tab" aria-selected="false">Student</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#packetSuper" role="tab" aria-selected="false">Super</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#packetPremium" role="tab" aria-selected="false">Premium</a>
-            </li>
-          </ul>
-
+          <div class="row">
+            <div class="col-md-10">
+              <ul id="navPacket" class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#packetStandard" role="tab" aria-selected="true">Standard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#packetEconom" role="tab" aria-selected="false">Econom</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#packetFamily" role="tab" aria-selected="false">Family</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#packetStudent" role="tab" aria-selected="false">Student</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#packetSuper" role="tab" aria-selected="false">Super</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#packetPremium" role="tab" aria-selected="false">Premium</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <button id="buyPacket" class="btn btn-warning">
+                Pay for this packet
+              </button>
+            </div>
+          </div>
           <div class="tab-content">
             <div id="packetStandard" class="tab-pane fade show active" role="tabpanel">
               <div class="media__container"></div>
@@ -396,7 +404,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Payment for <span id="paymentFor"></span></h5>
+        <h5 class="modal-title" id="exampleModalLabel">Payment for "<span id="modalPayTitle"></span>" packet</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/oruj91.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/oruj91.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" afterDir="false" />
@@ -21,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="210" column="18" lean-forward="true" selection-start-line="210" selection-start-column="18" selection-end-line="210" selection-end-column="18" />
+            <state relative-caret-position="614">
+              <caret line="273" column="34" selection-start-line="273" selection-start-column="34" selection-end-line="273" selection-end-column="34" />
               <folding>
                 <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -40,6 +41,9 @@
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -59,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="188" column="92" selection-start-line="188" selection-start-column="92" selection-end-line="188" selection-end-column="92" />
+            <state relative-caret-position="717">
+              <caret line="364" column="4" selection-start-line="364" selection-start-column="4" selection-end-line="364" selection-end-column="4" />
               <folding>
                 <element signature="e#492#1132#0" />
                 <element signature="e#587#841#0" />
@@ -75,14 +79,16 @@
                 <element signature="e#1169#1652#0" />
                 <element signature="e#1332#1648#0" />
                 <element signature="e#1365#1643#0" />
+                <element signature="e#3192#8074#0" />
+                <element signature="e#8158#8366#0" />
                 <element signature="e#8418#8636#0" />
                 <element signature="e#8682#8919#0" />
-                <element signature="e#8712#8915#0" />
                 <element signature="n#a#0;n#!!top" />
                 <element signature="e#8964#9203#0" />
                 <element signature="e#8995#9199#0" />
                 <element signature="n#a#0;n#!!top" />
                 <element signature="e#11131#11370#0" />
+                <element signature="e#11421#11666#0" />
                 <element signature="e#9248#9434#0" />
                 <element signature="e#9280#9430#0" />
                 <element signature="n#a#0;n#!!top" />
@@ -97,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="310">
-              <caret line="305" column="18" selection-start-line="305" selection-start-column="18" selection-end-line="305" selection-end-column="18" />
+              <caret line="367" column="21" selection-start-line="367" selection-start-column="21" selection-end-line="367" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -118,7 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font</find>
       <find>-cp('-R', 'static</find>
       <find>assetsPath</find>
       <find>url-loader</find>
@@ -148,6 +153,7 @@
       <find>header__user</find>
       <find>card-container-dark</find>
       <find>json</find>
+      <find>media__item</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -210,9 +216,9 @@
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/formatter.html" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/src/channel.html" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/pagination.min.css" />
-        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" />
+        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" />
       </list>
     </option>
   </component>
@@ -365,7 +371,7 @@
       <workItem from="1557661062696" duration="2066000" />
       <workItem from="1557726570406" duration="24784000" />
       <workItem from="1557810054259" duration="25224000" />
-      <workItem from="1557896300503" duration="2859000" />
+      <workItem from="1557896300503" duration="4609000" />
     </task>
     <task id="LOCAL-00001" summary="phone input spaces support">
       <created>1556480760201</created>
@@ -378,7 +384,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188911000" />
+    <option name="totallyTimeSpent" value="190661000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -690,17 +696,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="305" column="18" selection-start-line="305" selection-start-column="18" selection-end-line="305" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="210" column="18" lean-forward="true" selection-start-line="210" selection-start-column="18" selection-end-line="210" selection-end-column="18" />
+        <state relative-caret-position="614">
+          <caret line="273" column="34" selection-start-line="273" selection-start-column="34" selection-end-line="273" selection-end-column="34" />
           <folding>
             <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -718,6 +717,9 @@
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -738,8 +740,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="188" column="92" selection-start-line="188" selection-start-column="92" selection-end-line="188" selection-end-column="92" />
+        <state relative-caret-position="717">
+          <caret line="364" column="4" selection-start-line="364" selection-start-column="4" selection-end-line="364" selection-end-column="4" />
           <folding>
             <element signature="e#492#1132#0" />
             <element signature="e#587#841#0" />
@@ -751,14 +753,16 @@
             <element signature="e#1169#1652#0" />
             <element signature="e#1332#1648#0" />
             <element signature="e#1365#1643#0" />
+            <element signature="e#3192#8074#0" />
+            <element signature="e#8158#8366#0" />
             <element signature="e#8418#8636#0" />
             <element signature="e#8682#8919#0" />
-            <element signature="e#8712#8915#0" />
             <element signature="n#a#0;n#!!top" />
             <element signature="e#8964#9203#0" />
             <element signature="e#8995#9199#0" />
             <element signature="n#a#0;n#!!top" />
             <element signature="e#11131#11370#0" />
+            <element signature="e#11421#11666#0" />
             <element signature="e#9248#9434#0" />
             <element signature="e#9280#9430#0" />
             <element signature="n#a#0;n#!!top" />
@@ -769,6 +773,13 @@
             <element signature="e#15381#15530#0" />
             <element signature="n#a#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="367" column="21" selection-start-line="367" selection-start-column="21" selection-end-line="367" selection-end-column="21" />
         </state>
       </provider>
     </entry>

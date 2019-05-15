@@ -138,10 +138,10 @@ $(function () {
     {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
     {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
     {name: 'Discovery Science', type: 'science', imgSrc: '../public/assets/img/chanels/Discovery_science.png'},
-    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
-    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
-    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
     {name: 'Discovery Travel', type: 'travel', imgSrc: '../public/assets/img/chanels/discovery-travel.jpg'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
     {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
     {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
     {name: 'Discovery Science', type: 'science', imgSrc: '../public/assets/img/chanels/Discovery_science.png'},
@@ -188,8 +188,38 @@ $(function () {
     {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
     {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'}
   ];
+  const jsonPackets = [
+    {name: 'Discovery', packet: 'econom', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Discovery', packet: 'family', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Discovery', packet: 'student', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Discovery', packet: 'super', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Discovery', packet: 'premium', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Animal planet', packet: 'standard', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Animal planet', packet: 'family', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Animal planet', packet: 'student', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Animal planet', packet: 'premium', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'BBC news', packet: 'family', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'BBC news', packet: 'premium', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'Discovery Science', packet: 'standard', imgSrc: '../public/assets/img/chanels/Discovery_science.png'},
+    {name: 'Discovery Science', packet: 'student', imgSrc: '../public/assets/img/chanels/Discovery_science.png'},
+    {name: 'Discovery Science', packet: 'premium', imgSrc: '../public/assets/img/chanels/Discovery_science.png'},
+    {name: 'Discovery Travel', packet: 'super', imgSrc: '../public/assets/img/chanels/discovery-travel.jpg'},
+    {name: 'Discovery Travel', packet: 'premium', imgSrc: '../public/assets/img/chanels/discovery-travel.jpg'},
+    {name: 'Eurosport', packet: 'standard', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Eurosport', packet: 'family', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Eurosport', packet: 'super', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Eurosport', packet: 'premium', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'MTV', packet: 'family', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'MTV', packet: 'super', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'MTV', packet: 'premium', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Kids', packet: 'standard', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Kids', packet: 'econom', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Kids', packet: 'family', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Kids', packet: 'premium', imgSrc: '../public/assets/img/chanels/kids.jpg'}
+  ];
   let item;
   let channelAllArr = [];
+  let packetStandard = [];
 
   $.each(jsonChannels, function (key, val) {
     item = `
@@ -270,6 +300,67 @@ $(function () {
         <img src="${val.imgSrc}">
       </a>
     `)
+    }
+  })
+
+  $.each(jsonPackets, function (key, val) {
+    if (val.packet === 'standard') {
+      item = `
+        <a onclick="showModalChannel('${val.name}', '${val.imgSrc}')" class="media__item">
+          <img src="${val.imgSrc}" alt="${val.name}">      
+        </a>
+      `;
+      $('#packetStandard .media__container').append(item);
+    }
+  })
+  $.each(jsonPackets, function (key, val) {
+    if (val.packet === 'econom') {
+      item = `
+        <a onclick="showModalChannel('${val.name}', '${val.imgSrc}')" class="media__item">
+          <img src="${val.imgSrc}" alt="${val.name}">      
+        </a>
+      `;
+      $('#packetEconom .media__container').append(item);
+    }
+  })
+  $.each(jsonPackets, function (key, val) {
+    if (val.packet === 'family') {
+      item = `
+        <a onclick="showModalChannel('${val.name}', '${val.imgSrc}')" class="media__item">
+          <img src="${val.imgSrc}" alt="${val.name}">      
+        </a>
+      `;
+      $('#packetFamily .media__container').append(item);
+    }
+  })
+  $.each(jsonPackets, function (key, val) {
+    if (val.packet === 'student') {
+      item = `
+        <a onclick="showModalChannel('${val.name}', '${val.imgSrc}')" class="media__item">
+          <img src="${val.imgSrc}" alt="${val.name}">      
+        </a>
+      `;
+      $('#packetStudent .media__container').append(item);
+    }
+  })
+  $.each(jsonPackets, function (key, val) {
+    if (val.packet === 'super') {
+      item = `
+        <a onclick="showModalChannel('${val.name}', '${val.imgSrc}')" class="media__item">
+          <img src="${val.imgSrc}" alt="${val.name}">      
+        </a>
+      `;
+      $('#packetSuper .media__container').append(item);
+    }
+  })
+  $.each(jsonPackets, function (key, val) {
+    if (val.packet === 'premium') {
+      item = `
+        <a onclick="showModalChannel('${val.name}', '${val.imgSrc}')" class="media__item">
+          <img src="${val.imgSrc}" alt="${val.name}">      
+        </a>
+      `;
+      $('#packetPremium .media__container').append(item);
     }
   })
 })

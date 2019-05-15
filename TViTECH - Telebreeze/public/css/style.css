@@ -180,7 +180,7 @@ input::placeholder {
   top: 2rem;
   padding: 0;
   font-size: .85rem;
-  background: #720000;
+  background: #5C5C5B;
 }
 
 .header .dropdown-menu a {
@@ -188,7 +188,7 @@ input::placeholder {
 }
 
 .header .dropdown-menu a:hover {
-  background: #910000;
+  background: #80807f;
 }
 
 .header .dropdown-menu-right {
@@ -213,7 +213,7 @@ input::placeholder {
   height: 2rem;
   font-family: 'RobotoLight';
   font-size: .8rem;
-  background-color: #720000;
+  background-color: #5C5C5B;
 }
 
 .user__lang .dropdown-toggle i {
@@ -303,6 +303,7 @@ input::placeholder {
   box-shadow: 0 0 1.5rem #000000;
 }
 .card-container-dark {
+  margin-bottom: 4rem;
   color: #fff;
   background-color: #5C5C5B;
   overflow: hidden;

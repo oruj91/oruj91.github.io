@@ -124,7 +124,7 @@ function showModalChannel (title, imgSrc) {
   // $.ajax({
   //   url: 'requestChannelByID',
   //   data: id,
-  //   success: function (json) {
+  //   success: function (jsonChannels) {
   //     $('#modalChannel').modal();
   //   }
   // })
@@ -133,38 +133,25 @@ function showModalChannel (title, imgSrc) {
 // Media
 $(function () {
   const containerChannelAll = $('#channelAll .media__container');
-  const json = [
+  const jsonChannels = [
     {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
     {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
     {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'Discovery Science', type: 'science', imgSrc: '../public/assets/img/chanels/Discovery_science.png'},
     {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
     {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
     {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Discovery Travel', type: 'travel', imgSrc: '../public/assets/img/chanels/discovery-travel.jpg'},
     {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
     {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
-    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
-    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
-    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
-    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
-    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
-    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
-    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
-    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
-    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
-    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
-    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
-    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
-    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
-    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
-    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
-    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
-    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
-    {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Discovery Science', type: 'science', imgSrc: '../public/assets/img/chanels/Discovery_science.png'},
     {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
     {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
     {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
     {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
     {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Discovery Travel', type: 'travel', imgSrc: '../public/assets/img/chanels/discovery-travel.jpg'},
+    {name: 'Discovery Science', type: 'science', imgSrc: '../public/assets/img/chanels/Discovery_science.png'},
     {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
     {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
     {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
@@ -173,33 +160,44 @@ $(function () {
     {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
     {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
     {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'Discovery Science', type: 'science', imgSrc: '../public/assets/img/chanels/Discovery_science.png'},
     {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
     {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
+    {name: 'Discovery Travel', type: 'travel', imgSrc: '../public/assets/img/chanels/discovery-travel.jpg'},
     {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
     {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
     {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
+    {name: 'Discovery Science', type: 'science', imgSrc: '../public/assets/img/chanels/Discovery_science.png'},
     {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
     {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
     {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
     {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
     {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Discovery Travel', type: 'travel', imgSrc: '../public/assets/img/chanels/discovery-travel.jpg'},
     {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'Discovery Science', type: 'science', imgSrc: '../public/assets/img/chanels/Discovery_science.png'},
     {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'},
     {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
     {name: 'Kids', type: 'kids', imgSrc: '../public/assets/img/chanels/kids.jpg'},
-    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'}
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'Discovery', type: 'fun', imgSrc: '../public/assets/img/chanels/discovery.jpg'},
+    {name: 'Discovery Travel', type: 'travel', imgSrc: '../public/assets/img/chanels/discovery-travel.jpg'},
+    {name: 'Discovery Science', type: 'science', imgSrc: '../public/assets/img/chanels/Discovery_science.png'},
+    {name: 'Animal planet', type: 'fun', imgSrc: '../public/assets/img/chanels/animal_planet.png'},
+    {name: 'BBC news', type: 'news', imgSrc: '../public/assets/img/chanels/bbc_news.png'},
+    {name: 'MTV', type: 'music', imgSrc: '../public/assets/img/chanels/mtv.png'},
+    {name: 'Eurosport', type: 'sport', imgSrc: '../public/assets/img/chanels/eurosport.jpg'}
   ];
   let item;
   let channelAllArr = [];
 
-  $.each(json, function (key, val) {
+  $.each(jsonChannels, function (key, val) {
     item = `
       <a onclick="showModalChannel('${val.name}', '${val.imgSrc}')" class="media__item">
         <img src="${val.imgSrc}" alt="${val.name}">      
       </a>`;
     channelAllArr.push(item);
   })
-
   $('#channelAll .media__pagination').pagination({
     dataSource: channelAllArr,
     pageSize: 30,
@@ -211,7 +209,7 @@ $(function () {
     }
   })
 
-  $.each(json, function (key, val) {
+  $.each(jsonChannels, function (key, val) {
     if (val.type === 'fun') {
       $('#channelFun .media__container').append(`
       <a onclick="showModalChannel(${val.name}, ${val.imgSrc})" class="media__item" href="#">
@@ -220,7 +218,7 @@ $(function () {
     `)
     }
   })
-  $.each(json, function (key, val) {
+  $.each(jsonChannels, function (key, val) {
     if (val.type === 'news') {
       $('#channelNews .media__container').append(`
       <a onclick="showModalChannel(${val.name}, ${val.imgSrc})" class="media__item" href="#">
@@ -229,7 +227,25 @@ $(function () {
     `)
     }
   })
-  $.each(json, function (key, val) {
+  $.each(jsonChannels, function (key, val) {
+    if (val.type === 'science') {
+      $('#channelScience .media__container').append(`
+      <a onclick="showModalChannel(${val.name}, ${val.imgSrc})" class="media__item" href="#">
+        <img src="${val.imgSrc}">
+      </a>
+    `)
+    }
+  })
+  $.each(jsonChannels, function (key, val) {
+    if (val.type === 'travel') {
+      $('#channelTravel .media__container').append(`
+      <a onclick="showModalChannel(${val.name}, ${val.imgSrc})" class="media__item" href="#">
+        <img src="${val.imgSrc}">
+      </a>
+    `)
+    }
+  })
+  $.each(jsonChannels, function (key, val) {
     if (val.type === 'sport') {
       $('#channelSport .media__container').append(`
       <a class="media__item" href="#">
@@ -238,7 +254,7 @@ $(function () {
     `)
     }
   })
-  $.each(json, function (key, val) {
+  $.each(jsonChannels, function (key, val) {
     if (val.type === 'music') {
       $('#channelMusic .media__container').append(`
       <a class="media__item" href="#">
@@ -247,7 +263,7 @@ $(function () {
     `)
     }
   })
-  $.each(json, function (key, val) {
+  $.each(jsonChannels, function (key, val) {
     if (val.type === 'kids') {
       $('#channelKids .media__container').append(`
       <a class="media__item" href="#">
@@ -256,9 +272,6 @@ $(function () {
     `)
     }
   })
-
-  // 30 per page
-  // alert();
 })
 
 // Payment modals

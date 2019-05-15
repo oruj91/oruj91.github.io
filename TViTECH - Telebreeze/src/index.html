@@ -27,9 +27,9 @@
 </head>
 <body>
 <header class="header">
-  <div class="header__user">
-    <div class="container navbar">
-      <ul class="navbar-nav user__lang">
+  <div class="header__panel">
+    <div class="navbar container">
+      <ul class="header__panel__lang navbar-nav">
         <li class="nav-item dropdown">
           <a class="dropdown-toggle btn--light" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="lang__item">
@@ -59,10 +59,10 @@
           </div>
         </li>
       </ul>
-      <ul class="navbar-nav btn--light">
-        <li class="nav-item dropdown">
+      <ul class="header__panel__user navbar-nav btn--light">
+        <li class="nav-item nav-item-account dropdown">
           <a class="dropdown-toggle btn--light" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span>Surname Firstname</span>
+            <span>Surname Firstname / Log in</span>
             <i class="fas fa-user-circle"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-right">
@@ -234,7 +234,7 @@
         </div>
         <div class="card-container-dark-body">
           <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-9">
               <ul id="navPacket" class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link active" data-toggle="tab" href="#packetStandard" role="tab" aria-selected="true">Standard</a>
@@ -256,8 +256,8 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-2">
-              <button id="buyPacket" class="btn btn-warning">
+            <div class="col-md-3 mt-3 mt-md-0">
+              <button id="buyPacket" class="btn btn-warning fa-pull-right">
                 Pay for this packet
               </button>
             </div>

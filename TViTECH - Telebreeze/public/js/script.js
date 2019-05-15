@@ -1,5 +1,5 @@
 const
-  nav = $('.header__user'),
+  nav = $('.header__panel'),
   navButtons = $('#myTab .btn--light'),
   navH = nav.outerHeight(),
   inputMaskPhone = new Inputmask("999 - 99 - 99"),
@@ -48,8 +48,8 @@ $(window).scroll(function () {
 
 // Language change
 $(function () {
-  let $btnLanguages = $('.user__lang .dropdown-item');
-  let $currentLangWrapper = $('.user__lang .dropdown-toggle');
+  let $btnLanguages = $('.header__panel__lang .dropdown-item');
+  let $currentLangWrapper = $('.header__panel__lang .dropdown-toggle');
 
   $btnLanguages.each(function (key, lang) {
     $(lang).click(function (e) {

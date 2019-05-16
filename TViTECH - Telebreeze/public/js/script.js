@@ -68,9 +68,10 @@ $(function () {
 
 // Navbar active button on load
 $(window).on('load', function () {
-  if (localStorage.getItem('screenPosition') === null) {
+  if (localStorage.getItem('curSectionID') === null) {
     localStorage.setItem('curSectionID', 'whyWe')
   }
+  // navButtons.removeClass('active');
   $(`a[href="#${localStorage.getItem('curSectionID')}"]`).addClass('active');
 });
 

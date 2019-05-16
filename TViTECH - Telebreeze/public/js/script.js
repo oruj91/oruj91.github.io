@@ -11,6 +11,7 @@ const
 let lastScrollTop = 0;
 let lastDirection = 0;
 let movement = 0;
+let currentSection;
 
 // Profile navbar hide on scroll
 $(window).scroll(function () {
@@ -46,6 +47,8 @@ $(window).scroll(function () {
   lastScrollTop = st;
 });
 
+localStorage.getItem('curSection')
+
 // Language change
 $(function () {
   let $btnLanguages = $('.header__panel__lang .dropdown-item');
@@ -65,17 +68,17 @@ $(function () {
 
 // Navbar active button on load
 $(window).on('load', function () {
-  if (location.hash === '') {
-    location.hash = 'whyWe'
+  if (localStorage.getItem('screenPosition') === null) {
+    localStorage.setItem('curSectionID', 'whyWe')
   }
-  navButtons.removeClass('active')
-  $(`a[href="${location.hash}"]`).addClass('active');
+  $(`a[href="#${localStorage.getItem('curSectionID')}"]`).addClass('active');
 });
 
 // Navbar active button on scroll
 $(window).scroll(function () {
+  const screenPosition = window.pageYOffset;
+
   let sections = $('.content>div');
-  let screenPosition = window.pageYOffset;
   let sectionID;
 
   $.each(sections, function (key, el) {
@@ -83,9 +86,11 @@ $(window).scroll(function () {
       sectionID = el.id;
     }
   });
+
   if (sectionID) {
     navButtons.removeClass('active');
     $(`a[href="#${sectionID}"]`).addClass('active');
+    localStorage.setItem('curSectionID', sectionID);
   }
 })
 
@@ -99,7 +104,7 @@ navButtons.click(function (e) {
     $('html').animate({
       scrollTop: $(hash).offset().top
     }, 800, function () {
-      window.location.hash = hash;
+      // window.location.hash = hash;
     });
   }
 });

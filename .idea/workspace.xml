@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/formatter.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" afterDir="false" />
     </list>
@@ -18,14 +19,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+            <state relative-caret-position="697">
+              <caret line="315" column="36" selection-start-line="315" selection-start-column="36" selection-end-line="315" selection-end-column="36" />
               <folding>
+                <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -37,10 +38,8 @@
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#16808#20520#0" />
+                <element signature="e#17960#21672#0" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -106,78 +105,79 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="275">
+              <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
               <folding>
-                <element signature="e#492#1132#0" />
-                <element signature="e#587#841#0" />
-                <element signature="e#633#660#0" />
-                <element signature="e#721#749#0" />
-                <element signature="e#847#1107#0" />
-                <element signature="e#892#919#0" />
-                <element signature="e#980#1008#0" />
-                <element signature="e#1332#1648#0" />
-                <element signature="e#1365#1643#0" />
-                <element signature="e#1720#1874#0" />
-                <element signature="e#1750#1783#0" />
-                <element signature="e#1941#2280#0" />
-                <element signature="e#2078#2162#0" />
-                <element signature="e#2126#2158#0" />
-                <element signature="e#2182#2278#0" />
-                <element signature="e#2338#2554#0" />
-                <element signature="e#2364#2552#0" />
-                <element signature="e#2440#2485#0" />
-                <element signature="e#2504#2546#0" />
-                <element signature="e#2599#2751#0" />
-                <element signature="e#3192#8236#0" />
-                <element signature="e#8260#10926#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#11296#11514#0" />
-                <element signature="e#11377#11510#0" />
-                <element signature="e#11453#11503#0" />
-                <element signature="e#11560#11797#0" />
-                <element signature="e#11590#11793#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#11842#12081#0" />
-                <element signature="e#11873#12077#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#12126#12371#0" />
-                <element signature="e#12160#12367#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#12416#12659#0" />
-                <element signature="e#12449#12655#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#12704#12890#0" />
-                <element signature="e#12736#12886#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#12935#13121#0" />
-                <element signature="e#12967#13117#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#13166#13350#0" />
-                <element signature="e#13197#13346#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#13395#13690#0" />
-                <element signature="e#13432#13686#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#13734#14025#0" />
-                <element signature="e#13769#14021#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#14069#14360#0" />
-                <element signature="e#14104#14356#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#14404#14697#0" />
-                <element signature="e#14440#14693#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#14741#15030#0" />
-                <element signature="e#14775#15026#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#15074#15367#0" />
-                <element signature="e#15110#15363#0" />
-                <element signature="n#a#0;n#!!top" />
-                <element signature="e#15554#15650#0" />
+                <element signature="e#491#1131#0" />
+                <element signature="e#586#840#0" />
+                <element signature="e#632#659#0" />
+                <element signature="e#720#748#0" />
+                <element signature="e#846#1106#0" />
+                <element signature="e#891#918#0" />
+                <element signature="e#979#1007#0" />
+                <element signature="e#1204#1705#0" />
+                <element signature="e#1385#1701#0" />
+                <element signature="e#1418#1696#0" />
+                <element signature="e#3067#3219#0" />
+                <element signature="e#3246#15863#0" />
+                <element signature="e#3337#8381#0" />
+                <element signature="e#8405#11071#0" />
+                <element signature="e#11184#11485#0" />
+                <element signature="e#11311#11322#0" />
+                <element signature="e#11530#11738#0" />
+                <element signature="e#11789#12007#0" />
+                <element signature="e#11870#12003#0" />
+                <element signature="e#11946#11996#0" />
+                <element signature="e#12053#12290#0" />
+                <element signature="e#12083#12286#0" />
+                <element signature="e#12335#12574#0" />
+                <element signature="e#12366#12570#0" />
+                <element signature="e#12619#12864#0" />
+                <element signature="e#12653#12860#0" />
+                <element signature="e#12909#13152#0" />
+                <element signature="e#12942#13148#0" />
+                <element signature="e#13197#13383#0" />
+                <element signature="e#13229#13379#0" />
+                <element signature="e#13428#13614#0" />
+                <element signature="e#13460#13610#0" />
+                <element signature="e#13659#13843#0" />
+                <element signature="e#13690#13839#0" />
+                <element signature="e#13888#14183#0" />
+                <element signature="e#13925#14179#0" />
+                <element signature="e#14227#14518#0" />
+                <element signature="e#14262#14514#0" />
+                <element signature="e#14562#14853#0" />
+                <element signature="e#14597#14849#0" />
+                <element signature="e#14897#15190#0" />
+                <element signature="e#14933#15186#0" />
+                <element signature="e#15234#15523#0" />
+                <element signature="e#15268#15519#0" />
+                <element signature="e#15567#15860#0" />
+                <element signature="e#15603#15856#0" />
+                <element signature="e#15891#16273#0" />
+                <element signature="e#16047#16143#0" />
+                <element signature="e#16182#16270#0" />
+                <element signature="e#16306#17414#0" />
+                <element signature="e#16388#17127#0" />
+                <element signature="e#16400#16514#0" />
+                <element signature="e#16528#17123#0" />
+                <element signature="e#16551#16829#0" />
+                <element signature="e#16573#16821#0" />
+                <element signature="e#16593#16734#0" />
+                <element signature="e#16756#16809#0" />
+                <element signature="e#16855#16970#0" />
+                <element signature="e#16877#16962#0" />
+                <element signature="e#16899#16952#0" />
+                <element signature="e#17002#17117#0" />
+                <element signature="e#17024#17109#0" />
+                <element signature="e#17046#17099#0" />
+                <element signature="e#17166#17269#0" />
+                <element signature="e#17304#17410#0" />
+                <element signature="e#17456#17521#0" />
+                <marker date="1558012513314" expanded="true" signature="2570:2699" ph="..." />
               </folding>
             </state>
           </provider>
@@ -186,8 +186,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="191" column="60" selection-start-line="191" selection-start-column="60" selection-end-line="191" selection-end-column="60" />
+            <state relative-caret-position="221">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -300,14 +300,14 @@
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/Material-Design-components/material-components-web.min.js" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/Material-Design-components/material-components-web.min.css" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/src/login.html" />
-        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css" />
         <option value="$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html" />
+        <option value="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2092" />
+    <option name="x" value="2352" />
     <option name="y" value="46" />
     <option name="width" value="1280" />
     <option name="height" value="735" />
@@ -317,7 +317,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,36 +339,13 @@
               <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="formvalidation-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="TViTECH - Telebreeze" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,7 +353,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -474,7 +450,10 @@
       <workItem from="1557726570406" duration="24784000" />
       <workItem from="1557810054259" duration="25224000" />
       <workItem from="1557896300503" duration="11437000" />
-      <workItem from="1557908047918" duration="16522000" />
+      <workItem from="1557908047918" duration="16603000" />
+      <workItem from="1557983258014" duration="11370000" />
+      <workItem from="1558001018976" duration="2462000" />
+      <workItem from="1558011792801" duration="716000" />
     </task>
     <task id="LOCAL-00001" summary="phone input spaces support">
       <created>1556480760201</created>
@@ -487,7 +466,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214011000" />
+    <option name="totallyTimeSpent" value="228640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -506,7 +485,6 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" sideWeight="0.3160323" side_tool="true" weight="0.1899841" />
-      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.34256056" />
@@ -519,6 +497,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.39715537" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49947312" weight="0.28719723" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -609,7 +588,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.200619d5a68c04b59f761870ff42ea9b.css" />
     <entry file="file://$PROJECT_DIR$/ProjectVue-First/config/prod.env.js" />
     <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/css/app.ba2548d20f921417b482d5b208084574.css" />
     <entry file="file://$PROJECT_DIR$/ProjectVue-First/dist/static/css/app.0ff611e53fe8012bf93d5416ae793fe2.css.map" />
@@ -768,22 +746,9 @@
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-design-lite/_textfield.scss" />
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-design-lite/snippets/textfield-text.html" />
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-components-web-master/material-components-web-master/docs/code/README.md" />
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-components-web-master/mdc-dom/index.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-components-web-master/mdc-textfield/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-components-web-master/mdc-textfield/mdc-text-field.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-components-web-master/mdc-dom/index.ts" />
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-components-web-master/mdc-textfield/README.md" />
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-components-web-master/mdc-textfield/mdc-text-field.scss" />
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/material-design-components/material-components-web.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -815,95 +780,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/jquery-3.3.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="191" column="60" selection-start-line="191" selection-start-column="60" selection-end-line="191" selection-end-column="60" />
+        <state relative-caret-position="17">
+          <caret line="1" column="39717" selection-start-line="1" selection-start-column="39717" selection-end-line="1" selection-end-column="39717" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#492#1132#0" />
-            <element signature="e#587#841#0" />
-            <element signature="e#633#660#0" />
-            <element signature="e#721#749#0" />
-            <element signature="e#847#1107#0" />
-            <element signature="e#892#919#0" />
-            <element signature="e#980#1008#0" />
-            <element signature="e#1332#1648#0" />
-            <element signature="e#1365#1643#0" />
-            <element signature="e#1720#1874#0" />
-            <element signature="e#1750#1783#0" />
-            <element signature="e#1941#2280#0" />
-            <element signature="e#2078#2162#0" />
-            <element signature="e#2126#2158#0" />
-            <element signature="e#2182#2278#0" />
-            <element signature="e#2338#2554#0" />
-            <element signature="e#2364#2552#0" />
-            <element signature="e#2440#2485#0" />
-            <element signature="e#2504#2546#0" />
-            <element signature="e#2599#2751#0" />
-            <element signature="e#3192#8236#0" />
-            <element signature="e#8260#10926#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#11296#11514#0" />
-            <element signature="e#11377#11510#0" />
-            <element signature="e#11453#11503#0" />
-            <element signature="e#11560#11797#0" />
-            <element signature="e#11590#11793#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#11842#12081#0" />
-            <element signature="e#11873#12077#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#12126#12371#0" />
-            <element signature="e#12160#12367#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#12416#12659#0" />
-            <element signature="e#12449#12655#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#12704#12890#0" />
-            <element signature="e#12736#12886#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#12935#13121#0" />
-            <element signature="e#12967#13117#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#13166#13350#0" />
-            <element signature="e#13197#13346#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#13395#13690#0" />
-            <element signature="e#13432#13686#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#13734#14025#0" />
-            <element signature="e#13769#14021#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#14069#14360#0" />
-            <element signature="e#14104#14356#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#14404#14697#0" />
-            <element signature="e#14440#14693#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#14741#15030#0" />
-            <element signature="e#14775#15026#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#15074#15367#0" />
-            <element signature="e#15110#15363#0" />
-            <element signature="n#a#0;n#!!top" />
-            <element signature="e#15554#15650#0" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+        <state relative-caret-position="697">
+          <caret line="315" column="36" selection-start-line="315" selection-start-column="36" selection-end-line="315" selection-end-column="36" />
           <folding>
+            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -915,10 +812,8 @@
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#16808#20520#0" />
+            <element signature="e#17960#21672#0" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -979,6 +874,82 @@
             <element signature="n#select#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#input#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
+          <folding>
+            <element signature="e#491#1131#0" />
+            <element signature="e#586#840#0" />
+            <element signature="e#632#659#0" />
+            <element signature="e#720#748#0" />
+            <element signature="e#846#1106#0" />
+            <element signature="e#891#918#0" />
+            <element signature="e#979#1007#0" />
+            <element signature="e#1204#1705#0" />
+            <element signature="e#1385#1701#0" />
+            <element signature="e#1418#1696#0" />
+            <element signature="e#3067#3219#0" />
+            <element signature="e#3246#15863#0" />
+            <element signature="e#3337#8381#0" />
+            <element signature="e#8405#11071#0" />
+            <element signature="e#11184#11485#0" />
+            <element signature="e#11311#11322#0" />
+            <element signature="e#11530#11738#0" />
+            <element signature="e#11789#12007#0" />
+            <element signature="e#11870#12003#0" />
+            <element signature="e#11946#11996#0" />
+            <element signature="e#12053#12290#0" />
+            <element signature="e#12083#12286#0" />
+            <element signature="e#12335#12574#0" />
+            <element signature="e#12366#12570#0" />
+            <element signature="e#12619#12864#0" />
+            <element signature="e#12653#12860#0" />
+            <element signature="e#12909#13152#0" />
+            <element signature="e#12942#13148#0" />
+            <element signature="e#13197#13383#0" />
+            <element signature="e#13229#13379#0" />
+            <element signature="e#13428#13614#0" />
+            <element signature="e#13460#13610#0" />
+            <element signature="e#13659#13843#0" />
+            <element signature="e#13690#13839#0" />
+            <element signature="e#13888#14183#0" />
+            <element signature="e#13925#14179#0" />
+            <element signature="e#14227#14518#0" />
+            <element signature="e#14262#14514#0" />
+            <element signature="e#14562#14853#0" />
+            <element signature="e#14597#14849#0" />
+            <element signature="e#14897#15190#0" />
+            <element signature="e#14933#15186#0" />
+            <element signature="e#15234#15523#0" />
+            <element signature="e#15268#15519#0" />
+            <element signature="e#15567#15860#0" />
+            <element signature="e#15603#15856#0" />
+            <element signature="e#15891#16273#0" />
+            <element signature="e#16047#16143#0" />
+            <element signature="e#16182#16270#0" />
+            <element signature="e#16306#17414#0" />
+            <element signature="e#16388#17127#0" />
+            <element signature="e#16400#16514#0" />
+            <element signature="e#16528#17123#0" />
+            <element signature="e#16551#16829#0" />
+            <element signature="e#16573#16821#0" />
+            <element signature="e#16593#16734#0" />
+            <element signature="e#16756#16809#0" />
+            <element signature="e#16855#16970#0" />
+            <element signature="e#16877#16962#0" />
+            <element signature="e#16899#16952#0" />
+            <element signature="e#17002#17117#0" />
+            <element signature="e#17024#17109#0" />
+            <element signature="e#17046#17099#0" />
+            <element signature="e#17166#17269#0" />
+            <element signature="e#17304#17410#0" />
+            <element signature="e#17456#17521#0" />
+            <marker date="1558012513314" expanded="true" signature="2570:2699" ph="..." />
           </folding>
         </state>
       </provider>

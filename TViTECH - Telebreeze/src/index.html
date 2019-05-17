@@ -27,11 +27,17 @@
 </head>
 <body>
 <header class="header">
-  <div class="header__panel">
-    <div class="navbar container">
+  <nav class="header__panel navbar navbar-expand-lg navbar-dark">
+    <div class="container">
       <ul class="header__panel__lang navbar-nav">
         <li class="nav-item dropdown">
-          <a class="dropdown-toggle btn--light" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a
+            class         = "dropdown-toggle btn--light"
+            href          = "#"
+            data-toggle   = "dropdown"
+            aria-haspopup = "true"
+            aria-expanded = "false"
+          >
             <div class="lang__item">
               <i class="flag-icon flag-icon-gb"></i>
               <span>English</span>
@@ -59,28 +65,50 @@
           </div>
         </li>
       </ul>
+
       <ul class="header__panel__user navbar-nav btn--light">
 
         <li class="nav-item dropdown">
-          <a class="dropdown-toggle btn--light" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <a class="nav-link" href="#register">Register</a>
-          </a>
+          <a class="" href="#register">Register</a>
         </li>
+
+        <li class="nav-item">&nbsp;/&nbsp;</li>
 
         <li class="nav-item dropdown">
           <a class="dropdown-toggle btn--light" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span>Surname Firstname / Sign In / Sign Up</span>
+            <span>Log In</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-item">
+              <label for="loginPhone">Mobile phone number:</label>
+              <input type="text" id="loginPhone">
+            </div>
+            <div class="dropdown-item">
+              <label for="loginPassword">Password:</label>
+              <input type="text" id="loginPassword">
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">&nbsp;/&nbsp;</li>
+
+        <li class="nav-item dropdown d-none d-sm-block">
+          <a class="dropdown-toggle btn--light" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Surname Firstname</span>
             <i class="fas fa-user-circle"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="login.html"><i class=" flag-icon-az"></i> Exit</a>
+            <a class="dropdown-item" href="#"><i class=" flag-icon-az"></i><span>Settings</span></a>
+            <a class="dropdown-item" href="#"><i class=" flag-icon-az"></i>Exit</a>
           </div>
         </li>
 
       </ul>
+
     </div>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-dark header__menu">
+  </nav>
+
+  <nav class="header__menu navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="../public/assets/img/header_logo.png" alt="Home"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false">
@@ -92,13 +120,13 @@
           <li class="nav-item"><a class="btn--light" href="#devices" >Devices</a></li>
           <li class="nav-item"><a class="btn--light" href="#media">Media</a></li>
           <li class="nav-item"><a class="btn--light" href="#">About us</a></li>
-<!--          <li class="nav-item"><a class="btn&#45;&#45;light" href="#register">Sign in / Sign up</a></li>-->
         </ul>
       </div>
     </div>
 
   </nav>
 </header>
+
 <main class="content">
   <div id="whyWe" class="content__whyWe">
     <div class="container">

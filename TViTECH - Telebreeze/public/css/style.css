@@ -145,10 +145,17 @@ input::placeholder { color: #b8b8b8 !important }
   position: fixed;
   right: 0;
   left: 0;
+  color: #fff;
   z-index: 10;
 }
 
+.header span { font-size: 13px }
+
 .header .navbar { padding: 0 1rem }
+
+.header .navbar-nav { flex-direction: row }
+
+.header .nav-link { padding: 0 1rem }
 
 .header .dropdown-menu {
   position: absolute;
@@ -166,30 +173,32 @@ input::placeholder { color: #b8b8b8 !important }
   right: 0;
 }
 
-.header .flag-icon {
-  margin-right: .5rem;
-  z-index: 30
-}
-
-.header .nav-link { padding: 0 1rem }
-
-.header__panel {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+.header .header__panel {
   height: 2rem;
   font-family: "RobotoLight", sans-serif;
   font-size: 13px;
   background-color: #5C5C5B;
 }
+.header .header__panel .nav-item>a:hover,
+.header .header__panel .dropdown-toggle span:hover {
+  text-decoration: underline;
+  color: #fff;
+}
 
-.header__panel__lang .lang__item span { font-size: 13px }
+.header .flag-icon {
+  margin-right: .5rem;
+  z-index: 30
+}
+
+.header__panel__lang .dropdown-toggle span:hover { text-decoration: underline }
 .header__panel__lang .dropdown-toggle i {
   margin-right: .6rem;
   background-color: #0d0f0f;
 }
+
+.header__panel__user>span:hover { text-decoration: underline }
 .header__panel__user .dropdown-toggle span { margin-right: 5px }
+
 
 .header__menu {
   width: 100%;

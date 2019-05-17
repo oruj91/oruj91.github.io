@@ -5,15 +5,25 @@
         <v-flex xs12>
           <v-carousel>
             <v-carousel-item
-              v-for = "ad in ads"
+              v-for = "ad in promoAds"
               :key  = "ad.id"
               :src  = "ad.imgSrc"
             >
               <div class="carousel-link">
                 <v-btn
                   class     = "error"
-                  v-bind:to = "{name: 'ad', params: ad.id, query: {title: ad.title, imgSrc: ad.imgSrc, desc: ad.desc}}"
-                >{{ad.title}}</v-btn>
+                  v-bind:to = "{
+                    name: 'ad',
+                    params: {id: ad.id},
+                    query: {
+                      title: ad.title,
+                      imgSrc: ad.imgSrc,
+                      desc: ad.desc
+                    }
+                  }"
+                >
+                  {{ad.title}}
+                </v-btn>
               </div>
             </v-carousel-item>
           </v-carousel>
@@ -43,7 +53,15 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn
-                v-bind:to = "{name: 'ad', params: ad.id, query: {title: ad.title, imgSrc: ad.imgSrc, desc: ad.desc}}"
+                v-bind:to = "{
+                  name: 'ad',
+                  params: {id: ad.id},
+                  query: {
+                    title: ad.title,
+                    imgSrc: ad.imgSrc,
+                    desc: ad.desc
+                  }
+                }"
                 flat color="orange"
               >
                 Open
@@ -59,31 +77,12 @@
 
 <script>
 export default {
-  data () {
-    return {
-      ads: [
-        {
-          id: '1',
-          title: 'Squirrel',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloribus esse iste perferendis quas recusandae reprehenderit repudiandae totam unde vel!',
-          promo: false,
-          imgSrc: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
-        },
-        {
-          id: '2',
-          title: 'Sky',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, reiciendis.',
-          promo: false,
-          imgSrc: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
-        },
-        {
-          id: '3',
-          title: 'Eagle',
-          desc: 'Lorem ipsum dolor sit.',
-          promo: false,
-          imgSrc: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-        }
-      ]
+  computed: {
+    promoAds () {
+      return this.$store.getters.promoAds
+    },
+    ads () {
+      return this.$store.getters.allAds
     }
   }
 }

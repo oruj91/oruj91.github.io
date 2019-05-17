@@ -7,7 +7,7 @@ import Login from '@/pages/Login'
 import Registration from '@/pages/Registration'
 import Orders from '@/pages/Orders'
 import Ad from '@/components/Ad'
-import error404 from '@/components/404'
+// import error404 from '@/components/404'
 
 Vue.use(Router)
 
@@ -44,14 +44,15 @@ export default new Router({
       component: Registration
     },
     {
-      path: '/ad',
+      path: '/ad/:id',
+      props: true,
       name: 'ad',
       component: Ad
-    },
+    }
     // {
     //   path: '*',
     //   component: error404
     // }
-  ]
-  // mode: 'history'
+  ],
+  mode: 'history'
 })

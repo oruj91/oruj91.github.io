@@ -5,9 +5,10 @@
         <h1 class="text--secondary mb-2">Create new ad</h1>
         <v-form v-model="valid" ref="form" lazy-validation>
           <v-text-field
-            name     = "title"
-            label    = "Ad title"
             type     = "text"
+            name     = "title"
+            class    = "input"
+            label    = "Ad title"
             v-model  = "title"
             :rules   = "[v => !!v || 'Title is required']"
             outline
@@ -80,7 +81,8 @@ export default {
         const ad = {
           title: this.title,
           description: this.description,
-          promo: this.promo
+          promo: this.promo,
+          imgSrc: 'https://cdn-images-1.medium.com/max/1000/1*nq9cdMxtdhQ0ZGL8OuSCUQ.jpeg'
         }
 
         console.log(ad)
@@ -93,6 +95,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

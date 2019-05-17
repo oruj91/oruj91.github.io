@@ -4,6 +4,7 @@ import Vue from 'vue'
 import './plugins/vuetify'
 import App from './App'
 import router from './router'
+import store from './store'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import 'material-design-icons/iconfont/material-icons.css'
@@ -14,9 +15,10 @@ Vue.use(Vuetify)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
+  router: router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  store: store
 })
 
-// 98 lesion
+// 100 lesion

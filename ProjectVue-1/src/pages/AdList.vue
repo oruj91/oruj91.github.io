@@ -4,7 +4,7 @@
       <v-flex xs12 sm6 offset-sm3>
         <h1 class="text--secondary mb-3">My ads</h1>
 
-        <v-card v-for="ad in ads" v-bind:key="ad.id" class="elevation-10 mb-4">
+        <v-card v-for="ad in myAds" v-bind:key="ad.id" class="elevation-10 mb-4">
           <v-layout wrap>
             <v-flex xs12 sm4>
               <v-img :src="ad.imgSrc" height="100%"></v-img>
@@ -16,7 +16,7 @@
               <v-card-actions>
                 <v-spacer></v-spacer>
                 <v-btn
-                  v-bind:to = "{name: 'ad', params: ad.id, query: {title: ad.title, imgSrc: ad.imgSrc, desc: ad.desc}}"
+                  v-bind:to = "{name: 'ad', params: {id: ad.id}, query: {title: ad.title, imgSrc: ad.imgSrc, desc: ad.desc}}"
                   class     = "info"
                 >
                   Open
@@ -33,34 +33,11 @@
 
 <script>
 export default {
-  data () {
-    return {
-      ads: [
-        {
-          id: '1',
-          title: 'Squirrel',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloribus esse iste perferendis quas recusandae reprehenderit repudiandae totam unde vel!',
-          promo: false,
-          imgSrc: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
-        },
-        {
-          id: '2',
-          title: 'Sky',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, reiciendis.',
-          promo: false,
-          imgSrc: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
-        },
-        {
-          id: '3',
-          title: 'Eagle',
-          desc: 'Lorem ipsum dolor sit.',
-          promo: false,
-          imgSrc: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-        }
-      ]
+  computed: {
+    myAds () {
+      return this.$store.getters.myAds
     }
-  },
-  methods: {}
+  }
 }
 </script>
 

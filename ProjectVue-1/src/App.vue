@@ -29,7 +29,7 @@
           tag   = "span"
           class = "pointer"
         >
-          Ad application
+          Home
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>

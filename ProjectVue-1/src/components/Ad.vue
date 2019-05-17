@@ -3,7 +3,7 @@
     <v-layout>
       <v-flex xs12>
         <v-card>
-          <v-img :src="$route.query.imgSrc"></v-img>
+          <v-img :src="ad.imgSrc"></v-img>
           <v-card-title>
             <h1 class="text--primary">{{$route.query.title}}</h1>
           </v-card-title>
@@ -20,7 +20,15 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: ['id'],
+  computed: {
+    ad () {
+      const id = this.id
+      return this.$store.getters.adByID(id)
+    }
+  }
+}
 </script>
 
 <style scoped>

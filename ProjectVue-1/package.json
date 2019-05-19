@@ -9,11 +9,8 @@
     "lint": "eslint --ext .js,.vue src",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://oruj91.github.io/projectVue-1",
   "dependencies": {
-    "gh-pages": "^2.0.1",
     "material-design-icons": "^3.0.1",
     "npm": "^6.9.0",
     "vue": "^2.5.2",

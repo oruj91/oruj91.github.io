@@ -1,0 +1,600 @@
+% layout 'default';
+
+<br>
+
+
+<form id="buildingsFormEdit" method="get" class="form-horizontal">
+
+  <div class="form-group">
+    <label class="col-xs-3 control-label">ID</label>
+    <div class="col-xs-3">
+      <input type="text" class="form-control" id="id_object" name="id" disabled="disabled"/>
+      <input type="hidden" name="id">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-xs-3 control-label"><%=translate('Type')%></label>
+    <div class="col-xs-8">
+      <select id="type_id" class="form-control" name="type_id" selectpicker data-live-search="true"
+              data-dropup-auto="false">
+        <option>---</option>
+        <option value="1">Binalar</option>
+        <option value="2">Evler</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-xs-3 control-label"><%=translate('City')%></label>
+    <div class="col-xs-8">
+      <select id="firstForm_city_id" class="form-control" name="firstForm_city_id" selectpicker data-live-search="true"
+              data-dropup-auto="false">
+        <option>---</option>
+      </select>
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label class="col-xs-3 control-label"><%=translate('Builder')%></label>
+    <div class="col-xs-8 ">
+      <select id="firstForm_builder_id" class="form-control" name="firstForm_builder_id" selectpicker
+              data-live-search="true" data-dropup-auto="false">
+        <option>---</option>
+      </select>
+
+      <!--
+                      <div class="input-group">
+                              <select id="builder_id" class="form-control" name="builder_id">
+                              </select>
+                          <span class="input-group-btn">
+                              <a href="#modalBuilder" role="button" class="btn btn-default" data-toggle="modal" style="color: rgb(255, 0, 0);">
+                                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                              </a>
+                          </span>
+                      </div>
+      -->
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-xs-3 control-label"><%=translate('Street')%></label>
+    <div class="col-xs-8">
+      <input type="text" class="form-control" id="house_address" name="house_address"
+             placeholder="<%=translate('Address Example')%>"/>
+    </div>
+  </div>
+
+  <div hidden id="add_floors" class="form-group">
+    <label class="col-xs-3 control-label"><%=translate('Floors')%></label>
+    <div class="col-xs-8">
+      <input type="text" class="form-control" id="floors" name="floors"/>
+    </div>
+  </div>
+
+  <div hidden id="add_porches" class="form-group">
+    <label class="col-xs-3 control-label"><%=translate('Porches')%></label>
+    <div class="col-xs-8">
+      <input type="text" class="form-control" id="porches" name="porches"/>
+    </div>
+  </div>
+
+  <div hidden id="add_apartments_from" class="form-group">
+    <label class="col-xs-3 control-label"><%=translate('Apartments from')%></label>
+    <div class="col-xs-8">
+      <input type="text" class="form-control" id="apartments_from" name="apartments_from"/>
+    </div>
+  </div>
+
+  <div hidden id="add_apartments_to" class="form-group">
+    <label class="col-xs-3 control-label"><%=translate('Apartments to')%></label>
+    <div class="col-xs-8">
+      <input type="text" class="form-control" id="apartments_to" name="apartments_to"/>
+    </div>
+  </div>
+
+  <div hidden id="add_house_from" class="form-group">
+    <label class="col-xs-3 control-label"><%=translate('House number from')%></label>
+    <div class="col-xs-8">
+      <input type="text" class="form-control" id="house_from" name="house_from"/>
+    </div>
+  </div>
+
+  <div hidden id="add_house_to" class="form-group">
+    <label class="col-xs-3 control-label"><%=translate('House number to')%></label>
+    <div class="col-xs-8">
+      <input type="text" class="form-control" id="house_to" name="house_to"/>
+    </div>
+  </div>
+
+  <div id="tableStatusAll-toolbar">
+    <button type="button" class="btn btn-default" id="statusAllButton" onClick="statusAllAdd()">
+      <%=translate('Create')%>
+    </button>
+    <button type="button" class="btn btn-default" id="statusDeleteButton" onClick="apartmentsDelete()" disabled>
+      <%=translate('Delete')%>
+    </button>
+  </div>
+
+  <div class="form-group">
+    <div class="col-xs-8 col-xs-offset-3">
+      <table
+          id="tableBuildingDoors"
+          data-toggle="table"
+          data-detail-formatter="detailBuildingDoorsFormatter"
+          data-detail-view="true"
+          data-click-to-select="true"
+          data-toolbar="#tableStatusAll-toolbar"
+      >
+        <thead>
+        <tr>
+          <th data-field="building_doors_id" data-sortable="true" data-visible="false">ID</th>
+          <th data-field="building_doors_object_id" data-sortable="true" data-visible="false">ID</th>
+          <th data-field="building_doors_porches" data-formatter="formatterBlock" data-sortable="true"><%=translate('Porche')%></th>
+          <th data-field="building_doors_floors" data-sortable="true" data-editable="true"><%=translate('Floor')%></th>
+          <th data-field="building_doors_apartments" data-sortable="true" data-width="10px" data-editable="true"><%=translate('Apartment')%></th>
+          <th data-field="building_doors_street_n" id="building_doors_street_n" data-sortable="true" data-width="10px"><%=translate('House')%></th>
+          <th data-field="building_doors_status1_id" data-sortable="true" data-visible="false">Status1 ID</th>
+          <th data-field="building_doors_status1_name" data-sortable="true">Status1</th>
+          <th data-field="building_doors_status2_id" data-sortable="true" data-visible="false">Status2 ID</th>
+          <th data-field="building_doors_status2_name" data-sortable="true">Status2</th>
+          <th data-field="building_doors_status3_id" data-sortable="true" data-visible="false">Status3 ID</th>
+          <th data-field="building_doors_status3_name" data-sortable="true">Status3</th>
+          <th data-field="state" data-radio="true"></th>
+          <!--<th data-field="operate" data-formatter="operateBuildingDoors1Formatter" data-align="right"></th>-->
+        </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-5 col-xs-offset-3">
+      <button type="submit" class="btn btn-default"><%=translate('Save')%></button>
+      <a href="doors_buildings" role="button" class="btn btn-default"><%=translate('Cancel')%></a>
+    </div>
+  </div>
+
+</form>
+
+
+<script>
+
+  //    ymaps.ready(init);
+  //    var myMap;
+  var $table = $('#tableBuilderEdit');
+
+  //    loadValues();
+  init();
+
+  function init() {
+
+    if (getURLParameter('building_id')) {
+      loadValues();
+    } else if (getURLParameter('object_id')) {
+      loadValuesObjects();
+    }
+  }
+
+
+  // ANAR
+
+  function loadValuesObjects() {
+    var ltd;
+    var lng;
+    var cityID;
+    var typeID;
+    var objectID = getURLParameter('object_id');
+    console.log('obj_id' + objectID);
+    $.ajax("house_list?object_id=" + objectID)
+    .done(function (result) {
+      result = result.substring(0, result.length - 1);
+      result = result.substring(1);
+      var response = JSON.parse(result);
+      $('#buildingsFormEdit')
+      .find('[name="id"]').val(response.object_id).end()
+      .find('[name="type_id"]').val(response.type_id).end()
+      .find('[name="firstForm_city_id"]').val(response.building_city_id).end()
+      .find('[name="house_address"]').val(response.street).end()
+      .find('[name="floors"]').val(response.floors).end();
+      $("#type_id").change();
+      $("#firstForm_city_id").change();
+      cityID = response.building_city_id;
+      buildingID = response.building_builder_id;
+      typeID = response.type_id;
+      console.log('city' + cityID);
+      loadFfBuilderID(cityID, buildingID);
+      if (typeID == 1) {
+        $('#tableBuildingDoors').bootstrapTable('hideColumn', 'building_doors_street_n');
+      } else if (typeID == 2) {
+        $('#tableBuildingDoors').bootstrapTable('hideColumn', 'building_doors_porches').bootstrapTable('hideColumn', 'building_doors_floors').bootstrapTable('hideColumn', 'building_doors_apartments');
+      }
+
+    });
+
+  }
+
+
+  // END ANAR
+
+  const urlTableData = "doors_status_list?object_id=" + getURLParameter('object_id');
+
+  // building_doors_id
+  // building_doors_porches / building_doors_floors / building_doors_apartments
+
+  function formatterBlock (val, row, index, field) {
+    return `<a
+      id         = "${row.building_doors_id}"
+      class      = "editable editable-click"
+      href       = "javascript:void(0)"
+      data-type  = "text"
+      data-field = "${field}"
+    >${val}</a>`
+  }
+
+  $('#tableBuildingDoors').bootstrapTable({
+    url: urlTableData,
+    onLoadSuccess: function() {
+
+      $('.editable').editable();
+      $('.editable').on('save', function(e, params) {
+        const data = {
+          id: e.target.id,
+          field: e.target.dataset.field,
+          newValue: params.newValue
+        };
+        console.log('With dataFormatter', data)
+      });
+
+      $('.editable').on('save', function(e, params) {
+        const data = {
+          id: '',
+          field: e.target.dataset.name,
+          newValue: params.newValue
+        };
+        console.log(e);
+        console.log('No dataFormatter', data);
+      })
+
+
+
+    }
+  });
+
+  $('#tableBuildingDoors .editable').on('click', function() {
+    console.log('button click')
+    // $('#tableBuildingDoors tbody tr td').editable('submit', {
+    //     url: '/newuser',
+    //     ajaxOptions: {
+    //         dataType: 'json' //assuming json response
+    //     },
+    //     success: function(data, config) {
+    //         if(data && data.id) {  //record created, response like {"id": 2}
+    //             //set pk
+    //             $(this).editable('option', 'pk', data.id);
+    //             //remove unsaved class
+    //             $(this).removeClass('editable-unsaved');
+    //             //show messages
+    //             var msg = 'New user created! Now editables submit individually.';
+    //             $('#msg').addClass('alert-success').removeClass('alert-error').html(msg).show();
+    //             $('#save-btn').hide();
+    //             $(this).off('save.newuser');
+    //         } else if(data && data.errors){
+    //             //server-side validation error, response like {"errors": {"username": "username already exist"} }
+    //             config.error.call(this, data.errors);
+    //         }
+    //     },
+    //     error: function(errors) {
+    //         console.log('error')
+    //     }
+    // });
+  });
+
+
+  //
+
+  $.getJSON('ironleg_city_list', function (data) {
+    $.each(data, function (key, val) {
+      $('#firstForm_city_id').append('<option value="' + val.city_id + '">' + val.city_name + '</option>');
+    });
+  })
+  .always(function () {
+    $('#city_id').selectpicker('refresh');
+  });
+
+
+  //            loadBuilderID();
+
+
+  function loadFfBuilderID(cityID, builderID) {
+    document.getElementById('firstForm_builder_id').options.length = 0;
+    $.getJSON('ironleg_builders_list?city_id=' + cityID, function (data) {
+      $.each(data, function (key, val) {
+        $('#firstForm_builder_id').append('<option value="' + val.builder_id + '">' + val.builder_name + '</option>');
+      });
+    })
+    .always(function () {
+      // console.log("bid",builderID);
+      $('#firstForm_builder_id').val(builderID);
+      $('#firstForm_builder_id').selectpicker('refresh');
+      //  $('#firstForm_builder_id').selectpicker('val',builderID);
+      //  $('#builder_id').selectpicker('refresh');
+    });
+  }
+
+
+  $("#firstForm_city_id").bind("change", function (event) {
+    document.getElementById('firstForm_builder_id').options.length = 0;
+    $.getJSON('ironleg_builders_list?city_id=' + $("#firstForm_city_id").val(), function (data) {
+      $.each(data, function (key, val) {
+        $('#firstForm_builder_id').append('<option value="' + val.builder_id + '">' + val.builder_name + '</option>');
+      });
+    })
+    .always(function () {
+      $('#firstForm_builder_id').selectpicker('refresh');
+    });
+  });
+
+
+  function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null
+  }
+
+
+  $('#buildingsFormEdit').formValidation({
+    framework: 'bootstrap',
+    excluded: ':disabled',
+    icon: {
+      valid: 'glyphicon glyphicon-ok',
+      invalid: 'glyphicon glyphicon-remove',
+      validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+      house_address: {
+        validators: {
+          notEmpty: {
+            message: '<%=translate('Street')%> <%=translate('is required')%>'
+          },
+        }
+      }
+    }
+  })
+  .on('success.form.fv', function (e) {
+// Save the form data via an Ajax request
+    e.preventDefault();
+
+    var $form = $(e.target),
+      id = $form.find('[name="id"]').val(),
+      $url,
+      typeID = document.getElementById('type_id').value;
+
+    if (id) {
+
+      console.log("bidgggg", typeID);
+      $url = 'house_update'
+    } else {
+      $url = 'house_insert'
+    }
+
+    $.ajax({
+      url: $url,
+      method: 'POST',
+      data: $form.serialize()
+    }).success(function (response) {
+      window.location = "doors_buildings";
+    });
+
+  });
+
+  $("#type_id").bind("change", function (event) {
+    var t_id = document.getElementById('type_id').value;
+    if (t_id == 1) {
+      $("#add_floors").show();
+      $("#add_porches").show();
+      $("#add_apartments_from").show();
+      $("#add_apartments_to").show();
+    } else {
+      $("#add_house_from").show();
+      $("#add_house_to").show();
+    }
+  });
+
+
+  function detailBuildingDoorsFormatter(index, row) {
+    var html = [];
+    var str = '';
+
+    str += '<table id="tableBuildingTest" class="table table-bordered"><thead><tr>';
+    str += '<th>Status1</th>';
+    str += '<th>Status2</th>';
+    str += '<th>Status3</th>';
+    str += '<th>Changed Time</th>';
+    str += '<th>Changed By</th>';
+    str += '<th>Customer id</th>';
+    str += '</tr></thead><tbody>';
+
+
+    $.ajax({
+      url: "doors_status_history?object_id=" + getURLParameter('object_id') + '&apartment=' + row.building_doors_apartments + '&house=' + row.building_doors_street_n,
+      async: false
+    })
+    .done(function (result) {
+//                    bootbox.alert(result);
+      result = JSON.parse(result);
+
+      $.each(result, function (i, val) {
+        //                      bootbox.alert(val.doors_status2_name);
+        str += '<td>' + val.building_doors_status1_name + '</td>';
+        str += '<td>' + val.building_doors_status2_name + '</td>';
+        str += '<td>' + val.building_doors_status3_name + '</td>';
+        str += '<td>' + val.building_doors_changed_time + '</td>';
+        str += '<td>' + val.building_doors_changed_by + '</td>';
+        str += '<td>' + val.building_doors_customer_id + '</td></tr>';
+        //                      str += '<div class="row">';
+        //                      str += '<div class="col-xs-4">'+ val.doors_status2_name + '</div><div class="col-xs-6">'+ val.doors_status3_name + '</div>';
+        //                      str += '</div>';
+        //                    html.push('<div class="row">');
+        //                   html.push('<div class="col-xs-2"><b>Status2 name: </b></div><div class="col-xs-6">'+ val.doors_status2_name + '</div>');
+        //                   html.push('</div>');
+      });
+//                return str;
+//            bootbox.alert(str);
+      str += '</tbody></table>';
+      html.push(str);
+    });
+//            bootbox.alert(s);
+//            html.push('test');
+
+//            html.push("<table id='tableStatusHistory' data-toggle='table' data-url='doors_status_history?building_id="+ getURLParameter('building_id')  + "&apartment=" + row.building_doors_apartments+"'><thead><tr><th data-field='building_doors_porches' data-sortable='true'><%=translate('Porche')%></th></tr></thead></table>");
+    return html.join('');
+  }
+
+  var $i = 1;
+
+  function statusAllAdd() {
+    var objectID = $("#id_object").val(),
+      porchesName = $("#porches").val(),
+      apartmentsFrom = $("#apartments_from").val(),
+      apartmentsTo = $("#apartments_to").val(),
+      houseFrom = $("#house_from").val(),
+      houseTo = $("#house_to").val(),
+      tableData = $('#tableBuildingDoors').bootstrapTable('getData'),
+      porchesName1 = porchesName,
+      apartmentsFrom1 = apartmentsFrom,
+      apartmentsTo1 = apartmentsTo,
+      houseFrom1 = houseFrom,
+      houseTo1 = houseTo,
+
+      dataExist = false;
+
+//              tableData = JSON.parse(tableData);
+
+    if (apartmentsFrom) {
+
+      if (apartmentsTo == "" || apartmentsTo < apartmentsFrom) {
+        apartmentsTo = apartmentsFrom;
+      }
+
+      while (apartmentsFrom <= apartmentsTo) {
+
+        jQuery.each(tableData, function (i, val) {
+          if (val.building_doors_porches == porchesName && val.building_doors_apartments == apartmentsFrom) {
+            dataExist = true;
+          }
+        });
+        if (dataExist == false) {
+          $('#tableBuildingDoors').bootstrapTable('append', {
+            id: $i,
+            building_doors_porches: porchesName,
+            building_doors_floors: '',
+            building_doors_apartments: apartmentsFrom,
+            building_doors_status1_id: '1',
+            building_doors_status1_name: 'Unknown',
+            building_doors_status2_id: '',
+            building_doors_status2_name: '',
+            building_doors_status3_id: '',
+            building_doors_status3_name: ''
+          });
+          $i++;
+        } else {
+          //                       bootbox.alert("apartment already exist");
+          dataExist = false;
+        }
+
+        apartmentsFrom++;
+      }
+
+    } else if (houseFrom) {
+
+      if (houseTo == "" || houseTo < houseFrom) {
+        houseTo = houseFrom;
+      }
+
+      while (houseFrom <= houseTo) {
+
+        jQuery.each(tableData, function (i, val) {
+          if (val.building_doors_street_n == houseFrom) {
+            dataExist = true;
+          }
+        });
+        if (dataExist == false) {
+          $('#tableBuildingDoors').bootstrapTable('append', {
+            id: $i,
+            building_doors_street_n: houseFrom,
+            building_doors_status1_id: '1',
+            building_doors_status1_name: 'Unknown',
+            building_doors_status2_id: '',
+            building_doors_status2_name: '',
+            building_doors_status3_id: '',
+            building_doors_status3_name: ''
+          });
+          $i++;
+        } else {
+          //                       bootbox.alert("apartment already exist");
+          dataExist = false;
+        }
+
+        houseFrom++;
+      }
+
+    }
+
+    $.ajax({
+      url: "aparments_insert?object_id=" + objectID + "&apartments_from=" + apartmentsFrom1 + "&apartments_to=" + apartmentsTo1 + "&house_from=" + houseFrom1 + "&house_to=" + houseTo1 + "&porches=" + porchesName1,
+      method: 'POST'
+    }).success(function (response) {
+      $('#tableBuildingDoors').bootstrapTable('refresh');
+    });
+
+
+  }
+
+  $('#tableBuildingDoors').on('click-row.bs.table', function (e, row, $element) {
+    setTimeout(function () {
+      // console.log(row.building_doors_id);
+      // console.log(row.building_doors_status1_id);
+
+      if (row.building_doors_status1_id != 1) {
+        document.getElementById("statusDeleteButton").disabled = true;
+      } else {
+        document.getElementById("statusDeleteButton").disabled = false;
+      }
+    }, 10);
+  });
+
+  function apartmentsDelete() {
+    var tableData = $('#tableBuildingDoors').bootstrapTable('getSelections'),
+      BuildingDoorsID = tableData[0].building_doors_id;
+
+    bootbox.confirm("Are you sure?", function (result) {
+      if (result == true) {
+        $.ajax({
+          url: "doors_building_status_delete?doors_building_id=" + BuildingDoorsID,
+          method: 'POST'
+        }).success(function (response) {
+          var result = JSON.parse(response);
+          if (result.errors) {
+            bootbox.alert(result.errors);
+          } else {
+//                                  $('#tableBuildingDoors').bootstrapTable('removeAll');
+            $('#tableBuildingDoors').bootstrapTable('refresh');
+            document.getElementById("statusDeleteButton").disabled = true;
+          }
+        });
+      }
+    });
+
+  }
+
+
+</script>
+
+<style>
+  .editable-popup .editable-cancel {
+    margin-right: 7px
+  }
+
+  .editable-popup .editable-input {
+    margin-left: 7px
+  }
+</style>

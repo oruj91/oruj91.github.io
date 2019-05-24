@@ -131,9 +131,28 @@
         <tr>
           <th data-field="building_doors_id" data-sortable="true" data-visible="false">ID</th>
           <th data-field="building_doors_object_id" data-sortable="true" data-visible="false">ID</th>
-          <th data-field="building_doors_porches" data-formatter="formatterBlock" data-sortable="true"><%=translate('Porche')%></th>
-          <th data-field="building_doors_floors" data-sortable="true" data-editable="true"><%=translate('Floor')%></th>
-          <th data-field="building_doors_apartments" data-sortable="true" data-width="10px" data-editable="true"><%=translate('Apartment')%></th>
+          <th
+              data-field     = "building_doors_porches"
+              data-editable  = "true"
+              data-sortable  = "true"
+          >
+            <%=translate('Porche')%>
+          </th>
+          <th
+              data-field    = "building_doors_floors"
+              data-formatter = "formatterEditableSimple"
+              data-sortable = "true"
+          >
+            <%=translate('Floor')%>
+          </th>
+          <th
+              data-field     = "building_doors_apartments"
+              data-formatter = "formatterEditableApartment"
+              data-sortable  = "true"
+              data-width     = "10px"
+          >
+            <%=translate('Apartment')%>
+          </th>
           <th data-field="building_doors_street_n" id="building_doors_street_n" data-sortable="true" data-width="10px"><%=translate('House')%></th>
           <th data-field="building_doors_status1_id" data-sortable="true" data-visible="false">Status1 ID</th>
           <th data-field="building_doors_status1_name" data-sortable="true">Status1</th>
@@ -159,14 +178,12 @@
 
 
 <script>
-
+  var $table = $('#tableBuilderEdit');
   //    ymaps.ready(init);
   //    var myMap;
-  var $table = $('#tableBuilderEdit');
-
   //    loadValues();
-  init();
 
+  init();
   function init() {
 
     if (getURLParameter('building_id')) {
@@ -176,6 +193,89 @@
     }
   }
 
+  // building_doors_id
+  // building_doors_porches / building_doors_floors / building_doors_apartments
+
+  function formatterEditableSimple (val, row, index, field) {
+    return `<a
+    class      = "editable editable-simple text-danger"
+    href       = "javascript:void(0)"
+    data-type  = "number"
+    data-id    = "${row.building_doors_id}"
+    data-field = "${field}"
+  >${val}</a>`
+  }
+  function formatterEditableApartment (val, row, index, field) {
+    return `<a
+    class      = "editable editable-apartment text-danger"
+    href       = "javascript:void(0)"
+    data-type  = "number"
+    data-id    = "${row.building_doors_id}"
+    data-field = "${field}"
+  >${val}</a>`
+  }
+
+  $('#tableBuildingDoors').bootstrapTable({
+    url: "doors_status_list?object_id=" + getURLParameter('object_id'),
+    onLoadSuccess: function(data) {
+
+      $('.editable-apartment').editable({
+        validate: function(val) {
+          let apartmentRepeat = false;
+          $.each(data, function(key, apartment) {
+            if (apartment.building_doors_apartments === val) {
+              apartmentRepeat = true
+            }
+          })
+          if ($.trim(val) === '' || $.trim(val) === '0') {
+            return "This field is required"
+          }
+          if (apartmentRepeat === true) {
+            return "This apartment has already registered"
+          }
+        },
+        url: function(data) {
+          // console.log('url data:', data)
+        },
+        ajaxOptions: {
+          type: 'put',
+          dataType: 'json'
+        }
+      })
+      .on('save', function(e, params) {
+        const data = {
+          id: e.target.dataset.id,
+          field: e.target.dataset.field,
+          newValue: params.newValue
+        };
+        console.log('On save data', data)
+      });
+
+      $('.editable-simple').editable({
+        validate: function(val) {
+          if ($.trim(val) === '' || $.trim(val) === '0') {
+            return "This field is required"
+          }
+        },
+        url: function(data) {
+          // console.log('url data:', data)
+        },
+        ajaxOptions: {
+          type: 'put',
+          dataType: 'json'
+        }
+      })
+      .on('save', function(e, params) {
+        const data = {
+          id: e.target.dataset.id,
+          field: e.target.dataset.field,
+          newValue: params.newValue
+        };
+        console.log('On save data', data)
+      });
+
+    }
+  });
 
   // ANAR
 
@@ -216,82 +316,6 @@
 
 
   // END ANAR
-
-  const urlTableData = "doors_status_list?object_id=" + getURLParameter('object_id');
-
-  // building_doors_id
-  // building_doors_porches / building_doors_floors / building_doors_apartments
-
-  function formatterBlock (val, row, index, field) {
-    return `<a
-      id         = "${row.building_doors_id}"
-      class      = "editable editable-click"
-      href       = "javascript:void(0)"
-      data-type  = "text"
-      data-field = "${field}"
-    >${val}</a>`
-  }
-
-  $('#tableBuildingDoors').bootstrapTable({
-    url: urlTableData,
-    onLoadSuccess: function() {
-
-      $('.editable').editable();
-      $('.editable').on('save', function(e, params) {
-        const data = {
-          id: e.target.id,
-          field: e.target.dataset.field,
-          newValue: params.newValue
-        };
-        console.log('With dataFormatter', data)
-      });
-
-      $('.editable').on('save', function(e, params) {
-        const data = {
-          id: '',
-          field: e.target.dataset.name,
-          newValue: params.newValue
-        };
-        console.log(e);
-        console.log('No dataFormatter', data);
-      })
-
-
-
-    }
-  });
-
-  $('#tableBuildingDoors .editable').on('click', function() {
-    console.log('button click')
-    // $('#tableBuildingDoors tbody tr td').editable('submit', {
-    //     url: '/newuser',
-    //     ajaxOptions: {
-    //         dataType: 'json' //assuming json response
-    //     },
-    //     success: function(data, config) {
-    //         if(data && data.id) {  //record created, response like {"id": 2}
-    //             //set pk
-    //             $(this).editable('option', 'pk', data.id);
-    //             //remove unsaved class
-    //             $(this).removeClass('editable-unsaved');
-    //             //show messages
-    //             var msg = 'New user created! Now editables submit individually.';
-    //             $('#msg').addClass('alert-success').removeClass('alert-error').html(msg).show();
-    //             $('#save-btn').hide();
-    //             $(this).off('save.newuser');
-    //         } else if(data && data.errors){
-    //             //server-side validation error, response like {"errors": {"username": "username already exist"} }
-    //             config.error.call(this, data.errors);
-    //         }
-    //     },
-    //     error: function(errors) {
-    //         console.log('error')
-    //     }
-    // });
-  });
-
-
-  //
 
   $.getJSON('ironleg_city_list', function (data) {
     $.each(data, function (key, val) {
@@ -590,11 +614,6 @@
 </script>
 
 <style>
-  .editable-popup .editable-cancel {
-    margin-right: 7px
-  }
-
-  .editable-popup .editable-input {
-    margin-left: 7px
-  }
+  .editable-popup .control-group { padding: 0 7px }
+  .editable-popup .editable-clear-x { right: 7px !important }
 </style>

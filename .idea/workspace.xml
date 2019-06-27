@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Store/doors_house_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Store/doors_house_edit.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="272">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -93,11 +94,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/pages/AdNew.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+            <state relative-caret-position="1445">
+              <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Store/doors_house_edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="505" column="29" selection-start-line="505" selection-start-column="29" selection-end-line="505" selection-end-column="29" />
+              <folding>
+                <element signature="n#div#13;n#form#0;n#!!top" />
+                <element signature="n#div#0;n#div#13;n#form#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -250,11 +264,6 @@
               <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="Store" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -370,6 +379,8 @@
       <workItem from="1558011792801" duration="3376000" />
       <workItem from="1558069855252" duration="25230000" />
       <workItem from="1558619560078" duration="248000" />
+      <workItem from="1558705196267" duration="1212000" />
+      <workItem from="1561093596713" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="phone input spaces support">
       <created>1556480760201</created>
@@ -378,11 +389,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556480760201</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="editable input's validation">
+      <created>1558705252935</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558705252935</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256778000" />
+    <option name="totallyTimeSpent" value="258015000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,9 +413,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6839677" visible="true" weight="0.18651211" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6839677" visible="true" weight="0.19968387" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" sideWeight="0.3160323" side_tool="true" weight="0.1899841" />
@@ -485,7 +502,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="phone input spaces support" />
-    <option name="LAST_COMMIT_MESSAGE" value="phone input spaces support" />
+    <MESSAGE value="editable input's validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="editable input's validation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -542,13 +560,7 @@
         <state relative-caret-position="-612" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-1/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/dist/index.html" />
     <entry file="file://$PROJECT_DIR$/ProjectVue-1/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -762,7 +774,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="272">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -823,6 +835,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/pages/AdNew.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/components/Ad.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -832,85 +851,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Store/doors_house_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+        <state relative-caret-position="521">
+          <caret line="505" column="29" selection-start-line="505" selection-start-column="29" selection-end-line="505" selection-end-column="29" />
           <folding>
             <element signature="n#div#13;n#form#0;n#!!top" />
             <element signature="n#div#0;n#div#13;n#form#0;n#!!top" />
-            <element signature="e#6434#6458#0" />
-            <element signature="e#6569#6717#0" />
-            <element signature="e#6612#6639#0" />
-            <element signature="e#6679#6713#0" />
-            <element signature="e#6984#8103#0" />
-            <element signature="e#7764#7863#0" />
-            <element signature="e#7886#8096#0" />
-            <element signature="e#10560#10720#0" />
-            <element signature="e#10599#10714#0" />
-            <element signature="e#10744#10792#0" />
-            <element signature="e#10878#11507#0" />
-            <element signature="e#11025#11202#0" />
-            <element signature="e#11066#11194#0" />
-            <element signature="e#11228#11501#0" />
-            <element signature="e#11382#11443#0" />
-            <element signature="e#11568#12012#0" />
-            <element signature="e#11738#11915#0" />
-            <element signature="e#11779#11907#0" />
-            <element signature="e#11941#12006#0" />
-            <element signature="e#12253#12660#0" />
-            <element signature="e#12320#12459#0" />
-            <element signature="e#12473#12656#0" />
-            <element signature="e#12496#12650#0" />
-            <element signature="e#12518#12642#0" />
-            <element signature="e#12540#12631#0" />
-            <element signature="e#12700#13215#0" />
-            <element signature="e#12924#12998#0" />
-            <element signature="e#13004#13039#0" />
-            <element signature="e#13052#13128#0" />
-            <element signature="e#13158#13208#0" />
-            <element signature="e#13267#13578#0" />
-            <element signature="e#13345#13493#0" />
-            <element signature="e#13499#13574#0" />
-            <element signature="e#13635#15919#0" />
-            <element signature="e#14006#14199#0" />
-            <element signature="e#14229#15490#0" />
-            <element signature="e#14351#15363#0" />
-            <element signature="e#14836#14887#0" />
-            <element signature="e#15366#15395#0" />
-            <element signature="e#15493#15524#0" />
-            <element signature="e#15962#18984#0" />
-            <element signature="e#16566#17679#0" />
-            <element signature="e#16727#17672#0" />
-            <element signature="e#16779#16942#0" />
-            <element signature="e#16889#16932#0" />
-            <element signature="e#16977#17514#0" />
-            <element signature="e#17039#17486#0" />
-            <element signature="e#17520#17637#0" />
-            <element signature="e#17700#18626#0" />
-            <element signature="e#17826#18619#0" />
-            <element signature="e#17878#17989#0" />
-            <element signature="e#17936#17979#0" />
-            <element signature="e#18024#18466#0" />
-            <element signature="e#18086#18438#0" />
-            <element signature="e#18472#18589#0" />
-            <element signature="e#18639#18881#0" />
-            <element signature="e#18911#18976#0" />
-            <element signature="e#19242#19322#0" />
-            <element signature="e#19328#19409#0" />
-            <element signature="e#19459#20258#0" />
-            <element signature="e#19651#20251#0" />
-            <element signature="e#19679#20245#0" />
-            <element signature="e#19696#19816#0" />
-            <element signature="e#19846#20235#0" />
-            <element signature="e#19922#19977#0" />
-            <element signature="e#19983#20225#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/pages/AdNew.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
         </state>
       </provider>
     </entry>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,19 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#140#161#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/router.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/store/ads.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
+            <state relative-caret-position="682">
               <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
             </state>
           </provider>
@@ -96,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/pages/AdNew.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+            <state relative-caret-position="359">
+              <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -124,8 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>media__container</find>
-      <find>itemArr</find>
       <find>card-container-dark</find>
       <find>json</find>
       <find>media__item</find>
@@ -151,9 +134,11 @@
       <find>nav-item-account</find>
       <find>header__panel__user</find>
       <find>navbar navbar-expand-lg navbar-dark header__menu</find>
-      <find>header__panel__user</find>
       <find>nav-item</find>
       <find>Ad application</find>
+      <find>object_id</find>
+      <find>getURLParameter</find>
+      <find>decodeURIComponent</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -243,6 +228,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,13 +239,12 @@
             <path>
               <item name="oruj91.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="oruj91.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectVue-1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,7 +367,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256778000" />
+    <option name="totallyTimeSpent" value="257013000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,10 +379,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6839677" visible="true" weight="0.18651211" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6839677" visible="true" weight="0.19123931" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" sideWeight="0.3160323" side_tool="true" weight="0.1899841" />
@@ -412,7 +397,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.30552545" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.39715537" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49947312" visible="true" weight="0.28710726" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49947312" weight="0.28710726" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -542,20 +527,7 @@
         <state relative-caret-position="-612" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-1/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-1/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/dist/index.html" />
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/formatter.html" />
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/channel.html" />
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/paginationjs/pagination.min.js">
@@ -743,7 +715,9 @@
     <entry file="file://$PROJECT_DIR$/../vue-project/src/routes.js" />
     <entry file="file://$PROJECT_DIR$/ProjectVue-1/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
+        <state relative-caret-position="187">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectVue-1/.eslintrc.js">
@@ -791,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/store/ads.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -823,6 +790,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Store/doors_house_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="369" column="26" lean-forward="true" selection-start-line="369" selection-start-column="26" selection-end-line="369" selection-end-column="26" />
+          <folding>
+            <element signature="n#div#13;n#form#0;n#!!top" />
+            <element signature="n#div#0;n#div#13;n#form#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/store/ads.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/components/Ad.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -830,87 +822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Store/doors_house_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
-          <folding>
-            <element signature="n#div#13;n#form#0;n#!!top" />
-            <element signature="n#div#0;n#div#13;n#form#0;n#!!top" />
-            <element signature="e#6434#6458#0" />
-            <element signature="e#6569#6717#0" />
-            <element signature="e#6612#6639#0" />
-            <element signature="e#6679#6713#0" />
-            <element signature="e#6984#8103#0" />
-            <element signature="e#7764#7863#0" />
-            <element signature="e#7886#8096#0" />
-            <element signature="e#10560#10720#0" />
-            <element signature="e#10599#10714#0" />
-            <element signature="e#10744#10792#0" />
-            <element signature="e#10878#11507#0" />
-            <element signature="e#11025#11202#0" />
-            <element signature="e#11066#11194#0" />
-            <element signature="e#11228#11501#0" />
-            <element signature="e#11382#11443#0" />
-            <element signature="e#11568#12012#0" />
-            <element signature="e#11738#11915#0" />
-            <element signature="e#11779#11907#0" />
-            <element signature="e#11941#12006#0" />
-            <element signature="e#12253#12660#0" />
-            <element signature="e#12320#12459#0" />
-            <element signature="e#12473#12656#0" />
-            <element signature="e#12496#12650#0" />
-            <element signature="e#12518#12642#0" />
-            <element signature="e#12540#12631#0" />
-            <element signature="e#12700#13215#0" />
-            <element signature="e#12924#12998#0" />
-            <element signature="e#13004#13039#0" />
-            <element signature="e#13052#13128#0" />
-            <element signature="e#13158#13208#0" />
-            <element signature="e#13267#13578#0" />
-            <element signature="e#13345#13493#0" />
-            <element signature="e#13499#13574#0" />
-            <element signature="e#13635#15919#0" />
-            <element signature="e#14006#14199#0" />
-            <element signature="e#14229#15490#0" />
-            <element signature="e#14351#15363#0" />
-            <element signature="e#14836#14887#0" />
-            <element signature="e#15366#15395#0" />
-            <element signature="e#15493#15524#0" />
-            <element signature="e#15962#18984#0" />
-            <element signature="e#16566#17679#0" />
-            <element signature="e#16727#17672#0" />
-            <element signature="e#16779#16942#0" />
-            <element signature="e#16889#16932#0" />
-            <element signature="e#16977#17514#0" />
-            <element signature="e#17039#17486#0" />
-            <element signature="e#17520#17637#0" />
-            <element signature="e#17700#18626#0" />
-            <element signature="e#17826#18619#0" />
-            <element signature="e#17878#17989#0" />
-            <element signature="e#17936#17979#0" />
-            <element signature="e#18024#18466#0" />
-            <element signature="e#18086#18438#0" />
-            <element signature="e#18472#18589#0" />
-            <element signature="e#18639#18881#0" />
-            <element signature="e#18911#18976#0" />
-            <element signature="e#19242#19322#0" />
-            <element signature="e#19328#19409#0" />
-            <element signature="e#19459#20258#0" />
-            <element signature="e#19651#20251#0" />
-            <element signature="e#19679#20245#0" />
-            <element signature="e#19696#19816#0" />
-            <element signature="e#19846#20235#0" />
-            <element signature="e#19922#19977#0" />
-            <element signature="e#19983#20225#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectVue-1/src/pages/AdNew.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+        <state relative-caret-position="359">
+          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -1,8 +1,6 @@
 % layout 'default';
 
 <br>
-
-
 <form id="buildingsFormEdit" method="get" class="form-horizontal">
 
   <div class="form-group">
@@ -120,40 +118,43 @@
   <div class="form-group">
     <div class="col-xs-8 col-xs-offset-3">
       <table
-          id="tableBuildingDoors"
-          data-toggle="table"
-          data-detail-formatter="detailBuildingDoorsFormatter"
-          data-detail-view="true"
-          data-click-to-select="true"
-          data-toolbar="#tableStatusAll-toolbar"
+        id="tableBuildingDoors"
+        data-toggle="table"
+        data-detail-formatter="detailBuildingDoorsFormatter"
+        data-detail-view="true"
+        data-click-to-select="true"
+        data-toolbar="#tableStatusAll-toolbar"
+        data-unique-id="building_doors_id"
       >
         <thead>
         <tr>
           <th data-field="building_doors_id" data-sortable="true" data-visible="false">ID</th>
           <th data-field="building_doors_object_id" data-sortable="true" data-visible="false">ID</th>
           <th
-              data-field     = "building_doors_porches"
-              data-editable  = "true"
-              data-sortable  = "true"
+            data-field="building_doors_porches"
+            data-sortable="true"
+            data-editable="true"
           >
             <%=translate('Porche')%>
           </th>
           <th
-              data-field    = "building_doors_floors"
-              data-formatter = "formatterEditableSimple"
-              data-sortable = "true"
+            data-field="building_doors_floors"
+            data-editable="true"
+            data-sortable="true"
           >
             <%=translate('Floor')%>
           </th>
           <th
-              data-field     = "building_doors_apartments"
-              data-formatter = "formatterEditableApartment"
-              data-sortable  = "true"
-              data-width     = "10px"
+            data-field="building_doors_apartments"
+            data-sortable="true"
+            data-editable="true"
+            data-width="10px"
           >
             <%=translate('Apartment')%>
           </th>
-          <th data-field="building_doors_street_n" id="building_doors_street_n" data-sortable="true" data-width="10px"><%=translate('House')%></th>
+          <th data-field="building_doors_street_n" id="building_doors_street_n" data-sortable="true" data-width="10px">
+            <%=translate('House')%>
+          </th>
           <th data-field="building_doors_status1_id" data-sortable="true" data-visible="false">Status1 ID</th>
           <th data-field="building_doors_status1_name" data-sortable="true">Status1</th>
           <th data-field="building_doors_status2_id" data-sortable="true" data-visible="false">Status2 ID</th>
@@ -176,14 +177,9 @@
 
 </form>
 
-
 <script>
-  var $table = $('#tableBuilderEdit');
-  //    ymaps.ready(init);
-  //    var myMap;
-  //    loadValues();
-
   init();
+
   function init() {
 
     if (getURLParameter('building_id')) {
@@ -193,91 +189,44 @@
     }
   }
 
-  // building_doors_id
-  // building_doors_porches / building_doors_floors / building_doors_apartments
-
-  function formatterEditableSimple (val, row, index, field) {
-    return `<a
-    class      = "editable editable-simple text-danger"
-    href       = "javascript:void(0)"
-    data-type  = "number"
-    data-id    = "${row.building_doors_id}"
-    data-field = "${field}"
-  >${val}</a>`
-  }
-  function formatterEditableApartment (val, row, index, field) {
-    return `<a
-    class      = "editable editable-apartment text-danger"
-    href       = "javascript:void(0)"
-    data-type  = "number"
-    data-id    = "${row.building_doors_id}"
-    data-field = "${field}"
-  >${val}</a>`
-  }
-
   $('#tableBuildingDoors').bootstrapTable({
     url: "doors_status_list?object_id=" + getURLParameter('object_id'),
-    onLoadSuccess: function(data) {
+    // onEditableSave: function (field, row, oldValue, $el) {
+    //   $('.editable').editable({
+    //     validate: function(val) {
+    //       console.log('validate');
+    //       let apartmentRepeat = false;
+    //       $.each(data, function(key, apartment) {
+    //         if (apartment.building_doors_apartments === val) {
+    //           apartmentRepeat = true
+    //         }
+    //       })
+    //       if ($.trim(val) === '' || $.trim(val) === '0') {
+    //         return "This field is required"
+    //       }
+    //       if (isNaN($.trim(val)) === false) {
+    //         return "Only numbers"
+    //       }
+    //       if (apartmentRepeat === true) {
+    //         return "This apartment has already registered"
+    //       }
+    //     }
+    //   })
+    // },
+    onEditableHidden: function (field, row, $el) {
+      const data = {
+        building_doors_id: row.building_doors_id,
+        [field]: $el[0].innerHTML
+      }
 
-      $('.editable-apartment').editable({
-        validate: function(val) {
-          let apartmentRepeat = false;
-          $.each(data, function(key, apartment) {
-            if (apartment.building_doors_apartments === val) {
-              apartmentRepeat = true
-            }
-          })
-          if ($.trim(val) === '' || $.trim(val) === '0') {
-            return "This field is required"
-          }
-          if (apartmentRepeat === true) {
-            return "This apartment has already registered"
-          }
-        },
-        url: function(data) {
-          // console.log('url data:', data)
-        },
-        ajaxOptions: {
-          type: 'put',
-          dataType: 'json'
-        }
+      console.log(data)
+      $.ajax({
+        url: ironLegDoorsUpdate,
+        data: data,
+        method: 'GET'
       })
-      .on('save', function(e, params) {
-        const data = {
-          id: e.target.dataset.id,
-          field: e.target.dataset.field,
-          newValue: params.newValue
-        };
-        console.log('On save data', data)
-      });
-
-      $('.editable-simple').editable({
-        validate: function(val) {
-          if ($.trim(val) === '' || $.trim(val) === '0') {
-            return "This field is required"
-          }
-        },
-        url: function(data) {
-          // console.log('url data:', data)
-        },
-        ajaxOptions: {
-          type: 'put',
-          dataType: 'json'
-        }
-      })
-      .on('save', function(e, params) {
-        const data = {
-          id: e.target.dataset.id,
-          field: e.target.dataset.field,
-          newValue: params.newValue
-        };
-        console.log('On save data', data)
-      });
-
     }
   });
-
-  // ANAR
 
   function loadValuesObjects() {
     var ltd;
@@ -285,12 +234,11 @@
     var cityID;
     var typeID;
     var objectID = getURLParameter('object_id');
-    console.log('obj_id' + objectID);
+    // console.log('obj_id' + objectID);
     $.ajax("house_list?object_id=" + objectID)
     .done(function (result) {
-      result = result.substring(0, result.length - 1);
-      result = result.substring(1);
-      var response = JSON.parse(result);
+      // console.log(result);
+      var response = result[0];
       $('#buildingsFormEdit')
       .find('[name="id"]').val(response.object_id).end()
       .find('[name="type_id"]').val(response.type_id).end()
@@ -302,8 +250,8 @@
       cityID = response.building_city_id;
       buildingID = response.building_builder_id;
       typeID = response.type_id;
-      console.log('city' + cityID);
       loadFfBuilderID(cityID, buildingID);
+      loadCityID(cityID);
       if (typeID == 1) {
         $('#tableBuildingDoors').bootstrapTable('hideColumn', 'building_doors_street_n');
       } else if (typeID == 2) {
@@ -314,21 +262,19 @@
 
   }
 
+  function loadCityID(cityID) {
+    document.getElementById('firstForm_city_id').options.length = 0;
+    $.getJSON('ironleg_city_list', function (data) {
+      $.each(data, function (key, val) {
+        $('#firstForm_city_id').append('<option value="' + val.city_id + '">' + val.city_name + '</option>');
+      });
+    })
+    .always(function () {
+      $('#firstForm_city_id').val(cityID);
+      $('#firstForm_city_id').selectpicker('refresh');
 
-  // END ANAR
-
-  $.getJSON('ironleg_city_list', function (data) {
-    $.each(data, function (key, val) {
-      $('#firstForm_city_id').append('<option value="' + val.city_id + '">' + val.city_name + '</option>');
     });
-  })
-  .always(function () {
-    $('#city_id').selectpicker('refresh');
-  });
-
-
-  //            loadBuilderID();
-
+  }
 
   function loadFfBuilderID(cityID, builderID) {
     document.getElementById('firstForm_builder_id').options.length = 0;
@@ -346,7 +292,6 @@
     });
   }
 
-
   $("#firstForm_city_id").bind("change", function (event) {
     document.getElementById('firstForm_builder_id').options.length = 0;
     $.getJSON('ironleg_builders_list?city_id=' + $("#firstForm_city_id").val(), function (data) {
@@ -358,7 +303,6 @@
       $('#firstForm_builder_id').selectpicker('refresh');
     });
   });
-
 
   function getURLParameter(name) {
     return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null
@@ -386,14 +330,12 @@
   .on('success.form.fv', function (e) {
 // Save the form data via an Ajax request
     e.preventDefault();
-
     var $form = $(e.target),
-      id = $form.find('[name="id"]').val(),
-      $url,
-      typeID = document.getElementById('type_id').value;
+    id = $form.find('[name="id"]').val(),
+    $url,
+    typeID = document.getElementById('type_id').value;
 
     if (id) {
-
       console.log("bidgggg", typeID);
       $url = 'house_update'
     } else {
@@ -477,21 +419,19 @@
 
   function statusAllAdd() {
     var objectID = $("#id_object").val(),
-      porchesName = $("#porches").val(),
-      apartmentsFrom = $("#apartments_from").val(),
-      apartmentsTo = $("#apartments_to").val(),
-      houseFrom = $("#house_from").val(),
-      houseTo = $("#house_to").val(),
-      tableData = $('#tableBuildingDoors').bootstrapTable('getData'),
-      porchesName1 = porchesName,
-      apartmentsFrom1 = apartmentsFrom,
-      apartmentsTo1 = apartmentsTo,
-      houseFrom1 = houseFrom,
-      houseTo1 = houseTo,
-
-      dataExist = false;
-
-//              tableData = JSON.parse(tableData);
+    porchesName = $("#porches").val(),
+    apartmentsFrom = $("#apartments_from").val(),
+    apartmentsTo = $("#apartments_to").val(),
+    houseFrom = $("#house_from").val(),
+    houseTo = $("#house_to").val(),
+    tableData = $('#tableBuildingDoors').bootstrapTable('getData'),
+    floors = $('#floors').val(),
+    porchesName1 = porchesName,
+    apartmentsFrom1 = apartmentsFrom,
+    apartmentsTo1 = apartmentsTo,
+    houseFrom1 = houseFrom,
+    houseTo1 = houseTo,
+    dataExist = false;
 
     if (apartmentsFrom) {
 
@@ -502,15 +442,18 @@
       while (apartmentsFrom <= apartmentsTo) {
 
         jQuery.each(tableData, function (i, val) {
+          // console.log('porchesName: ', porchesName);
+          // console.log('val.building_doors_porches: ', val.building_doors_porches);
           if (val.building_doors_porches == porchesName && val.building_doors_apartments == apartmentsFrom) {
+            console.log('worked');
             dataExist = true;
           }
         });
-        if (dataExist == false) {
+        if (dataExist === false) {
           $('#tableBuildingDoors').bootstrapTable('append', {
             id: $i,
             building_doors_porches: porchesName,
-            building_doors_floors: '',
+            building_doors_floors: floors,
             building_doors_apartments: apartmentsFrom,
             building_doors_status1_id: '1',
             building_doors_status1_name: 'Unknown',
@@ -521,7 +464,7 @@
           });
           $i++;
         } else {
-          //                       bootbox.alert("apartment already exist");
+          // bootbox.alert("apartment already exist");
           dataExist = false;
         }
 
@@ -535,13 +478,12 @@
       }
 
       while (houseFrom <= houseTo) {
-
         jQuery.each(tableData, function (i, val) {
           if (val.building_doors_street_n == houseFrom) {
             dataExist = true;
           }
         });
-        if (dataExist == false) {
+        if (dataExist === false) {
           $('#tableBuildingDoors').bootstrapTable('append', {
             id: $i,
             building_doors_street_n: houseFrom,
@@ -554,7 +496,7 @@
           });
           $i++;
         } else {
-          //                       bootbox.alert("apartment already exist");
+          // bootbox.alert("apartment already exist");
           dataExist = false;
         }
 
@@ -562,15 +504,58 @@
       }
 
     }
-
+    // console.log('apartmentsFrom1', apartmentsFrom1);
+    // console.log('apartmentsTo1', apartmentsTo1);
     $.ajax({
-      url: "aparments_insert?object_id=" + objectID + "&apartments_from=" + apartmentsFrom1 + "&apartments_to=" + apartmentsTo1 + "&house_from=" + houseFrom1 + "&house_to=" + houseTo1 + "&porches=" + porchesName1,
+      url:
+      "aparments_insert?object_id=" + objectID +
+      "&apartments_from=" + apartmentsFrom1 +
+      "&apartments_to=" + apartmentsTo1 +
+      "&house_from=" + houseFrom1 +
+      "&house_to=" + houseTo1 +
+      "&porches=" + porchesName1 +
+      "&floors=" + floors,
       method: 'POST'
-    }).success(function (response) {
-      $('#tableBuildingDoors').bootstrapTable('refresh');
+    }).success(function(response) {
+      // $('#tableBuildingDoors').bootstrapTable('refresh');
+      let existObjects;
+      let objectType;
+      // console.log('response: ', response);
+
+      if (response.houses) {
+        existObjects = response.houses.exist;
+        objectType = 'houses'
+      } else {
+        existObjects = response.apartments.exist;
+        objectType = 'apartments'
+      }
+
+      // console.log('existObjects: ', existObjects);
+
+      if (existObjects) {
+        const rows = document.querySelectorAll('#tableBuildingDoors tbody tr');
+
+        let objectNumbers = [];
+
+        rows.forEach(row => {
+          row.style.background = 'unset'
+        });
+
+        existObjects.forEach(object => {
+          objectNumbers.push(object[objectType]);
+
+          rows.forEach(row => {
+            if (row.childNodes[1].textContent === object[objectType]) {
+              row.style.background = '#fbe8ea';
+            }
+            if (row.getAttribute('data-uniqueid') === object.id) {
+              row.style.background = '#fbe8ea';
+            }
+          })
+        });
+        bootbox.alert(`Apartment ${objectNumbers} already exist`);
+      }
     });
-
-
   }
 
   $('#tableBuildingDoors').on('click-row.bs.table', function (e, row, $element) {
@@ -588,7 +573,7 @@
 
   function apartmentsDelete() {
     var tableData = $('#tableBuildingDoors').bootstrapTable('getSelections'),
-      BuildingDoorsID = tableData[0].building_doors_id;
+    BuildingDoorsID = tableData[0].building_doors_id;
 
     bootbox.confirm("Are you sure?", function (result) {
       if (result == true) {
@@ -600,7 +585,7 @@
           if (result.errors) {
             bootbox.alert(result.errors);
           } else {
-//                                  $('#tableBuildingDoors').bootstrapTable('removeAll');
+            // $('#tableBuildingDoors').bootstrapTable('removeAll');
             $('#tableBuildingDoors').bootstrapTable('refresh');
             document.getElementById("statusDeleteButton").disabled = true;
           }
@@ -609,11 +594,10 @@
     });
 
   }
-
-
 </script>
 
 <style>
-  .editable-popup .control-group { padding: 0 7px }
-  .editable-popup .editable-clear-x { right: 7px !important }
+  .bootstrap-table tr { cursor: pointer }
+  /*.editable-popup .control-group { padding: 0 7px }*/
+  /*.editable-popup .editable-clear-x { right: 7px !important }*/
 </style>

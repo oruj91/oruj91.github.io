@@ -2,57 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2784222f-8f44-40f9-8710-ce2aea0383fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Birlink-blocked/img/icon_warning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Birlink-blocked/img/logo-login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Birlink-blocked/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/.postcssrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/build/check-versions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/build/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/build/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/build/vue-loader.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/build/webpack.base.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/build/webpack.dev.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/build/webpack.prod.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/config/dev.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/config/prod.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/assets/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/components/404.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/components/Ad.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/pages/AdList.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/pages/AdNew.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/pages/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/pages/Login.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/pages/Orders.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/pages/Registration.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/plugins/vuetify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/src/store/ads.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectVue-1/static/.gitkeep" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test Bootstrap/img/15284_DEAKIN_SPORT-25_fullres.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test Bootstrap/img/20ye_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test Bootstrap/img/cinema.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test Bootstrap/img/funny_games.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test Bootstrap/img/museum.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test Bootstrap/img/thetre.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test Bootstrap/testBootstrap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test Bootstrap/testBootstrap.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -69,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="459" column="38" selection-start-line="459" selection-start-column="38" selection-end-line="459" selection-end-column="38" />
+            <state relative-caret-position="329">
+              <caret line="471" column="7" lean-forward="true" selection-start-line="471" selection-start-column="7" selection-end-line="471" selection-end-column="7" />
               <folding>
                 <element signature="e#2993#2999#0" expanded="true" />
                 <element signature="e#3000#3006#0" expanded="true" />
@@ -154,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <state relative-caret-position="-68">
+              <caret line="269" column="65" selection-start-line="269" selection-start-column="65" selection-end-line="269" selection-end-column="65" />
               <folding>
                 <element signature="e#586#840#0" />
                 <element signature="e#632#659#0" />
@@ -186,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>json</find>
       <find>media__item</find>
       <find>nav nav-tabs</find>
       <find>modalPay</find>
@@ -216,6 +165,7 @@
       <find>decodeURIComponent</find>
       <find>showModalChannel</find>
       <find>showModalChannel</find>
+      <find>nav = $('.header__pane</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -424,7 +374,7 @@
       <workItem from="1558069855252" duration="25230000" />
       <workItem from="1558619560078" duration="248000" />
       <workItem from="1562077429146" duration="221000" />
-      <workItem from="1562348623741" duration="1366000" />
+      <workItem from="1562348623741" duration="2179000" />
     </task>
     <task id="LOCAL-00001" summary="phone input spaces support">
       <created>1556480760201</created>
@@ -444,7 +394,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258600000" />
+    <option name="totallyTimeSpent" value="259413000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,14 +409,14 @@
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6839677" weight="0.19337606" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6839677" visible="true" weight="0.19337606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" sideWeight="0.3160323" side_tool="true" weight="0.1899841" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.34256056" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37527353" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.35995623" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32871974" />
@@ -474,7 +424,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.30525163" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.39715537" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49947312" weight="0.28710726" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49947312" weight="0.2866521" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -562,12 +512,6 @@
           <url>file://$PROJECT_DIR$/ProjectVue-First/build/webpack.base.conf.js</url>
           <line>75</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js</url>
-          <line>249</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -797,10 +741,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/jquery-3.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="2555" selection-start-line="1" selection-start-column="2555" selection-end-line="1" selection-end-column="2555" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="459" column="38" selection-start-line="459" selection-start-column="38" selection-end-line="459" selection-end-column="38" />
+        <state relative-caret-position="329">
+          <caret line="471" column="7" lean-forward="true" selection-start-line="471" selection-start-column="7" selection-end-line="471" selection-end-column="7" />
           <folding>
             <element signature="e#2993#2999#0" expanded="true" />
             <element signature="e#3000#3006#0" expanded="true" />
@@ -880,17 +831,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/assets/plugins/jquery-3.3.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="2555" selection-start-line="1" selection-start-column="2555" selection-end-line="1" selection-end-column="2555" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TViTECH - Telebreeze/public/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state relative-caret-position="-68">
+          <caret line="269" column="65" selection-start-line="269" selection-start-column="65" selection-end-line="269" selection-end-column="65" />
           <folding>
             <element signature="e#586#840#0" />
             <element signature="e#632#659#0" />

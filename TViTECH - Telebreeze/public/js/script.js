@@ -1,4 +1,3 @@
-
 const
   nav = $('.header__panel'),
   navButtons = $('#myTab .btn--light'),
@@ -250,25 +249,25 @@ $(function () {
   $.each(jsonChannels, function (key, val) {
     if (val.type === 'fun') {
       $('#channelFun .media__container').append(`
-      <a onclick="showModalChannel(${val.name}, ${val.imgSrc})" class="media__item" href="">
-        <img src="${val.imgSrc}">
-      </a>
-    `)
+        <a onclick="showModalChannel('${val.name}', '${val.imgSrc}')" class="media__item">
+          <img src="${val.imgSrc}">
+        </a>
+      `)
     }
   })
   $.each(jsonChannels, function (key, val) {
     if (val.type === 'news') {
       $('#channelNews .media__container').append(`
-      <a onclick="showModalChannel(${val.name}, ${val.imgSrc})" class="media__item" href="#">
-        <img src="${val.imgSrc}">
-      </a>
-    `)
+        <a onclick="showModalChannel('${val.name}', '${val.imgSrc}')" class="media__item">
+          <img src="${val.imgSrc}">
+        </a>
+      `)
     }
   })
   $.each(jsonChannels, function (key, val) {
     if (val.type === 'science') {
       $('#channelScience .media__container').append(`
-      <a onclick="showModalChannel(${val.name}, ${val.imgSrc})" class="media__item" href="#">
+      <a onclick="showModalChannel('${val.name}', '${val.imgSrc}')" class="media__item">
         <img src="${val.imgSrc}">
       </a>
     `)
@@ -277,7 +276,7 @@ $(function () {
   $.each(jsonChannels, function (key, val) {
     if (val.type === 'travel') {
       $('#channelTravel .media__container').append(`
-      <a onclick="showModalChannel(${val.name}, ${val.imgSrc})" class="media__item" href="#">
+      <a onclick="showModalChannel('${val.name}', '${val.imgSrc}')" class="media__item">
         <img src="${val.imgSrc}">
       </a>
     `)

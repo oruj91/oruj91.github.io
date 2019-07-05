@@ -1,3 +1,4 @@
+
 const
   nav = $('.header__panel'),
   navButtons = $('#myTab .btn--light'),
@@ -12,6 +13,20 @@ let lastScrollTop = 0;
 let lastDirection = 0;
 let movement = 0;
 let currentSection;
+
+function showModalChannel (title, imgSrc) {
+  $('#modalChannelTitle').text(title);
+  $('#modalChannelImg').attr('src', imgSrc);
+
+  $('#modalChannel').modal();
+  // $.ajax({
+  //   url: 'requestChannelByID',
+  //   data: id,
+  //   success: function (jsonChannels) {
+  //     $('#modalChannel').modal();
+  //   }
+  // })
+}
 
 // Profile navbar hide on scroll
 $(window).scroll(function () {
@@ -212,19 +227,7 @@ $(function () {
   let channelAllArr = [];
   let packetStandard = [];
 
-  function showModalChannel (title, imgSrc) {
-    $('#modalChannelTitle').text(title);
-    $('#modalChannelImg').attr('src', imgSrc);
 
-    $('#modalChannel').modal();
-    // $.ajax({
-    //   url: 'requestChannelByID',
-    //   data: id,
-    //   success: function (jsonChannels) {
-    //     $('#modalChannel').modal();
-    //   }
-    // })
-  }
 
   $.each(jsonChannels, function (key, val) {
     item = `
@@ -247,7 +250,7 @@ $(function () {
   $.each(jsonChannels, function (key, val) {
     if (val.type === 'fun') {
       $('#channelFun .media__container').append(`
-      <a onclick="showModalChannel(${val.name}, ${val.imgSrc})" class="media__item" href="#">
+      <a onclick="showModalChannel(${val.name}, ${val.imgSrc})" class="media__item" href="">
         <img src="${val.imgSrc}">
       </a>
     `)
